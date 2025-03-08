@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Peer Assessment</title>
+</head>
+<body>
+    <h2>Question:</h2>
+<p>{{ question }}</p>
+
+<h2>Assessment Criteria:</h2>
+<ul>
+    {% for score, description in criteria.items() %}
+        <li><strong>Score {{ score }}:</strong> {{ description }}</li>
+    {% endfor %}
+</ul>
+
+    <form action="/assess" method="post">
+        <label for="answer">Answer:</label><br>
+        <textarea name="answer" rows="4" cols="50"></textarea><br>
+        <label for="score">Score Given:</label><br>
+        <input type="number" name="score" min="1" max="5"><br><br>
+        <input type="submit" value="Submit Assessment">
+    </form>
+</body>
+</html>
