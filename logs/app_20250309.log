@@ -1,0 +1,1748 @@
+2025-03-09 08:05:26,158 - flask_app - INFO - Aplikasi Flask dimulai
+2025-03-09 08:05:26,196 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.8:5000
+2025-03-09 08:05:26,197 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-09 08:05:26,203 - werkzeug - INFO -  * Restarting with stat
+2025-03-09 08:05:29,122 - flask_app - INFO - Aplikasi Flask dimulai
+2025-03-09 08:05:29,136 - werkzeug - WARNING -  * Debugger is active!
+2025-03-09 08:05:29,142 - werkzeug - INFO -  * Debugger PIN: 460-836-505
+2025-03-09 08:07:50,044 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Mengumpulkan banyak iklan, platform cukup beragam.",
+  "score_given": 2,
+  "criteria": {
+    "1": "Mengumpulkan sedikit iklan, platform terbatas.",
+    "2": "Mengumpulkan cukup iklan, platform terbatas.",
+    "3": "Iklan cukup, platform yang digunakan terbatas.",
+    "4": "Mengumpulkan banyak iklan, platform cukup beragam.",
+    "5": "Mengumpulkan banyak iklan dari banyak platform."
+  }
+}
+2025-03-09 08:07:50,046 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '360'}
+2025-03-09 08:07:50,060 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Mengumpulkan+sedikit+iklan%2C+platform+terbatas.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C47A2AD0>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:50,062 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Mengumpulkan+cukup+iklan%2C+platform+terbatas.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C47A0890>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:50,064 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Iklan+cukup%2C+platform+yang+digunakan+terbatas.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C48046D0>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:50,067 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Mengumpulkan+banyak+iklan%2C+platform+cukup+beragam.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C47A3990>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:50,069 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Mengumpulkan+banyak+iklan+dari+banyak+platform.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C47A1510>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:50,070 - flask_app - INFO - Answer: Mengumpulkan banyak iklan, platform cukup beragam.
+2025-03-09 08:07:50,070 - flask_app - INFO - Score Given: 2
+2025-03-09 08:07:50,070 - flask_app - INFO - Translated Criteria: {
+  "1": "Mengumpulkan sedikit iklan, platform terbatas.",
+  "2": "Mengumpulkan cukup iklan, platform terbatas.",
+  "3": "Iklan cukup, platform yang digunakan terbatas.",
+  "4": "Mengumpulkan banyak iklan, platform cukup beragam.",
+  "5": "Mengumpulkan banyak iklan dari banyak platform."
+}
+2025-03-09 08:07:50,072 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Mengumpulkan+banyak+iklan%2C+platform+cukup+beragam.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C479A350>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:50,073 - flask_app - INFO - Translated answer: Mengumpulkan banyak iklan, platform cukup beragam.
+2025-03-09 08:07:53,096 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Mengumpulkan banyak iklan, platform cukup beragam.'
+Criteria: 'Mengumpulkan sedikit iklan, platform terbatas.'
+2025-03-09 08:07:53,114 - flask_app - INFO - spaCy similarity score: 0.8071032166481018
+2025-03-09 08:07:53,115 - flask_app - INFO - Answer keywords: [('mengumpulkan', False), ('banyak', False), ('iklan', False), ('platform', False), ('cukup', False), ('beragam', False)]
+2025-03-09 08:07:53,116 - flask_app - INFO - Criteria keywords: {'terbata', 'iklan', 'sedikit', 'mengumpulkan', 'platform'}
+2025-03-09 08:07:53,116 - flask_app - INFO - Keyword matches: 3
+2025-03-09 08:07:53,116 - flask_app - INFO - Keyword ratio: 0.6
+2025-03-09 08:07:53,116 - flask_app - INFO - Combined similarity score: 0.703551608324051
+2025-03-09 08:07:53,117 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Mengumpulkan banyak iklan, platform cukup beragam.'
+Criteria: 'Mengumpulkan cukup iklan, platform terbatas.'
+2025-03-09 08:07:53,130 - flask_app - INFO - spaCy similarity score: 0.8948330879211426
+2025-03-09 08:07:53,130 - flask_app - INFO - Answer keywords: [('mengumpulkan', False), ('banyak', False), ('iklan', False), ('platform', False), ('cukup', False), ('beragam', False)]
+2025-03-09 08:07:53,130 - flask_app - INFO - Criteria keywords: {'terbata', 'cukup', 'iklan', 'mengumpulkan', 'platform'}
+2025-03-09 08:07:53,130 - flask_app - INFO - Keyword matches: 4
+2025-03-09 08:07:53,131 - flask_app - INFO - Keyword ratio: 0.8
+2025-03-09 08:07:53,131 - flask_app - INFO - Combined similarity score: 0.8474165439605713
+2025-03-09 08:07:53,131 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Mengumpulkan banyak iklan, platform cukup beragam.'
+Criteria: 'Iklan cukup, platform yang digunakan terbatas.'
+2025-03-09 08:07:53,146 - flask_app - INFO - spaCy similarity score: 0.8755113482475281
+2025-03-09 08:07:53,146 - flask_app - INFO - Answer keywords: [('mengumpulkan', False), ('banyak', False), ('iklan', False), ('platform', False), ('cukup', False), ('beragam', False)]
+2025-03-09 08:07:53,147 - flask_app - INFO - Criteria keywords: {'terbata', 'cukup', 'iklan', 'yang', 'digunakan', 'platform'}
+2025-03-09 08:07:53,147 - flask_app - INFO - Keyword matches: 3
+2025-03-09 08:07:53,147 - flask_app - INFO - Keyword ratio: 0.5
+2025-03-09 08:07:53,147 - flask_app - INFO - Combined similarity score: 0.687755674123764
+2025-03-09 08:07:53,148 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Mengumpulkan banyak iklan, platform cukup beragam.'
+Criteria: 'Mengumpulkan banyak iklan, platform cukup beragam.'
+2025-03-09 08:07:53,161 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 08:07:53,162 - flask_app - INFO - Answer keywords: [('mengumpulkan', False), ('banyak', False), ('iklan', False), ('platform', False), ('cukup', False), ('beragam', False)]
+2025-03-09 08:07:53,162 - flask_app - INFO - Criteria keywords: {'platform', 'cukup', 'iklan', 'mengumpulkan', 'banyak', 'beragam'}
+2025-03-09 08:07:53,162 - flask_app - INFO - Keyword matches: 6
+2025-03-09 08:07:53,162 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 08:07:53,163 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 08:07:53,163 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Mengumpulkan banyak iklan, platform cukup beragam.'
+Criteria: 'Mengumpulkan banyak iklan dari banyak platform.'
+2025-03-09 08:07:53,175 - flask_app - INFO - spaCy similarity score: 0.8112066388130188
+2025-03-09 08:07:53,176 - flask_app - INFO - Answer keywords: [('mengumpulkan', False), ('banyak', False), ('iklan', False), ('platform', False), ('cukup', False), ('beragam', False)]
+2025-03-09 08:07:53,176 - flask_app - INFO - Criteria keywords: {'platform', 'iklan', 'dari', 'mengumpulkan', 'banyak'}
+2025-03-09 08:07:53,177 - flask_app - INFO - Keyword matches: 4
+2025-03-09 08:07:53,177 - flask_app - INFO - Keyword ratio: 0.8
+2025-03-09 08:07:53,178 - flask_app - INFO - Combined similarity score: 0.8056033194065094
+2025-03-09 08:07:53,178 - flask_app - INFO - Hasil Analisis: best_score=4, best_similarity=1.0, sentiment=Neutral
+2025-03-09 08:07:53,178 - flask_app - INFO - Similarity Scores: {
+  "1": 0.7036,
+  "2": 0.8474,
+  "3": 0.6878,
+  "4": 1.0,
+  "5": 0.8056
+}
+2025-03-09 08:07:53,178 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 4,
+  "best_similarity": 1.0,
+  "sentiment": "Neutral",
+  "avg_pos": 0.0,
+  "avg_neg": 0.0,
+  "similarity_scores": {
+    "1": 0.7036,
+    "2": 0.8474,
+    "3": 0.6878,
+    "4": 1.0,
+    "5": 0.8056
+  }
+}
+2025-03-09 08:07:53,179 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 08:07:53] "POST /assess HTTP/1.1" 200 -
+2025-03-09 08:07:53,676 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Cukup memahami isi iklan.",
+  "score_given": 2,
+  "criteria": {
+    "1": "Tidak memahami isi iklan.",
+    "2": "Memahami sebagian kecil isi iklan.",
+    "3": "Cukup memahami isi iklan.",
+    "4": "Memahami sebagian besar isi iklan.",
+    "5": "Memahami isi iklan dengan sangat baik."
+  }
+}
+2025-03-09 08:07:53,676 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '258'}
+2025-03-09 08:07:53,678 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Tidak+memahami+isi+iklan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBF2F6D0>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,680 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Memahami+sebagian+kecil+isi+iklan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFC8910>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,682 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Cukup+memahami+isi+iklan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBF2FA90>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,684 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Memahami+sebagian+besar+isi+iklan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBF2C1D0>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,685 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Memahami+isi+iklan+dengan+sangat+baik.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFC96D0>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,686 - flask_app - INFO - Answer: Cukup memahami isi iklan.
+2025-03-09 08:07:53,686 - flask_app - INFO - Score Given: 2
+2025-03-09 08:07:53,687 - flask_app - INFO - Translated Criteria: {
+  "1": "Tidak memahami isi iklan.",
+  "2": "Memahami sebagian kecil isi iklan.",
+  "3": "Cukup memahami isi iklan.",
+  "4": "Memahami sebagian besar isi iklan.",
+  "5": "Memahami isi iklan dengan sangat baik."
+}
+2025-03-09 08:07:53,688 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Cukup+memahami+isi+iklan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFCB750>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,689 - flask_app - INFO - Translated answer: Cukup memahami isi iklan.
+2025-03-09 08:07:53,697 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Cukup memahami isi iklan.'
+Criteria: 'Tidak memahami isi iklan.'
+2025-03-09 08:07:53,708 - flask_app - INFO - spaCy similarity score: 0.952995240688324
+2025-03-09 08:07:53,708 - flask_app - INFO - Answer keywords: [('cukup', False), ('memahami', False), ('isi', False), ('iklan', False)]
+2025-03-09 08:07:53,709 - flask_app - INFO - Criteria keywords: {'isi', 'memahami', 'tidak', 'iklan'}
+2025-03-09 08:07:53,709 - flask_app - INFO - Keyword matches: 3
+2025-03-09 08:07:53,710 - flask_app - INFO - Keyword ratio: 0.75
+2025-03-09 08:07:53,711 - flask_app - INFO - Combined similarity score: 0.851497620344162
+2025-03-09 08:07:53,711 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Cukup memahami isi iklan.'
+Criteria: 'Memahami sebagian kecil isi iklan.'
+2025-03-09 08:07:53,721 - flask_app - INFO - spaCy similarity score: 0.8265388607978821
+2025-03-09 08:07:53,722 - flask_app - INFO - Answer keywords: [('cukup', False), ('memahami', False), ('isi', False), ('iklan', False)]
+2025-03-09 08:07:53,722 - flask_app - INFO - Criteria keywords: {'sebagian', 'memahami', 'iklan', 'kecil', 'isi'}
+2025-03-09 08:07:53,723 - flask_app - INFO - Keyword matches: 3
+2025-03-09 08:07:53,723 - flask_app - INFO - Keyword ratio: 0.6
+2025-03-09 08:07:53,723 - flask_app - INFO - Combined similarity score: 0.7132694303989411
+2025-03-09 08:07:53,723 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Cukup memahami isi iklan.'
+Criteria: 'Cukup memahami isi iklan.'
+2025-03-09 08:07:53,732 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 08:07:53,733 - flask_app - INFO - Answer keywords: [('cukup', False), ('memahami', False), ('isi', False), ('iklan', False)]
+2025-03-09 08:07:53,734 - flask_app - INFO - Criteria keywords: {'cukup', 'isi', 'memahami', 'iklan'}
+2025-03-09 08:07:53,734 - flask_app - INFO - Keyword matches: 4
+2025-03-09 08:07:53,734 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 08:07:53,734 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 08:07:53,735 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Cukup memahami isi iklan.'
+Criteria: 'Memahami sebagian besar isi iklan.'
+2025-03-09 08:07:53,745 - flask_app - INFO - spaCy similarity score: 0.8256906867027283
+2025-03-09 08:07:53,746 - flask_app - INFO - Answer keywords: [('cukup', False), ('memahami', False), ('isi', False), ('iklan', False)]
+2025-03-09 08:07:53,746 - flask_app - INFO - Criteria keywords: {'besar', 'sebagian', 'memahami', 'iklan', 'isi'}
+2025-03-09 08:07:53,746 - flask_app - INFO - Keyword matches: 3
+2025-03-09 08:07:53,746 - flask_app - INFO - Keyword ratio: 0.6
+2025-03-09 08:07:53,747 - flask_app - INFO - Combined similarity score: 0.7128453433513642
+2025-03-09 08:07:53,747 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Cukup memahami isi iklan.'
+Criteria: 'Memahami isi iklan dengan sangat baik.'
+2025-03-09 08:07:53,758 - flask_app - INFO - spaCy similarity score: 0.7116904854774475
+2025-03-09 08:07:53,759 - flask_app - INFO - Answer keywords: [('cukup', False), ('memahami', False), ('isi', False), ('iklan', False)]
+2025-03-09 08:07:53,759 - flask_app - INFO - Criteria keywords: {'sangat', 'baik', 'memahami', 'iklan', 'isi', 'dengan'}
+2025-03-09 08:07:53,760 - flask_app - INFO - Keyword matches: 3
+2025-03-09 08:07:53,760 - flask_app - INFO - Keyword ratio: 0.5
+2025-03-09 08:07:53,760 - flask_app - INFO - Combined similarity score: 0.6058452427387238
+2025-03-09 08:07:53,761 - flask_app - INFO - Hasil Analisis: best_score=3, best_similarity=1.0, sentiment=Neutral
+2025-03-09 08:07:53,761 - flask_app - INFO - Similarity Scores: {
+  "1": 0.8515,
+  "2": 0.7133,
+  "3": 1.0,
+  "4": 0.7128,
+  "5": 0.6058
+}
+2025-03-09 08:07:53,761 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 3,
+  "best_similarity": 1.0,
+  "sentiment": "Neutral",
+  "avg_pos": 0.0,
+  "avg_neg": 0.0,
+  "similarity_scores": {
+    "1": 0.8515,
+    "2": 0.7133,
+    "3": 1.0,
+    "4": 0.7128,
+    "5": 0.6058
+  }
+}
+2025-03-09 08:07:53,762 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 08:07:53] "POST /assess HTTP/1.1" 200 -
+2025-03-09 08:07:53,800 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Struktur data sangat baik dan lengkap.",
+  "score_given": 2,
+  "criteria": {
+    "1": "Struktur tidak sesuai dengan data.",
+    "2": "Struktur kurang sesuai, masih perlu banyak perbaikan.",
+    "3": "Struktur cukup sesuai, namun ada kekurangan.",
+    "4": "Struktur hampir sesuai, hanya ada sedikit kekurangan.",
+    "5": "Struktur data sangat baik dan lengkap."
+  }
+}
+2025-03-09 08:07:53,801 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '337'}
+2025-03-09 08:07:53,803 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Struktur+tidak+sesuai+dengan+data.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFCAAD0>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,804 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Struktur+kurang+sesuai%2C+masih+perlu+banyak+perbaikan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFC9B10>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,806 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Struktur+cukup+sesuai%2C+namun+ada+kekurangan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFCB390>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,808 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Struktur+hampir+sesuai%2C+hanya+ada+sedikit+kekurangan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFCBB10>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,810 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Struktur+data+sangat+baik+dan+lengkap.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBF2EC10>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,810 - flask_app - INFO - Answer: Struktur data sangat baik dan lengkap.
+2025-03-09 08:07:53,811 - flask_app - INFO - Score Given: 2
+2025-03-09 08:07:53,811 - flask_app - INFO - Translated Criteria: {
+  "1": "Struktur tidak sesuai dengan data.",
+  "2": "Struktur kurang sesuai, masih perlu banyak perbaikan.",
+  "3": "Struktur cukup sesuai, namun ada kekurangan.",
+  "4": "Struktur hampir sesuai, hanya ada sedikit kekurangan.",
+  "5": "Struktur data sangat baik dan lengkap."
+}
+2025-03-09 08:07:53,814 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Struktur+data+sangat+baik+dan+lengkap.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBF2E610>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,814 - flask_app - INFO - Translated answer: Struktur data sangat baik dan lengkap.
+2025-03-09 08:07:53,823 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Struktur data sangat baik dan lengkap.'
+Criteria: 'Struktur tidak sesuai dengan data.'
+2025-03-09 08:07:53,834 - flask_app - INFO - spaCy similarity score: 0.7288748025894165
+2025-03-09 08:07:53,835 - flask_app - INFO - Answer keywords: [('struktur', False), ('datum', False), ('sangat', False), ('baik', False), ('dan', False), ('lengkap', False)]
+2025-03-09 08:07:53,835 - flask_app - INFO - Criteria keywords: {'datum', 'tidak', 'sesuai', 'struktur', 'dengan'}
+2025-03-09 08:07:53,836 - flask_app - INFO - Keyword matches: 2
+2025-03-09 08:07:53,836 - flask_app - INFO - Keyword ratio: 0.4
+2025-03-09 08:07:53,836 - flask_app - INFO - Combined similarity score: 0.5644374012947082
+2025-03-09 08:07:53,836 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Struktur data sangat baik dan lengkap.'
+Criteria: 'Struktur kurang sesuai, masih perlu banyak perbaikan.'
+2025-03-09 08:07:53,847 - flask_app - INFO - spaCy similarity score: 0.7539044618606567
+2025-03-09 08:07:53,847 - flask_app - INFO - Answer keywords: [('struktur', False), ('datum', False), ('sangat', False), ('baik', False), ('dan', False), ('lengkap', False)]
+2025-03-09 08:07:53,848 - flask_app - INFO - Criteria keywords: {'perlu', 'perbaikan', 'masih', 'sesuai', 'kurang', 'banyak', 'struktur'}
+2025-03-09 08:07:53,848 - flask_app - INFO - Keyword matches: 1
+2025-03-09 08:07:53,849 - flask_app - INFO - Keyword ratio: 0.14285714285714285
+2025-03-09 08:07:53,849 - flask_app - INFO - Combined similarity score: 0.44838080235889977
+2025-03-09 08:07:53,849 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Struktur data sangat baik dan lengkap.'
+Criteria: 'Struktur cukup sesuai, namun ada kekurangan.'
+2025-03-09 08:07:53,860 - flask_app - INFO - spaCy similarity score: 0.772057294845581
+2025-03-09 08:07:53,861 - flask_app - INFO - Answer keywords: [('struktur', False), ('datum', False), ('sangat', False), ('baik', False), ('dan', False), ('lengkap', False)]
+2025-03-09 08:07:53,861 - flask_app - INFO - Criteria keywords: {'namun', 'sesuai', 'cukup', 'kekurangan', 'struktur', 'ada'}
+2025-03-09 08:07:53,862 - flask_app - INFO - Keyword matches: 1
+2025-03-09 08:07:53,862 - flask_app - INFO - Keyword ratio: 0.16666666666666666
+2025-03-09 08:07:53,862 - flask_app - INFO - Combined similarity score: 0.46936198075612384
+2025-03-09 08:07:53,863 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Struktur data sangat baik dan lengkap.'
+Criteria: 'Struktur hampir sesuai, hanya ada sedikit kekurangan.'
+2025-03-09 08:07:53,873 - flask_app - INFO - spaCy similarity score: 0.7580417990684509
+2025-03-09 08:07:53,874 - flask_app - INFO - Answer keywords: [('struktur', False), ('datum', False), ('sangat', False), ('baik', False), ('dan', False), ('lengkap', False)]
+2025-03-09 08:07:53,874 - flask_app - INFO - Criteria keywords: {'hanya', 'sesuai', 'hampir', 'sedikit', 'kekurangan', 'struktur', 'ada'}
+2025-03-09 08:07:53,874 - flask_app - INFO - Keyword matches: 1
+2025-03-09 08:07:53,875 - flask_app - INFO - Keyword ratio: 0.14285714285714285
+2025-03-09 08:07:53,875 - flask_app - INFO - Combined similarity score: 0.45044947096279686
+2025-03-09 08:07:53,875 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Struktur data sangat baik dan lengkap.'
+Criteria: 'Struktur data sangat baik dan lengkap.'
+2025-03-09 08:07:53,885 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 08:07:53,887 - flask_app - INFO - Answer keywords: [('struktur', False), ('datum', False), ('sangat', False), ('baik', False), ('dan', False), ('lengkap', False)]
+2025-03-09 08:07:53,887 - flask_app - INFO - Criteria keywords: {'datum', 'sangat', 'baik', 'lengkap', 'dan', 'struktur'}
+2025-03-09 08:07:53,887 - flask_app - INFO - Keyword matches: 6
+2025-03-09 08:07:53,888 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 08:07:53,888 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 08:07:53,889 - flask_app - INFO - Hasil Analisis: best_score=5, best_similarity=1.0, sentiment=Neutral
+2025-03-09 08:07:53,889 - flask_app - INFO - Similarity Scores: {
+  "1": 0.5644,
+  "2": 0.4484,
+  "3": 0.4694,
+  "4": 0.4504,
+  "5": 1.0
+}
+2025-03-09 08:07:53,890 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 5,
+  "best_similarity": 1.0,
+  "sentiment": "Neutral",
+  "avg_pos": 0.0,
+  "avg_neg": 0.0,
+  "similarity_scores": {
+    "1": 0.5644,
+    "2": 0.4484,
+    "3": 0.4694,
+    "4": 0.4504,
+    "5": 1.0
+  }
+}
+2025-03-09 08:07:53,891 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 08:07:53] "POST /assess HTTP/1.1" 200 -
+2025-03-09 08:07:53,927 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Data diinput dengan akurat dan tanpa kesalahan.",
+  "score_given": 5,
+  "criteria": {
+    "1": "Banyak kesalahan, tidak teliti.",
+    "2": "Cukup banyak kesalahan, masih kurang teliti.",
+    "3": "Cukup akurat, terdapat beberapa kesalahan.",
+    "4": "Hanya ada sedikit kesalahan, cukup teliti.",
+    "5": "Data diinput dengan akurat dan tanpa kesalahan."
+  }
+}
+2025-03-09 08:07:53,928 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '330'}
+2025-03-09 08:07:53,929 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Banyak+kesalahan%2C+tidak+teliti.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C3666090>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,931 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Cukup+banyak+kesalahan%2C+masih+kurang+teliti.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C36D7E90>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,933 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Cukup+akurat%2C+terdapat+beberapa+kesalahan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C284BD50>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,935 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Hanya+ada+sedikit+kesalahan%2C+cukup+teliti.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C36A9AD0>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,937 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Data+diinput+dengan+akurat+dan+tanpa+kesalahan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFCB6D0>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,938 - flask_app - INFO - Answer: Data diinput dengan akurat dan tanpa kesalahan.
+2025-03-09 08:07:53,938 - flask_app - INFO - Score Given: 5
+2025-03-09 08:07:53,938 - flask_app - INFO - Translated Criteria: {
+  "1": "Banyak kesalahan, tidak teliti.",
+  "2": "Cukup banyak kesalahan, masih kurang teliti.",
+  "3": "Cukup akurat, terdapat beberapa kesalahan.",
+  "4": "Hanya ada sedikit kesalahan, cukup teliti.",
+  "5": "Data diinput dengan akurat dan tanpa kesalahan."
+}
+2025-03-09 08:07:53,940 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Data+diinput+dengan+akurat+dan+tanpa+kesalahan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFC9850>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:53,940 - flask_app - INFO - Translated answer: Data diinput dengan akurat dan tanpa kesalahan.
+2025-03-09 08:07:53,956 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Data diinput dengan akurat dan tanpa kesalahan.'
+Criteria: 'Banyak kesalahan, tidak teliti.'
+2025-03-09 08:07:53,996 - flask_app - INFO - spaCy similarity score: 0.5129844546318054
+2025-03-09 08:07:53,999 - flask_app - INFO - Answer keywords: [('datum', False), ('diinput', False), ('dengan', False), ('akurat', False), ('dan', False), ('tanpa', False), ('kesalahan', False)]
+2025-03-09 08:07:54,000 - flask_app - INFO - Criteria keywords: {'teliti', 'banyak', 'tidak', 'kesalahan'}
+2025-03-09 08:07:54,001 - flask_app - INFO - Keyword matches: 1
+2025-03-09 08:07:54,001 - flask_app - INFO - Keyword ratio: 0.25
+2025-03-09 08:07:54,002 - flask_app - INFO - Combined similarity score: 0.3814922273159027
+2025-03-09 08:07:54,002 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Data diinput dengan akurat dan tanpa kesalahan.'
+Criteria: 'Cukup banyak kesalahan, masih kurang teliti.'
+2025-03-09 08:07:54,017 - flask_app - INFO - spaCy similarity score: 0.7243940234184265
+2025-03-09 08:07:54,018 - flask_app - INFO - Answer keywords: [('datum', False), ('diinput', False), ('dengan', False), ('akurat', False), ('dan', False), ('tanpa', False), ('kesalahan', False)]
+2025-03-09 08:07:54,018 - flask_app - INFO - Criteria keywords: {'kesalahan', 'masih', 'cukup', 'kurang', 'teliti', 'banyak'}
+2025-03-09 08:07:54,018 - flask_app - INFO - Keyword matches: 1
+2025-03-09 08:07:54,019 - flask_app - INFO - Keyword ratio: 0.16666666666666666
+2025-03-09 08:07:54,019 - flask_app - INFO - Combined similarity score: 0.44553034504254657
+2025-03-09 08:07:54,019 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Data diinput dengan akurat dan tanpa kesalahan.'
+Criteria: 'Cukup akurat, terdapat beberapa kesalahan.'
+2025-03-09 08:07:54,032 - flask_app - INFO - spaCy similarity score: 0.7452085614204407
+2025-03-09 08:07:54,033 - flask_app - INFO - Answer keywords: [('datum', False), ('diinput', False), ('dengan', False), ('akurat', False), ('dan', False), ('tanpa', False), ('kesalahan', False)]
+2025-03-09 08:07:54,033 - flask_app - INFO - Criteria keywords: {'kesalahan', 'terdapat', 'cukup', 'akurat', 'beberapa'}
+2025-03-09 08:07:54,034 - flask_app - INFO - Keyword matches: 2
+2025-03-09 08:07:54,034 - flask_app - INFO - Keyword ratio: 0.4
+2025-03-09 08:07:54,034 - flask_app - INFO - Combined similarity score: 0.5726042807102203
+2025-03-09 08:07:54,035 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Data diinput dengan akurat dan tanpa kesalahan.'
+Criteria: 'Hanya ada sedikit kesalahan, cukup teliti.'
+2025-03-09 08:07:54,053 - flask_app - INFO - spaCy similarity score: 0.687049925327301
+2025-03-09 08:07:54,053 - flask_app - INFO - Answer keywords: [('datum', False), ('diinput', False), ('dengan', False), ('akurat', False), ('dan', False), ('tanpa', False), ('kesalahan', False)]
+2025-03-09 08:07:54,054 - flask_app - INFO - Criteria keywords: {'hanya', 'kesalahan', 'cukup', 'sedikit', 'teliti', 'ada'}
+2025-03-09 08:07:54,054 - flask_app - INFO - Keyword matches: 1
+2025-03-09 08:07:54,055 - flask_app - INFO - Keyword ratio: 0.16666666666666666
+2025-03-09 08:07:54,055 - flask_app - INFO - Combined similarity score: 0.4268582959969838
+2025-03-09 08:07:54,055 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Data diinput dengan akurat dan tanpa kesalahan.'
+Criteria: 'Data diinput dengan akurat dan tanpa kesalahan.'
+2025-03-09 08:07:54,078 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 08:07:54,079 - flask_app - INFO - Answer keywords: [('datum', False), ('diinput', False), ('dengan', False), ('akurat', False), ('dan', False), ('tanpa', False), ('kesalahan', False)]
+2025-03-09 08:07:54,079 - flask_app - INFO - Criteria keywords: {'datum', 'kesalahan', 'akurat', 'tanpa', 'diinput', 'dan', 'dengan'}
+2025-03-09 08:07:54,080 - flask_app - INFO - Keyword matches: 7
+2025-03-09 08:07:54,080 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 08:07:54,080 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 08:07:54,081 - flask_app - INFO - Hasil Analisis: best_score=5, best_similarity=1.0, sentiment=Neutral
+2025-03-09 08:07:54,081 - flask_app - INFO - Similarity Scores: {
+  "1": 0.3815,
+  "2": 0.4455,
+  "3": 0.5726,
+  "4": 0.4269,
+  "5": 1.0
+}
+2025-03-09 08:07:54,081 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 5,
+  "best_similarity": 1.0,
+  "sentiment": "Neutral",
+  "avg_pos": 0.0,
+  "avg_neg": 0.0,
+  "similarity_scores": {
+    "1": 0.3815,
+    "2": 0.4455,
+    "3": 0.5726,
+    "4": 0.4269,
+    "5": 1.0
+  }
+}
+2025-03-09 08:07:54,084 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 08:07:54] "POST /assess HTTP/1.1" 200 -
+2025-03-09 08:07:54,135 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Aktif dalam penggabungan, namun ada beberapa kekurangan.",
+  "score_given": 2,
+  "criteria": {
+    "1": "Tidak aktif dalam proses penggabungan.",
+    "2": "Kurang aktif dalam penggabungan, kontribusi minim.",
+    "3": "Cukup aktif namun kontribusi terbatas.",
+    "4": "Aktif dalam penggabungan, namun ada beberapa kekurangan.",
+    "5": "Sangat aktif dan membantu menyelesaikan masalah."
+  }
+}
+2025-03-09 08:07:54,136 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '363'}
+2025-03-09 08:07:54,138 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Tidak+aktif+dalam+proses+penggabungan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C47A2090>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,139 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Kurang+aktif+dalam+penggabungan%2C+kontribusi+minim.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFB86D0>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,140 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Cukup+aktif+namun+kontribusi+terbatas.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C36D6710>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,142 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Aktif+dalam+penggabungan%2C+namun+ada+beberapa+kekurangan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C2964890>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,143 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Sangat+aktif+dan+membantu+menyelesaikan+masalah.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CD30E590>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,144 - flask_app - INFO - Answer: Aktif dalam penggabungan, namun ada beberapa kekurangan.
+2025-03-09 08:07:54,144 - flask_app - INFO - Score Given: 2
+2025-03-09 08:07:54,144 - flask_app - INFO - Translated Criteria: {
+  "1": "Tidak aktif dalam proses penggabungan.",
+  "2": "Kurang aktif dalam penggabungan, kontribusi minim.",
+  "3": "Cukup aktif namun kontribusi terbatas.",
+  "4": "Aktif dalam penggabungan, namun ada beberapa kekurangan.",
+  "5": "Sangat aktif dan membantu menyelesaikan masalah."
+}
+2025-03-09 08:07:54,146 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Aktif+dalam+penggabungan%2C+namun+ada+beberapa+kekurangan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBF2FE90>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,146 - flask_app - INFO - Translated answer: Aktif dalam penggabungan, namun ada beberapa kekurangan.
+2025-03-09 08:07:54,160 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Aktif dalam penggabungan, namun ada beberapa kekurangan.'
+Criteria: 'Tidak aktif dalam proses penggabungan.'
+2025-03-09 08:07:54,176 - flask_app - INFO - spaCy similarity score: 0.669873058795929
+2025-03-09 08:07:54,177 - flask_app - INFO - Answer keywords: [('aktif', False), ('dalam', False), ('penggabungan', False), ('namun', False), ('ada', False), ('beberapa', False), ('kekurangan', False)]
+2025-03-09 08:07:54,177 - flask_app - INFO - Criteria keywords: {'aktif', 'dalam', 'prose', 'tidak', 'penggabungan'}
+2025-03-09 08:07:54,178 - flask_app - INFO - Keyword matches: 3
+2025-03-09 08:07:54,178 - flask_app - INFO - Keyword ratio: 0.6
+2025-03-09 08:07:54,178 - flask_app - INFO - Combined similarity score: 0.6349365293979645
+2025-03-09 08:07:54,178 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Aktif dalam penggabungan, namun ada beberapa kekurangan.'
+Criteria: 'Kurang aktif dalam penggabungan, kontribusi minim.'
+2025-03-09 08:07:54,193 - flask_app - INFO - spaCy similarity score: 0.8230929374694824
+2025-03-09 08:07:54,194 - flask_app - INFO - Answer keywords: [('aktif', False), ('dalam', False), ('penggabungan', False), ('namun', False), ('ada', False), ('beberapa', False), ('kekurangan', False)]
+2025-03-09 08:07:54,194 - flask_app - INFO - Criteria keywords: {'minim', 'aktif', 'kurang', 'dalam', 'kontribusi', 'penggabungan'}
+2025-03-09 08:07:54,194 - flask_app - INFO - Keyword matches: 3
+2025-03-09 08:07:54,195 - flask_app - INFO - Keyword ratio: 0.5
+2025-03-09 08:07:54,195 - flask_app - INFO - Combined similarity score: 0.6615464687347412
+2025-03-09 08:07:54,195 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Aktif dalam penggabungan, namun ada beberapa kekurangan.'
+Criteria: 'Cukup aktif namun kontribusi terbatas.'
+2025-03-09 08:07:54,209 - flask_app - INFO - spaCy similarity score: 0.7470048666000366
+2025-03-09 08:07:54,209 - flask_app - INFO - Answer keywords: [('aktif', False), ('dalam', False), ('penggabungan', False), ('namun', False), ('ada', False), ('beberapa', False), ('kekurangan', False)]
+2025-03-09 08:07:54,210 - flask_app - INFO - Criteria keywords: {'terbata', 'namun', 'aktif', 'cukup', 'kontribusi'}
+2025-03-09 08:07:54,210 - flask_app - INFO - Keyword matches: 2
+2025-03-09 08:07:54,210 - flask_app - INFO - Keyword ratio: 0.4
+2025-03-09 08:07:54,210 - flask_app - INFO - Combined similarity score: 0.5735024333000183
+2025-03-09 08:07:54,211 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Aktif dalam penggabungan, namun ada beberapa kekurangan.'
+Criteria: 'Aktif dalam penggabungan, namun ada beberapa kekurangan.'
+2025-03-09 08:07:54,224 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 08:07:54,225 - flask_app - INFO - Answer keywords: [('aktif', False), ('dalam', False), ('penggabungan', False), ('namun', False), ('ada', False), ('beberapa', False), ('kekurangan', False)]
+2025-03-09 08:07:54,226 - flask_app - INFO - Criteria keywords: {'namun', 'aktif', 'dalam', 'beberapa', 'kekurangan', 'penggabungan', 'ada'}
+2025-03-09 08:07:54,226 - flask_app - INFO - Keyword matches: 7
+2025-03-09 08:07:54,227 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 08:07:54,227 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 08:07:54,227 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Aktif dalam penggabungan, namun ada beberapa kekurangan.'
+Criteria: 'Sangat aktif dan membantu menyelesaikan masalah.'
+2025-03-09 08:07:54,241 - flask_app - INFO - spaCy similarity score: 0.7744457125663757
+2025-03-09 08:07:54,242 - flask_app - INFO - Answer keywords: [('aktif', False), ('dalam', False), ('penggabungan', False), ('namun', False), ('ada', False), ('beberapa', False), ('kekurangan', False)]
+2025-03-09 08:07:54,242 - flask_app - INFO - Criteria keywords: {'menyelesaikan', 'sangat', 'membantu', 'masalah', 'aktif', 'dan'}
+2025-03-09 08:07:54,242 - flask_app - INFO - Keyword matches: 1
+2025-03-09 08:07:54,243 - flask_app - INFO - Keyword ratio: 0.16666666666666666
+2025-03-09 08:07:54,243 - flask_app - INFO - Combined similarity score: 0.4705561896165212
+2025-03-09 08:07:54,243 - flask_app - INFO - Hasil Analisis: best_score=4, best_similarity=1.0, sentiment=Neutral
+2025-03-09 08:07:54,244 - flask_app - INFO - Similarity Scores: {
+  "1": 0.6349,
+  "2": 0.6615,
+  "3": 0.5735,
+  "4": 1.0,
+  "5": 0.4706
+}
+2025-03-09 08:07:54,244 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 4,
+  "best_similarity": 1.0,
+  "sentiment": "Neutral",
+  "avg_pos": 0.0,
+  "avg_neg": 0.0,
+  "similarity_scores": {
+    "1": 0.6349,
+    "2": 0.6615,
+    "3": 0.5735,
+    "4": 1.0,
+    "5": 0.4706
+  }
+}
+2025-03-09 08:07:54,245 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 08:07:54] "POST /assess HTTP/1.1" 200 -
+2025-03-09 08:07:54,273 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Sangat kooperatif dan membantu tim dengan baik.",
+  "score_given": 4,
+  "criteria": {
+    "1": "Tidak banyak terlibat dalam kerjasama.",
+    "2": "Kurang terlibat dalam kerjasama, sering pasif.",
+    "3": "Cukup terlibat dalam kerjasama.",
+    "4": "Terlibat dengan baik, meskipun masih bisa ditingkatkan.",
+    "5": "Sangat kooperatif dan membantu tim dengan baik."
+  }
+}
+2025-03-09 08:07:54,274 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '341'}
+2025-03-09 08:07:54,275 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Tidak+banyak+terlibat+dalam+kerjasama.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFC96D0>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,277 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Kurang+terlibat+dalam+kerjasama%2C+sering+pasif.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFB8490>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,280 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Cukup+terlibat+dalam+kerjasama.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C2A62190>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,285 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Terlibat+dengan+baik%2C+meskipun+masih+bisa+ditingkatkan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBF2C350>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,287 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Sangat+kooperatif+dan+membantu+tim+dengan+baik.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFC9850>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,288 - flask_app - INFO - Answer: Sangat kooperatif dan membantu tim dengan baik.
+2025-03-09 08:07:54,288 - flask_app - INFO - Score Given: 4
+2025-03-09 08:07:54,289 - flask_app - INFO - Translated Criteria: {
+  "1": "Tidak banyak terlibat dalam kerjasama.",
+  "2": "Kurang terlibat dalam kerjasama, sering pasif.",
+  "3": "Cukup terlibat dalam kerjasama.",
+  "4": "Terlibat dengan baik, meskipun masih bisa ditingkatkan.",
+  "5": "Sangat kooperatif dan membantu tim dengan baik."
+}
+2025-03-09 08:07:54,291 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Sangat+kooperatif+dan+membantu+tim+dengan+baik.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFBAA10>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,291 - flask_app - INFO - Translated answer: Sangat kooperatif dan membantu tim dengan baik.
+2025-03-09 08:07:54,302 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Sangat kooperatif dan membantu tim dengan baik.'
+Criteria: 'Tidak banyak terlibat dalam kerjasama.'
+2025-03-09 08:07:54,315 - flask_app - INFO - spaCy similarity score: 0.6340909004211426
+2025-03-09 08:07:54,318 - flask_app - INFO - Answer keywords: [('sangat', False), ('kooperatif', False), ('dan', False), ('membantu', False), ('tim', False), ('dengan', False), ('baik', False)]
+2025-03-09 08:07:54,318 - flask_app - INFO - Criteria keywords: {'dalam', 'kerjasama', 'terlibat', 'banyak', 'tidak'}
+2025-03-09 08:07:54,318 - flask_app - INFO - Keyword matches: 0
+2025-03-09 08:07:54,319 - flask_app - INFO - Keyword ratio: 0.0
+2025-03-09 08:07:54,319 - flask_app - INFO - Combined similarity score: 0.3170454502105713
+2025-03-09 08:07:54,319 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Sangat kooperatif dan membantu tim dengan baik.'
+Criteria: 'Kurang terlibat dalam kerjasama, sering pasif.'
+2025-03-09 08:07:54,332 - flask_app - INFO - spaCy similarity score: 0.5284608602523804
+2025-03-09 08:07:54,334 - flask_app - INFO - Answer keywords: [('sangat', False), ('kooperatif', False), ('dan', False), ('membantu', False), ('tim', False), ('dengan', False), ('baik', False)]
+2025-03-09 08:07:54,334 - flask_app - INFO - Criteria keywords: {'pasif', 'kurang', 'kerjasama', 'dalam', 'terlibat', 'sere'}
+2025-03-09 08:07:54,335 - flask_app - INFO - Keyword matches: 0
+2025-03-09 08:07:54,335 - flask_app - INFO - Keyword ratio: 0.0
+2025-03-09 08:07:54,335 - flask_app - INFO - Combined similarity score: 0.2642304301261902
+2025-03-09 08:07:54,336 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Sangat kooperatif dan membantu tim dengan baik.'
+Criteria: 'Cukup terlibat dalam kerjasama.'
+2025-03-09 08:07:54,347 - flask_app - INFO - spaCy similarity score: 0.6134402751922607
+2025-03-09 08:07:54,350 - flask_app - INFO - Answer keywords: [('sangat', False), ('kooperatif', False), ('dan', False), ('membantu', False), ('tim', False), ('dengan', False), ('baik', False)]
+2025-03-09 08:07:54,351 - flask_app - INFO - Criteria keywords: {'terlibat', 'cukup', 'dalam', 'kerjasama'}
+2025-03-09 08:07:54,351 - flask_app - INFO - Keyword matches: 0
+2025-03-09 08:07:54,352 - flask_app - INFO - Keyword ratio: 0.0
+2025-03-09 08:07:54,352 - flask_app - INFO - Combined similarity score: 0.30672013759613037
+2025-03-09 08:07:54,352 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Sangat kooperatif dan membantu tim dengan baik.'
+Criteria: 'Terlibat dengan baik, meskipun masih bisa ditingkatkan.'
+2025-03-09 08:07:54,367 - flask_app - INFO - spaCy similarity score: 0.7948487997055054
+2025-03-09 08:07:54,368 - flask_app - INFO - Answer keywords: [('sangat', False), ('kooperatif', False), ('dan', False), ('membantu', False), ('tim', False), ('dengan', False), ('baik', False)]
+2025-03-09 08:07:54,368 - flask_app - INFO - Criteria keywords: {'masih', 'baik', 'bisa', 'ditingkatkan', 'meskipun', 'terlibat', 'dengan'}
+2025-03-09 08:07:54,368 - flask_app - INFO - Keyword matches: 2
+2025-03-09 08:07:54,369 - flask_app - INFO - Keyword ratio: 0.2857142857142857
+2025-03-09 08:07:54,369 - flask_app - INFO - Combined similarity score: 0.5402815427098955
+2025-03-09 08:07:54,369 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Sangat kooperatif dan membantu tim dengan baik.'
+Criteria: 'Sangat kooperatif dan membantu tim dengan baik.'
+2025-03-09 08:07:54,380 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 08:07:54,383 - flask_app - INFO - Answer keywords: [('sangat', False), ('kooperatif', False), ('dan', False), ('membantu', False), ('tim', False), ('dengan', False), ('baik', False)]
+2025-03-09 08:07:54,385 - flask_app - INFO - Criteria keywords: {'kooperatif', 'sangat', 'membantu', 'baik', 'tim', 'dan', 'dengan'}
+2025-03-09 08:07:54,385 - flask_app - INFO - Keyword matches: 7
+2025-03-09 08:07:54,386 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 08:07:54,386 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 08:07:54,386 - flask_app - INFO - Hasil Analisis: best_score=5, best_similarity=1.0, sentiment=Neutral
+2025-03-09 08:07:54,387 - flask_app - INFO - Similarity Scores: {
+  "1": 0.317,
+  "2": 0.2642,
+  "3": 0.3067,
+  "4": 0.5403,
+  "5": 1.0
+}
+2025-03-09 08:07:54,387 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 5,
+  "best_similarity": 1.0,
+  "sentiment": "Neutral",
+  "avg_pos": 0.0,
+  "avg_neg": 0.0,
+  "similarity_scores": {
+    "1": 0.317,
+    "2": 0.2642,
+    "3": 0.3067,
+    "4": 0.5403,
+    "5": 1.0
+  }
+}
+2025-03-09 08:07:54,388 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 08:07:54] "POST /assess HTTP/1.1" 200 -
+2025-03-09 08:07:54,434 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Komunikasi sangat baik, ide tersampaikan jelas.",
+  "score_given": 1,
+  "criteria": {
+    "1": "Komunikasi tidak jelas atau tidak efektif.",
+    "2": "Komunikasi kurang jelas, sering terjadi kesalahpahaman.",
+    "3": "Komunikasi cukup baik namun kurang terbuka.",
+    "4": "Komunikasi baik, tetapi masih bisa lebih efektif.",
+    "5": "Komunikasi sangat baik, ide tersampaikan jelas."
+  }
+}
+2025-03-09 08:07:54,435 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '360'}
+2025-03-09 08:07:54,437 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Komunikasi+tidak+jelas+atau+tidak+efektif.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C47A2090>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,439 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Komunikasi+kurang+jelas%2C+sering+terjadi+kesalahpahaman.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFBAD10>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,441 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Komunikasi+cukup+baik+namun+kurang+terbuka.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C47A22D0>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,443 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Komunikasi+baik%2C+tetapi+masih+bisa+lebih+efektif.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFCB610>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,444 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Komunikasi+sangat+baik%2C+ide+tersampaikan+jelas.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C2BB5FD0>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,445 - flask_app - INFO - Answer: Komunikasi sangat baik, ide tersampaikan jelas.
+2025-03-09 08:07:54,445 - flask_app - INFO - Score Given: 1
+2025-03-09 08:07:54,445 - flask_app - INFO - Translated Criteria: {
+  "1": "Komunikasi tidak jelas atau tidak efektif.",
+  "2": "Komunikasi kurang jelas, sering terjadi kesalahpahaman.",
+  "3": "Komunikasi cukup baik namun kurang terbuka.",
+  "4": "Komunikasi baik, tetapi masih bisa lebih efektif.",
+  "5": "Komunikasi sangat baik, ide tersampaikan jelas."
+}
+2025-03-09 08:07:54,450 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Komunikasi+sangat+baik%2C+ide+tersampaikan+jelas.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFBAC90>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,451 - flask_app - INFO - Translated answer: Komunikasi sangat baik, ide tersampaikan jelas.
+2025-03-09 08:07:54,460 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Komunikasi sangat baik, ide tersampaikan jelas.'
+Criteria: 'Komunikasi tidak jelas atau tidak efektif.'
+2025-03-09 08:07:54,475 - flask_app - INFO - spaCy similarity score: 0.5304003357887268
+2025-03-09 08:07:54,475 - flask_app - INFO - Answer keywords: [('komunikasi', False), ('sangat', False), ('baik', False), ('ide', False), ('tersampaikan', False), ('jela', False)]
+2025-03-09 08:07:54,475 - flask_app - INFO - Criteria keywords: {'komunikasi', 'jelas', 'efektif', 'atau', 'tidak'}
+2025-03-09 08:07:54,475 - flask_app - INFO - Keyword matches: 1
+2025-03-09 08:07:54,476 - flask_app - INFO - Keyword ratio: 0.2
+2025-03-09 08:07:54,476 - flask_app - INFO - Combined similarity score: 0.3652001678943634
+2025-03-09 08:07:54,477 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Komunikasi sangat baik, ide tersampaikan jelas.'
+Criteria: 'Komunikasi kurang jelas, sering terjadi kesalahpahaman.'
+2025-03-09 08:07:54,491 - flask_app - INFO - spaCy similarity score: 0.6293088793754578
+2025-03-09 08:07:54,492 - flask_app - INFO - Answer keywords: [('komunikasi', False), ('sangat', False), ('baik', False), ('ide', False), ('tersampaikan', False), ('jela', False)]
+2025-03-09 08:07:54,492 - flask_app - INFO - Criteria keywords: {'terjadi', 'komunikasi', 'jelas', 'kesalahpahaman', 'kurang', 'sere'}
+2025-03-09 08:07:54,492 - flask_app - INFO - Keyword matches: 1
+2025-03-09 08:07:54,493 - flask_app - INFO - Keyword ratio: 0.16666666666666666
+2025-03-09 08:07:54,493 - flask_app - INFO - Combined similarity score: 0.3979877730210622
+2025-03-09 08:07:54,494 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Komunikasi sangat baik, ide tersampaikan jelas.'
+Criteria: 'Komunikasi cukup baik namun kurang terbuka.'
+2025-03-09 08:07:54,511 - flask_app - INFO - spaCy similarity score: 0.5737302303314209
+2025-03-09 08:07:54,512 - flask_app - INFO - Answer keywords: [('komunikasi', False), ('sangat', False), ('baik', False), ('ide', False), ('tersampaikan', False), ('jela', False)]
+2025-03-09 08:07:54,513 - flask_app - INFO - Criteria keywords: {'komunikasi', 'namun', 'baik', 'terbuka', 'cukup', 'kurang'}
+2025-03-09 08:07:54,513 - flask_app - INFO - Keyword matches: 2
+2025-03-09 08:07:54,514 - flask_app - INFO - Keyword ratio: 0.3333333333333333
+2025-03-09 08:07:54,515 - flask_app - INFO - Combined similarity score: 0.4535317818323771
+2025-03-09 08:07:54,516 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Komunikasi sangat baik, ide tersampaikan jelas.'
+Criteria: 'Komunikasi baik, tetapi masih bisa lebih efektif.'
+2025-03-09 08:07:54,537 - flask_app - INFO - spaCy similarity score: 0.6795048117637634
+2025-03-09 08:07:54,538 - flask_app - INFO - Answer keywords: [('komunikasi', False), ('sangat', False), ('baik', False), ('ide', False), ('tersampaikan', False), ('jela', False)]
+2025-03-09 08:07:54,539 - flask_app - INFO - Criteria keywords: {'komunikasi', 'bisa', 'masih', 'baik', 'efektif', 'lebih', 'tetapi'}
+2025-03-09 08:07:54,539 - flask_app - INFO - Keyword matches: 2
+2025-03-09 08:07:54,540 - flask_app - INFO - Keyword ratio: 0.2857142857142857
+2025-03-09 08:07:54,540 - flask_app - INFO - Combined similarity score: 0.48260954873902456
+2025-03-09 08:07:54,540 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Komunikasi sangat baik, ide tersampaikan jelas.'
+Criteria: 'Komunikasi sangat baik, ide tersampaikan jelas.'
+2025-03-09 08:07:54,558 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 08:07:54,559 - flask_app - INFO - Answer keywords: [('komunikasi', False), ('sangat', False), ('baik', False), ('ide', False), ('tersampaikan', False), ('jela', False)]
+2025-03-09 08:07:54,559 - flask_app - INFO - Criteria keywords: {'komunikasi', 'sangat', 'baik', 'ide', 'jela', 'tersampaikan'}
+2025-03-09 08:07:54,560 - flask_app - INFO - Keyword matches: 6
+2025-03-09 08:07:54,560 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 08:07:54,560 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 08:07:54,560 - flask_app - INFO - Hasil Analisis: best_score=5, best_similarity=1.0, sentiment=Neutral
+2025-03-09 08:07:54,561 - flask_app - INFO - Similarity Scores: {
+  "1": 0.3652,
+  "2": 0.398,
+  "3": 0.4535,
+  "4": 0.4826,
+  "5": 1.0
+}
+2025-03-09 08:07:54,561 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 5,
+  "best_similarity": 1.0,
+  "sentiment": "Neutral",
+  "avg_pos": 0.0,
+  "avg_neg": 0.0,
+  "similarity_scores": {
+    "1": 0.3652,
+    "2": 0.398,
+    "3": 0.4535,
+    "4": 0.4826,
+    "5": 1.0
+  }
+}
+2025-03-09 08:07:54,562 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 08:07:54] "POST /assess HTTP/1.1" 200 -
+2025-03-09 08:07:54,595 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Aktif dalam menyelesaikan masalah, namun kurang sistematis.",
+  "score_given": 3,
+  "criteria": {
+    "1": "Tidak aktif dalam menyelesaikan masalah.",
+    "2": "Kurang aktif dalam menemukan solusi.",
+    "3": "Membantu dalam beberapa situasi.",
+    "4": "Aktif dalam menyelesaikan masalah, namun kurang sistematis.",
+    "5": "Sangat aktif menyelesaikan masalah dan proaktif."
+  }
+}
+2025-03-09 08:07:54,599 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '351'}
+2025-03-09 08:07:54,602 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Tidak+aktif+dalam+menyelesaikan+masalah.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFB9310>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,604 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Kurang+aktif+dalam+menemukan+solusi.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBF2DE90>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,607 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Membantu+dalam+beberapa+situasi.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C1F4FE50>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,608 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Aktif+dalam+menyelesaikan+masalah%2C+namun+kurang+sistematis.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFBBD90>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,611 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Sangat+aktif+menyelesaikan+masalah+dan+proaktif.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFBBF10>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,611 - flask_app - INFO - Answer: Aktif dalam menyelesaikan masalah, namun kurang sistematis.
+2025-03-09 08:07:54,611 - flask_app - INFO - Score Given: 3
+2025-03-09 08:07:54,611 - flask_app - INFO - Translated Criteria: {
+  "1": "Tidak aktif dalam menyelesaikan masalah.",
+  "2": "Kurang aktif dalam menemukan solusi.",
+  "3": "Membantu dalam beberapa situasi.",
+  "4": "Aktif dalam menyelesaikan masalah, namun kurang sistematis.",
+  "5": "Sangat aktif menyelesaikan masalah dan proaktif."
+}
+2025-03-09 08:07:54,617 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Aktif+dalam+menyelesaikan+masalah%2C+namun+kurang+sistematis.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C3666050>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,617 - flask_app - INFO - Translated answer: Aktif dalam menyelesaikan masalah, namun kurang sistematis.
+2025-03-09 08:07:54,628 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Aktif dalam menyelesaikan masalah, namun kurang sistematis.'
+Criteria: 'Tidak aktif dalam menyelesaikan masalah.'
+2025-03-09 08:07:54,645 - flask_app - INFO - spaCy similarity score: 0.7993817925453186
+2025-03-09 08:07:54,646 - flask_app - INFO - Answer keywords: [('aktif', False), ('dalam', False), ('menyelesaikan', False), ('masalah', False), ('namun', False), ('kurang', False), ('sistematis', False)]
+2025-03-09 08:07:54,647 - flask_app - INFO - Criteria keywords: {'menyelesaikan', 'masalah', 'aktif', 'dalam', 'tidak'}
+2025-03-09 08:07:54,648 - flask_app - INFO - Keyword matches: 4
+2025-03-09 08:07:54,649 - flask_app - INFO - Keyword ratio: 0.8
+2025-03-09 08:07:54,650 - flask_app - INFO - Combined similarity score: 0.7996908962726593
+2025-03-09 08:07:54,650 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Aktif dalam menyelesaikan masalah, namun kurang sistematis.'
+Criteria: 'Kurang aktif dalam menemukan solusi.'
+2025-03-09 08:07:54,678 - flask_app - INFO - spaCy similarity score: 0.7910422086715698
+2025-03-09 08:07:54,679 - flask_app - INFO - Answer keywords: [('aktif', False), ('dalam', False), ('menyelesaikan', False), ('masalah', False), ('namun', False), ('kurang', False), ('sistematis', False)]
+2025-03-09 08:07:54,681 - flask_app - INFO - Criteria keywords: {'aktif', 'solusi', 'kurang', 'dalam', 'menemukan'}
+2025-03-09 08:07:54,681 - flask_app - INFO - Keyword matches: 3
+2025-03-09 08:07:54,682 - flask_app - INFO - Keyword ratio: 0.6
+2025-03-09 08:07:54,682 - flask_app - INFO - Combined similarity score: 0.695521104335785
+2025-03-09 08:07:54,682 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Aktif dalam menyelesaikan masalah, namun kurang sistematis.'
+Criteria: 'Membantu dalam beberapa situasi.'
+2025-03-09 08:07:54,717 - flask_app - INFO - spaCy similarity score: 0.6299880146980286
+2025-03-09 08:07:54,717 - flask_app - INFO - Answer keywords: [('aktif', False), ('dalam', False), ('menyelesaikan', False), ('masalah', False), ('namun', False), ('kurang', False), ('sistematis', False)]
+2025-03-09 08:07:54,717 - flask_app - INFO - Criteria keywords: {'dalam', 'situasi', 'beberapa', 'membantu'}
+2025-03-09 08:07:54,718 - flask_app - INFO - Keyword matches: 1
+2025-03-09 08:07:54,718 - flask_app - INFO - Keyword ratio: 0.25
+2025-03-09 08:07:54,718 - flask_app - INFO - Combined similarity score: 0.4399940073490143
+2025-03-09 08:07:54,719 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Aktif dalam menyelesaikan masalah, namun kurang sistematis.'
+Criteria: 'Aktif dalam menyelesaikan masalah, namun kurang sistematis.'
+2025-03-09 08:07:54,747 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 08:07:54,748 - flask_app - INFO - Answer keywords: [('aktif', False), ('dalam', False), ('menyelesaikan', False), ('masalah', False), ('namun', False), ('kurang', False), ('sistematis', False)]
+2025-03-09 08:07:54,748 - flask_app - INFO - Criteria keywords: {'menyelesaikan', 'namun', 'masalah', 'aktif', 'dalam', 'kurang', 'sistematis'}
+2025-03-09 08:07:54,748 - flask_app - INFO - Keyword matches: 7
+2025-03-09 08:07:54,748 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 08:07:54,749 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 08:07:54,749 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Aktif dalam menyelesaikan masalah, namun kurang sistematis.'
+Criteria: 'Sangat aktif menyelesaikan masalah dan proaktif.'
+2025-03-09 08:07:54,765 - flask_app - INFO - spaCy similarity score: 0.7977864742279053
+2025-03-09 08:07:54,766 - flask_app - INFO - Answer keywords: [('aktif', False), ('dalam', False), ('menyelesaikan', False), ('masalah', False), ('namun', False), ('kurang', False), ('sistematis', False)]
+2025-03-09 08:07:54,766 - flask_app - INFO - Criteria keywords: {'menyelesaikan', 'sangat', 'masalah', 'aktif', 'proaktif', 'dan'}
+2025-03-09 08:07:54,767 - flask_app - INFO - Keyword matches: 3
+2025-03-09 08:07:54,767 - flask_app - INFO - Keyword ratio: 0.5
+2025-03-09 08:07:54,767 - flask_app - INFO - Combined similarity score: 0.6488932371139526
+2025-03-09 08:07:54,767 - flask_app - INFO - Hasil Analisis: best_score=4, best_similarity=1.0, sentiment=Neutral
+2025-03-09 08:07:54,768 - flask_app - INFO - Similarity Scores: {
+  "1": 0.7997,
+  "2": 0.6955,
+  "3": 0.44,
+  "4": 1.0,
+  "5": 0.6489
+}
+2025-03-09 08:07:54,769 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 4,
+  "best_similarity": 1.0,
+  "sentiment": "Neutral",
+  "avg_pos": 0.0,
+  "avg_neg": 0.0,
+  "similarity_scores": {
+    "1": 0.7997,
+    "2": 0.6955,
+    "3": 0.44,
+    "4": 1.0,
+    "5": 0.6489
+  }
+}
+2025-03-09 08:07:54,771 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 08:07:54] "POST /assess HTTP/1.1" 200 -
+2025-03-09 08:07:54,809 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Semua tugas diselesaikan tepat waktu.",
+  "score_given": 4,
+  "criteria": {
+    "1": "Banyak tugas yang terlambat diselesaikan.",
+    "2": "Beberapa tugas terlambat, sering menunda pekerjaan.",
+    "3": "Beberapa tugas terlambat namun masih dapat dikejar.",
+    "4": "Sebagian besar tugas selesai tepat waktu, hanya ada sedikit keterlambatan.",
+    "5": "Semua tugas diselesaikan tepat waktu."
+  }
+}
+2025-03-09 08:07:54,809 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '368'}
+2025-03-09 08:07:54,818 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Banyak+tugas+yang+terlambat+diselesaikan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C3689550>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,820 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Beberapa+tugas+terlambat%2C+sering+menunda+pekerjaan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBF2EB50>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,821 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Beberapa+tugas+terlambat+namun+masih+dapat+dikejar.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183C368A050>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,823 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Sebagian+besar+tugas+selesai+tepat+waktu%2C+hanya+ada+sedikit+keterlambatan.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFB9BD0>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,824 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Semua+tugas+diselesaikan+tepat+waktu.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBFBBB10>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,825 - flask_app - INFO - Answer: Semua tugas diselesaikan tepat waktu.
+2025-03-09 08:07:54,825 - flask_app - INFO - Score Given: 4
+2025-03-09 08:07:54,825 - flask_app - INFO - Translated Criteria: {
+  "1": "Banyak tugas yang terlambat diselesaikan.",
+  "2": "Beberapa tugas terlambat, sering menunda pekerjaan.",
+  "3": "Beberapa tugas terlambat namun masih dapat dikejar.",
+  "4": "Sebagian besar tugas selesai tepat waktu, hanya ada sedikit keterlambatan.",
+  "5": "Semua tugas diselesaikan tepat waktu."
+}
+2025-03-09 08:07:54,827 - flask_app - ERROR - Error translating text: HTTPConnectionPool(host='api.mymemory.translated.net', port=80): Max retries exceeded with url: /get?q=Semua+tugas+diselesaikan+tepat+waktu.&langpair=id%7Cen (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000183CBF2E010>: Failed to resolve 'api.mymemory.translated.net' ([Errno 11001] getaddrinfo failed)"))
+2025-03-09 08:07:54,828 - flask_app - INFO - Translated answer: Semua tugas diselesaikan tepat waktu.
+2025-03-09 08:07:54,841 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Semua tugas diselesaikan tepat waktu.'
+Criteria: 'Banyak tugas yang terlambat diselesaikan.'
+2025-03-09 08:07:54,870 - flask_app - INFO - spaCy similarity score: 0.8822696805000305
+2025-03-09 08:07:54,871 - flask_app - INFO - Answer keywords: [('semua', False), ('tugas', False), ('diselesaikan', False), ('tepat', False), ('waktu', False)]
+2025-03-09 08:07:54,872 - flask_app - INFO - Criteria keywords: {'tugas', 'diselesaikan', 'terlambat', 'yang', 'banyak'}
+2025-03-09 08:07:54,873 - flask_app - INFO - Keyword matches: 2
+2025-03-09 08:07:54,874 - flask_app - INFO - Keyword ratio: 0.4
+2025-03-09 08:07:54,875 - flask_app - INFO - Combined similarity score: 0.6411348402500152
+2025-03-09 08:07:54,875 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Semua tugas diselesaikan tepat waktu.'
+Criteria: 'Beberapa tugas terlambat, sering menunda pekerjaan.'
+2025-03-09 08:07:54,925 - flask_app - INFO - spaCy similarity score: 0.7464513778686523
+2025-03-09 08:07:54,925 - flask_app - INFO - Answer keywords: [('semua', False), ('tugas', False), ('diselesaikan', False), ('tepat', False), ('waktu', False)]
+2025-03-09 08:07:54,926 - flask_app - INFO - Criteria keywords: {'tugas', 'terlambat', 'beberapa', 'menunda', 'sere', 'pekerjaan'}
+2025-03-09 08:07:54,926 - flask_app - INFO - Keyword matches: 1
+2025-03-09 08:07:54,926 - flask_app - INFO - Keyword ratio: 0.16666666666666666
+2025-03-09 08:07:54,927 - flask_app - INFO - Combined similarity score: 0.4565590222676595
+2025-03-09 08:07:54,927 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Semua tugas diselesaikan tepat waktu.'
+Criteria: 'Beberapa tugas terlambat namun masih dapat dikejar.'
+2025-03-09 08:07:54,947 - flask_app - INFO - spaCy similarity score: 0.8345323801040649
+2025-03-09 08:07:54,949 - flask_app - INFO - Answer keywords: [('semua', False), ('tugas', False), ('diselesaikan', False), ('tepat', False), ('waktu', False)]
+2025-03-09 08:07:54,949 - flask_app - INFO - Criteria keywords: {'namun', 'masih', 'tugas', 'dikejar', 'terlambat', 'dapat', 'beberapa'}
+2025-03-09 08:07:54,950 - flask_app - INFO - Keyword matches: 1
+2025-03-09 08:07:54,950 - flask_app - INFO - Keyword ratio: 0.14285714285714285
+2025-03-09 08:07:54,951 - flask_app - INFO - Combined similarity score: 0.48869476148060387
+2025-03-09 08:07:54,951 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Semua tugas diselesaikan tepat waktu.'
+Criteria: 'Sebagian besar tugas selesai tepat waktu, hanya ada sedikit keterlambatan.'
+2025-03-09 08:07:54,983 - flask_app - INFO - spaCy similarity score: 0.8865797519683838
+2025-03-09 08:07:54,984 - flask_app - INFO - Answer keywords: [('semua', False), ('tugas', False), ('diselesaikan', False), ('tepat', False), ('waktu', False)]
+2025-03-09 08:07:54,984 - flask_app - INFO - Criteria keywords: {'besar', 'selesai', 'hanya', 'keterlambatan', 'sebagian', 'tugas', 'waktu', 'tepat', 'sedikit', 'ada'}
+2025-03-09 08:07:54,985 - flask_app - INFO - Keyword matches: 3
+2025-03-09 08:07:54,985 - flask_app - INFO - Keyword ratio: 0.3
+2025-03-09 08:07:54,985 - flask_app - INFO - Combined similarity score: 0.5932898759841919
+2025-03-09 08:07:54,985 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Semua tugas diselesaikan tepat waktu.'
+Criteria: 'Semua tugas diselesaikan tepat waktu.'
+2025-03-09 08:07:55,002 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 08:07:55,003 - flask_app - INFO - Answer keywords: [('semua', False), ('tugas', False), ('diselesaikan', False), ('tepat', False), ('waktu', False)]
+2025-03-09 08:07:55,004 - flask_app - INFO - Criteria keywords: {'tugas', 'semua', 'diselesaikan', 'waktu', 'tepat'}
+2025-03-09 08:07:55,004 - flask_app - INFO - Keyword matches: 5
+2025-03-09 08:07:55,004 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 08:07:55,005 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 08:07:55,005 - flask_app - INFO - Hasil Analisis: best_score=5, best_similarity=1.0, sentiment=Neutral
+2025-03-09 08:07:55,005 - flask_app - INFO - Similarity Scores: {
+  "1": 0.6411,
+  "2": 0.4566,
+  "3": 0.4887,
+  "4": 0.5933,
+  "5": 1.0
+}
+2025-03-09 08:07:55,006 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 5,
+  "best_similarity": 1.0,
+  "sentiment": "Neutral",
+  "avg_pos": 0.0,
+  "avg_neg": 0.0,
+  "similarity_scores": {
+    "1": 0.6411,
+    "2": 0.4566,
+    "3": 0.4887,
+    "4": 0.5933,
+    "5": 1.0
+  }
+}
+2025-03-09 08:07:55,006 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 08:07:55] "POST /assess HTTP/1.1" 200 -
+2025-03-09 13:34:48,962 - flask_app - INFO - Aplikasi Flask dimulai
+2025-03-09 13:34:49,016 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.128.240:5000
+2025-03-09 13:34:49,017 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-09 13:34:49,022 - werkzeug - INFO -  * Restarting with stat
+2025-03-09 13:34:51,857 - flask_app - INFO - Aplikasi Flask dimulai
+2025-03-09 13:34:51,876 - werkzeug - WARNING -  * Debugger is active!
+2025-03-09 13:34:51,889 - werkzeug - INFO -  * Debugger PIN: 755-422-809
+2025-03-09 13:34:51,967 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Beberapa tugas terlambat, sering menunda pekerjaan.",
+  "score_given": 3,
+  "criteria": {
+    "1": "Banyak tugas yang terlambat diselesaikan.",
+    "2": "Beberapa tugas terlambat, sering menunda pekerjaan.",
+    "3": "Beberapa tugas terlambat namun masih dapat dikejar.",
+    "4": "Sebagian besar tugas selesai tepat waktu, hanya ada sedikit keterlambatan.",
+    "5": "Semua tugas diselesaikan tepat waktu."
+  }
+}
+2025-03-09 13:34:51,968 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '382'}
+2025-03-09 13:34:53,940 - flask_app - INFO - Translated text: Many tasks are overdue for completion.
+2025-03-09 13:34:55,783 - flask_app - INFO - Translated text: Some tasks are late, often delaying work.
+2025-03-09 13:34:57,646 - flask_app - INFO - Translated text: Some tasks are late but can still be pursued.
+2025-03-09 13:34:59,413 - flask_app - INFO - Translated text: Most tasks are completed on time, there is only a small delay.
+2025-03-09 13:35:01,309 - flask_app - INFO - Translated text: All tasks are completed on time.
+2025-03-09 13:35:01,311 - flask_app - INFO - Answer: Beberapa tugas terlambat, sering menunda pekerjaan.
+2025-03-09 13:35:01,311 - flask_app - INFO - Score Given: 3
+2025-03-09 13:35:01,312 - flask_app - INFO - Translated Criteria: {
+  "1": "Many tasks are overdue for completion.",
+  "2": "Some tasks are late, often delaying work.",
+  "3": "Some tasks are late but can still be pursued.",
+  "4": "Most tasks are completed on time, there is only a small delay.",
+  "5": "All tasks are completed on time."
+}
+2025-03-09 13:35:03,228 - flask_app - INFO - Translated text: Some tasks are late, often delaying work.
+2025-03-09 13:35:03,229 - flask_app - INFO - Translated answer: Some tasks are late, often delaying work.
+2025-03-09 13:35:07,703 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Some tasks are late, often delaying work.'
+Criteria: 'Many tasks are overdue for completion.'
+2025-03-09 13:35:09,107 - flask_app - INFO - spaCy similarity score: 0.5125434994697571
+2025-03-09 13:35:09,177 - flask_app - INFO - Answer keywords: [('task', False), ('late', False), ('delay', False), ('work', False)]
+2025-03-09 13:35:09,178 - flask_app - INFO - Criteria keywords: {'overdue', 'completion', 'task'}
+2025-03-09 13:35:09,178 - flask_app - INFO - Keyword matches: 1
+2025-03-09 13:35:09,179 - flask_app - INFO - Keyword ratio: 0.3333333333333333
+2025-03-09 13:35:09,179 - flask_app - INFO - Combined similarity score: 0.42293841640154517
+2025-03-09 13:35:09,180 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Some tasks are late, often delaying work.'
+Criteria: 'Some tasks are late, often delaying work.'
+2025-03-09 13:35:09,197 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 13:35:09,197 - flask_app - INFO - Answer keywords: [('task', False), ('late', False), ('delay', False), ('work', False)]
+2025-03-09 13:35:09,198 - flask_app - INFO - Criteria keywords: {'work', 'late', 'delay', 'task'}
+2025-03-09 13:35:09,198 - flask_app - INFO - Keyword matches: 4
+2025-03-09 13:35:09,199 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 13:35:09,199 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 13:35:09,213 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Some tasks are late, often delaying work.'
+Criteria: 'Some tasks are late but can still be pursued.'
+2025-03-09 13:35:09,241 - flask_app - INFO - spaCy similarity score: 0.5616874694824219
+2025-03-09 13:35:09,241 - flask_app - INFO - Answer keywords: [('task', False), ('late', False), ('delay', False), ('work', False)]
+2025-03-09 13:35:09,242 - flask_app - INFO - Criteria keywords: {'pursue', 'late', 'task'}
+2025-03-09 13:35:09,242 - flask_app - INFO - Keyword matches: 2
+2025-03-09 13:35:09,242 - flask_app - INFO - Keyword ratio: 0.6666666666666666
+2025-03-09 13:35:09,243 - flask_app - INFO - Combined similarity score: 0.6141770680745442
+2025-03-09 13:35:09,243 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Some tasks are late, often delaying work.'
+Criteria: 'Most tasks are completed on time, there is only a small delay.'
+2025-03-09 13:35:09,273 - flask_app - INFO - spaCy similarity score: 0.6100415587425232
+2025-03-09 13:35:09,274 - flask_app - INFO - Answer keywords: [('task', False), ('late', False), ('delay', False), ('work', False)]
+2025-03-09 13:35:09,274 - flask_app - INFO - Criteria keywords: {'small', 'task', 'time', 'delay', 'complete'}
+2025-03-09 13:35:09,275 - flask_app - INFO - Keyword matches: 2
+2025-03-09 13:35:09,275 - flask_app - INFO - Keyword ratio: 0.4
+2025-03-09 13:35:09,275 - flask_app - INFO - Combined similarity score: 0.5050207793712616
+2025-03-09 13:35:09,276 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Some tasks are late, often delaying work.'
+Criteria: 'All tasks are completed on time.'
+2025-03-09 13:35:09,296 - flask_app - INFO - spaCy similarity score: 0.5782734751701355
+2025-03-09 13:35:09,297 - flask_app - INFO - Answer keywords: [('task', False), ('late', False), ('delay', False), ('work', False)]
+2025-03-09 13:35:09,298 - flask_app - INFO - Criteria keywords: {'complete', 'task', 'time'}
+2025-03-09 13:35:09,298 - flask_app - INFO - Keyword matches: 1
+2025-03-09 13:35:09,298 - flask_app - INFO - Keyword ratio: 0.3333333333333333
+2025-03-09 13:35:09,299 - flask_app - INFO - Combined similarity score: 0.4558034042517344
+2025-03-09 13:35:09,299 - flask_app - INFO - Hasil Analisis: best_score=2, best_similarity=1.0, sentiment=Positive
+2025-03-09 13:35:09,299 - flask_app - INFO - Similarity Scores: {
+  "1": 0.4229,
+  "2": 1.0,
+  "3": 0.6142,
+  "4": 0.505,
+  "5": 0.4558
+}
+2025-03-09 13:35:09,300 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 2,
+  "best_similarity": 1.0,
+  "sentiment": "Positive",
+  "avg_pos": 0.0417,
+  "avg_neg": 0.0,
+  "similarity_scores": {
+    "1": 0.4229,
+    "2": 1.0,
+    "3": 0.6142,
+    "4": 0.505,
+    "5": 0.4558
+  }
+}
+2025-03-09 13:35:09,301 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 13:35:09] "POST /assess HTTP/1.1" 200 -
+2025-03-09 13:35:31,913 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Mengumpulkan banyak iklan dari banyak platform.",
+  "score_given": 3,
+  "criteria": {
+    "1": "Mengumpulkan sedikit iklan, platform terbatas.",
+    "2": "Mengumpulkan cukup iklan, platform terbatas.",
+    "3": "Iklan cukup, platform yang digunakan terbatas.",
+    "4": "Mengumpulkan banyak iklan, platform cukup beragam.",
+    "5": "Mengumpulkan banyak iklan dari banyak platform."
+  }
+}
+2025-03-09 13:35:31,914 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '357'}
+2025-03-09 13:35:33,599 - flask_app - INFO - Translated text: Collecting a little advertising, the platform is limited.
+2025-03-09 13:35:35,438 - flask_app - INFO - Translated text: Collect enough ads, limited platform.
+2025-03-09 13:35:37,217 - flask_app - INFO - Translated text: Ad enough, the platform used is limited.
+2025-03-09 13:35:38,956 - flask_app - INFO - Translated text: Collecting a lot of ads, the platform is quite diverse.
+2025-03-09 13:35:40,965 - flask_app - INFO - Translated text: Collect a lot of ads from many platforms.
+2025-03-09 13:35:40,966 - flask_app - INFO - Answer: Mengumpulkan banyak iklan dari banyak platform.
+2025-03-09 13:35:40,966 - flask_app - INFO - Score Given: 3
+2025-03-09 13:35:40,967 - flask_app - INFO - Translated Criteria: {
+  "1": "Collecting a little advertising, the platform is limited.",
+  "2": "Collect enough ads, limited platform.",
+  "3": "Ad enough, the platform used is limited.",
+  "4": "Collecting a lot of ads, the platform is quite diverse.",
+  "5": "Collect a lot of ads from many platforms."
+}
+2025-03-09 13:35:42,873 - flask_app - INFO - Translated text: Collect a lot of ads from many platforms.
+2025-03-09 13:35:42,875 - flask_app - INFO - Translated answer: Collect a lot of ads from many platforms.
+2025-03-09 13:35:42,891 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Collect a lot of ads from many platforms.'
+Criteria: 'Collecting a little advertising, the platform is limited.'
+2025-03-09 13:35:42,913 - flask_app - INFO - spaCy similarity score: 0.34862926602363586
+2025-03-09 13:35:42,914 - flask_app - INFO - Answer keywords: [('collect', False), ('lot', False), ('ad', False), ('platform', False)]
+2025-03-09 13:35:42,915 - flask_app - INFO - Criteria keywords: {'advertising', 'collect', 'little', 'limited', 'platform'}
+2025-03-09 13:35:42,915 - flask_app - INFO - Keyword matches: 2
+2025-03-09 13:35:42,915 - flask_app - INFO - Keyword ratio: 0.4
+2025-03-09 13:35:42,916 - flask_app - INFO - Combined similarity score: 0.37431463301181794
+2025-03-09 13:35:42,917 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Collect a lot of ads from many platforms.'
+Criteria: 'Collect enough ads, limited platform.'
+2025-03-09 13:35:42,937 - flask_app - INFO - spaCy similarity score: 0.4067358672618866
+2025-03-09 13:35:42,939 - flask_app - INFO - Answer keywords: [('collect', False), ('lot', False), ('ad', False), ('platform', False)]
+2025-03-09 13:35:42,940 - flask_app - INFO - Criteria keywords: {'ad', 'collect', 'limited', 'platform'}
+2025-03-09 13:35:42,940 - flask_app - INFO - Keyword matches: 3
+2025-03-09 13:35:42,941 - flask_app - INFO - Keyword ratio: 0.75
+2025-03-09 13:35:42,942 - flask_app - INFO - Combined similarity score: 0.5783679336309433
+2025-03-09 13:35:42,942 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Collect a lot of ads from many platforms.'
+Criteria: 'Ad enough, the platform used is limited.'
+2025-03-09 13:35:42,965 - flask_app - INFO - spaCy similarity score: 0.2796221375465393
+2025-03-09 13:35:42,966 - flask_app - INFO - Answer keywords: [('collect', False), ('lot', False), ('ad', False), ('platform', False)]
+2025-03-09 13:35:42,966 - flask_app - INFO - Criteria keywords: {'ad', 'limited', 'platform'}
+2025-03-09 13:35:42,967 - flask_app - INFO - Keyword matches: 2
+2025-03-09 13:35:42,967 - flask_app - INFO - Keyword ratio: 0.6666666666666666
+2025-03-09 13:35:42,968 - flask_app - INFO - Combined similarity score: 0.47314440210660297
+2025-03-09 13:35:42,968 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Collect a lot of ads from many platforms.'
+Criteria: 'Collecting a lot of ads, the platform is quite diverse.'
+2025-03-09 13:35:42,992 - flask_app - INFO - spaCy similarity score: 0.6293481588363647
+2025-03-09 13:35:42,994 - flask_app - INFO - Answer keywords: [('collect', False), ('lot', False), ('ad', False), ('platform', False)]
+2025-03-09 13:35:42,994 - flask_app - INFO - Criteria keywords: {'lot', 'ad', 'collect', 'diverse', 'platform'}
+2025-03-09 13:35:42,995 - flask_app - INFO - Keyword matches: 4
+2025-03-09 13:35:42,995 - flask_app - INFO - Keyword ratio: 0.8
+2025-03-09 13:35:42,995 - flask_app - INFO - Combined similarity score: 0.7146740794181824
+2025-03-09 13:35:42,996 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Collect a lot of ads from many platforms.'
+Criteria: 'Collect a lot of ads from many platforms.'
+2025-03-09 13:35:43,017 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 13:35:43,017 - flask_app - INFO - Answer keywords: [('collect', False), ('lot', False), ('ad', False), ('platform', False)]
+2025-03-09 13:35:43,018 - flask_app - INFO - Criteria keywords: {'lot', 'ad', 'collect', 'platform'}
+2025-03-09 13:35:43,018 - flask_app - INFO - Keyword matches: 4
+2025-03-09 13:35:43,018 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 13:35:43,019 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 13:35:43,019 - flask_app - INFO - Hasil Analisis: best_score=5, best_similarity=1.0, sentiment=Neutral
+2025-03-09 13:35:43,019 - flask_app - INFO - Similarity Scores: {
+  "1": 0.3743,
+  "2": 0.5784,
+  "3": 0.4731,
+  "4": 0.7147,
+  "5": 1.0
+}
+2025-03-09 13:35:43,020 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 5,
+  "best_similarity": 1.0,
+  "sentiment": "Neutral",
+  "avg_pos": 0.0,
+  "avg_neg": 0.0,
+  "similarity_scores": {
+    "1": 0.3743,
+    "2": 0.5784,
+    "3": 0.4731,
+    "4": 0.7147,
+    "5": 1.0
+  }
+}
+2025-03-09 13:35:43,022 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 13:35:43] "POST /assess HTTP/1.1" 200 -
+2025-03-09 13:35:43,232 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Memahami sebagian besar isi iklan.",
+  "score_given": 2,
+  "criteria": {
+    "1": "Tidak memahami isi iklan.",
+    "2": "Memahami sebagian kecil isi iklan.",
+    "3": "Cukup memahami isi iklan.",
+    "4": "Memahami sebagian besar isi iklan.",
+    "5": "Memahami isi iklan dengan sangat baik."
+  }
+}
+2025-03-09 13:35:43,232 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '267'}
+2025-03-09 13:35:45,050 - flask_app - INFO - Translated text: Don't understand the content of the ad.
+2025-03-09 13:35:46,958 - flask_app - INFO - Translated text: Understand a small portion of a listing's content.
+2025-03-09 13:35:48,910 - flask_app - INFO - Translated text: Simply understand the contents of the ad.
+2025-03-09 13:35:50,823 - flask_app - INFO - Translated text: Understand most of the content of the listing.
+2025-03-09 13:35:52,821 - flask_app - INFO - Translated text: Understand the content of the listing very well.
+2025-03-09 13:35:52,822 - flask_app - INFO - Answer: Memahami sebagian besar isi iklan.
+2025-03-09 13:35:52,822 - flask_app - INFO - Score Given: 2
+2025-03-09 13:35:52,823 - flask_app - INFO - Translated Criteria: {
+  "1": "Don't understand the content of the ad.",
+  "2": "Understand a small portion of a listing's content.",
+  "3": "Simply understand the contents of the ad.",
+  "4": "Understand most of the content of the listing.",
+  "5": "Understand the content of the listing very well."
+}
+2025-03-09 13:35:54,695 - flask_app - INFO - Translated text: Understand most of the content of the listing.
+2025-03-09 13:35:54,696 - flask_app - INFO - Translated answer: Understand most of the content of the listing.
+2025-03-09 13:35:54,708 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Understand most of the content of the listing.'
+Criteria: 'Don't understand the content of the ad.'
+2025-03-09 13:35:54,735 - flask_app - INFO - spaCy similarity score: 0.4495144486427307
+2025-03-09 13:35:54,736 - flask_app - INFO - Answer keywords: [('understand', False), ('content', False), ('listing', False)]
+2025-03-09 13:35:54,736 - flask_app - INFO - Criteria keywords: {'understand', 'ad', 'content'}
+2025-03-09 13:35:54,737 - flask_app - INFO - Keyword matches: 2
+2025-03-09 13:35:54,737 - flask_app - INFO - Keyword ratio: 0.6666666666666666
+2025-03-09 13:35:54,738 - flask_app - INFO - Combined similarity score: 0.5580905576546986
+2025-03-09 13:35:54,738 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Understand most of the content of the listing.'
+Criteria: 'Understand a small portion of a listing's content.'
+2025-03-09 13:35:54,759 - flask_app - INFO - spaCy similarity score: 0.5405834913253784
+2025-03-09 13:35:54,760 - flask_app - INFO - Answer keywords: [('understand', False), ('content', False), ('listing', False)]
+2025-03-09 13:35:54,762 - flask_app - INFO - Criteria keywords: {'small', 'understand', 'content', 'listing', 'portion'}
+2025-03-09 13:35:54,763 - flask_app - INFO - Keyword matches: 3
+2025-03-09 13:35:54,763 - flask_app - INFO - Keyword ratio: 0.6
+2025-03-09 13:35:54,764 - flask_app - INFO - Combined similarity score: 0.5702917456626893
+2025-03-09 13:35:54,765 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Understand most of the content of the listing.'
+Criteria: 'Simply understand the contents of the ad.'
+2025-03-09 13:35:54,790 - flask_app - INFO - spaCy similarity score: 0.6115602850914001
+2025-03-09 13:35:54,790 - flask_app - INFO - Answer keywords: [('understand', False), ('content', False), ('listing', False)]
+2025-03-09 13:35:54,791 - flask_app - INFO - Criteria keywords: {'understand', 'ad', 'content', 'simply'}
+2025-03-09 13:35:54,791 - flask_app - INFO - Keyword matches: 2
+2025-03-09 13:35:54,791 - flask_app - INFO - Keyword ratio: 0.5
+2025-03-09 13:35:54,792 - flask_app - INFO - Combined similarity score: 0.5557801425457001
+2025-03-09 13:35:54,792 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Understand most of the content of the listing.'
+Criteria: 'Understand most of the content of the listing.'
+2025-03-09 13:35:54,808 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 13:35:54,810 - flask_app - INFO - Answer keywords: [('understand', False), ('content', False), ('listing', False)]
+2025-03-09 13:35:54,811 - flask_app - INFO - Criteria keywords: {'understand', 'listing', 'content'}
+2025-03-09 13:35:54,812 - flask_app - INFO - Keyword matches: 3
+2025-03-09 13:35:54,813 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 13:35:54,813 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 13:35:54,814 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Understand most of the content of the listing.'
+Criteria: 'Understand the content of the listing very well.'
+2025-03-09 13:35:54,829 - flask_app - INFO - spaCy similarity score: 0.6846921443939209
+2025-03-09 13:35:54,831 - flask_app - INFO - Answer keywords: [('understand', False), ('content', False), ('listing', False)]
+2025-03-09 13:35:54,831 - flask_app - INFO - Criteria keywords: {'understand', 'listing', 'content'}
+2025-03-09 13:35:54,831 - flask_app - INFO - Keyword matches: 3
+2025-03-09 13:35:54,832 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 13:35:54,832 - flask_app - INFO - Combined similarity score: 0.8423460721969604
+2025-03-09 13:35:54,833 - flask_app - INFO - Hasil Analisis: best_score=4, best_similarity=1.0, sentiment=Neutral
+2025-03-09 13:35:54,833 - flask_app - INFO - Similarity Scores: {
+  "1": 0.5581,
+  "2": 0.5703,
+  "3": 0.5558,
+  "4": 1.0,
+  "5": 0.8423
+}
+2025-03-09 13:35:54,833 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 4,
+  "best_similarity": 1.0,
+  "sentiment": "Neutral",
+  "avg_pos": 0.0,
+  "avg_neg": 0.0,
+  "similarity_scores": {
+    "1": 0.5581,
+    "2": 0.5703,
+    "3": 0.5558,
+    "4": 1.0,
+    "5": 0.8423
+  }
+}
+2025-03-09 13:35:54,834 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 13:35:54] "POST /assess HTTP/1.1" 200 -
+2025-03-09 13:35:54,872 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Struktur data sangat baik dan lengkap.",
+  "score_given": 3,
+  "criteria": {
+    "1": "Struktur tidak sesuai dengan data.",
+    "2": "Struktur kurang sesuai, masih perlu banyak perbaikan.",
+    "3": "Struktur cukup sesuai, namun ada kekurangan.",
+    "4": "Struktur hampir sesuai, hanya ada sedikit kekurangan.",
+    "5": "Struktur data sangat baik dan lengkap."
+  }
+}
+2025-03-09 13:35:54,873 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '337'}
+2025-03-09 13:35:56,888 - flask_app - INFO - Translated text: The structure is incompatible with the data.
+2025-03-09 13:35:58,535 - flask_app - INFO - Translated text: The structure is not suitable, there are still many improvements.
+2025-03-09 13:36:00,399 - flask_app - INFO - Translated text: The structure is quite suitable, but there are shortcomings.
+2025-03-09 13:36:02,286 - flask_app - INFO - Translated text: The structure is almost suitable, there are only a few shortcomings.
+2025-03-09 13:36:05,191 - flask_app - INFO - Translated text: The data structure is very good and complete.
+2025-03-09 13:36:05,192 - flask_app - INFO - Answer: Struktur data sangat baik dan lengkap.
+2025-03-09 13:36:05,193 - flask_app - INFO - Score Given: 3
+2025-03-09 13:36:05,195 - flask_app - INFO - Translated Criteria: {
+  "1": "The structure is incompatible with the data.",
+  "2": "The structure is not suitable, there are still many improvements.",
+  "3": "The structure is quite suitable, but there are shortcomings.",
+  "4": "The structure is almost suitable, there are only a few shortcomings.",
+  "5": "The data structure is very good and complete."
+}
+2025-03-09 13:36:07,147 - flask_app - INFO - Translated text: The data structure is very good and complete.
+2025-03-09 13:36:07,147 - flask_app - INFO - Translated answer: The data structure is very good and complete.
+2025-03-09 13:36:07,159 - flask_app - INFO - Calculating similarity between: 
+Answer: 'The data structure is very good and complete.'
+Criteria: 'The structure is incompatible with the data.'
+2025-03-09 13:36:07,175 - flask_app - INFO - spaCy similarity score: 0.4664385914802551
+2025-03-09 13:36:07,175 - flask_app - INFO - Answer keywords: [('data', False), ('structure', False), ('good', False), ('complete', False)]
+2025-03-09 13:36:07,176 - flask_app - INFO - Criteria keywords: {'structure', 'datum', 'incompatible'}
+2025-03-09 13:36:07,176 - flask_app - INFO - Keyword matches: 1
+2025-03-09 13:36:07,177 - flask_app - INFO - Keyword ratio: 0.3333333333333333
+2025-03-09 13:36:07,177 - flask_app - INFO - Combined similarity score: 0.3998859624067942
+2025-03-09 13:36:07,178 - flask_app - INFO - Calculating similarity between: 
+Answer: 'The data structure is very good and complete.'
+Criteria: 'The structure is not suitable, there are still many improvements.'
+2025-03-09 13:36:07,195 - flask_app - INFO - spaCy similarity score: 0.5064939856529236
+2025-03-09 13:36:07,196 - flask_app - INFO - Answer keywords: [('data', False), ('structure', False), ('good', False), ('complete', False)]
+2025-03-09 13:36:07,197 - flask_app - INFO - Criteria keywords: {'structure', 'improvement', 'suitable'}
+2025-03-09 13:36:07,197 - flask_app - INFO - Keyword matches: 1
+2025-03-09 13:36:07,197 - flask_app - INFO - Keyword ratio: 0.3333333333333333
+2025-03-09 13:36:07,198 - flask_app - INFO - Combined similarity score: 0.4199136594931284
+2025-03-09 13:36:07,198 - flask_app - INFO - Calculating similarity between: 
+Answer: 'The data structure is very good and complete.'
+Criteria: 'The structure is quite suitable, but there are shortcomings.'
+2025-03-09 13:36:07,213 - flask_app - INFO - spaCy similarity score: 0.6411992907524109
+2025-03-09 13:36:07,214 - flask_app - INFO - Answer keywords: [('data', False), ('structure', False), ('good', False), ('complete', False)]
+2025-03-09 13:36:07,214 - flask_app - INFO - Criteria keywords: {'structure', 'shortcoming', 'suitable'}
+2025-03-09 13:36:07,215 - flask_app - INFO - Keyword matches: 1
+2025-03-09 13:36:07,215 - flask_app - INFO - Keyword ratio: 0.3333333333333333
+2025-03-09 13:36:07,215 - flask_app - INFO - Combined similarity score: 0.4872663120428721
+2025-03-09 13:36:07,216 - flask_app - INFO - Calculating similarity between: 
+Answer: 'The data structure is very good and complete.'
+Criteria: 'The structure is almost suitable, there are only a few shortcomings.'
+2025-03-09 13:36:07,234 - flask_app - INFO - spaCy similarity score: 0.5348096489906311
+2025-03-09 13:36:07,235 - flask_app - INFO - Answer keywords: [('data', False), ('structure', False), ('good', False), ('complete', False)]
+2025-03-09 13:36:07,235 - flask_app - INFO - Criteria keywords: {'structure', 'shortcoming', 'suitable'}
+2025-03-09 13:36:07,235 - flask_app - INFO - Keyword matches: 1
+2025-03-09 13:36:07,236 - flask_app - INFO - Keyword ratio: 0.3333333333333333
+2025-03-09 13:36:07,236 - flask_app - INFO - Combined similarity score: 0.4340714911619822
+2025-03-09 13:36:07,237 - flask_app - INFO - Calculating similarity between: 
+Answer: 'The data structure is very good and complete.'
+Criteria: 'The data structure is very good and complete.'
+2025-03-09 13:36:07,250 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 13:36:07,251 - flask_app - INFO - Answer keywords: [('data', False), ('structure', False), ('good', False), ('complete', False)]
+2025-03-09 13:36:07,252 - flask_app - INFO - Criteria keywords: {'data', 'structure', 'good', 'complete'}
+2025-03-09 13:36:07,252 - flask_app - INFO - Keyword matches: 4
+2025-03-09 13:36:07,253 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 13:36:07,253 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 13:36:07,254 - flask_app - INFO - Hasil Analisis: best_score=5, best_similarity=1.0, sentiment=Positive
+2025-03-09 13:36:07,254 - flask_app - INFO - Similarity Scores: {
+  "1": 0.3999,
+  "2": 0.4199,
+  "3": 0.4873,
+  "4": 0.4341,
+  "5": 1.0
+}
+2025-03-09 13:36:07,254 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 5,
+  "best_similarity": 1.0,
+  "sentiment": "Positive",
+  "avg_pos": 0.1667,
+  "avg_neg": 0.0,
+  "similarity_scores": {
+    "1": 0.3999,
+    "2": 0.4199,
+    "3": 0.4873,
+    "4": 0.4341,
+    "5": 1.0
+  }
+}
+2025-03-09 13:36:07,255 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 13:36:07] "POST /assess HTTP/1.1" 200 -
+2025-03-09 13:36:07,318 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Hanya ada sedikit kesalahan, cukup teliti.",
+  "score_given": 4,
+  "criteria": {
+    "1": "Banyak kesalahan, tidak teliti.",
+    "2": "Cukup banyak kesalahan, masih kurang teliti.",
+    "3": "Cukup akurat, terdapat beberapa kesalahan.",
+    "4": "Hanya ada sedikit kesalahan, cukup teliti.",
+    "5": "Data diinput dengan akurat dan tanpa kesalahan."
+  }
+}
+2025-03-09 13:36:07,320 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '325'}
+2025-03-09 13:36:09,079 - flask_app - INFO - Translated text: Many mistakes, not careful.
+2025-03-09 13:36:10,829 - flask_app - INFO - Translated text: Quite a lot of mistakes, still less thorough.
+2025-03-09 13:36:12,501 - flask_app - INFO - Translated text: Quite accurately, there were some errors.
+2025-03-09 13:36:14,483 - flask_app - INFO - Translated text: There were only a few mistakes, quite thorough.
+2025-03-09 13:36:16,183 - flask_app - INFO - Translated text: Data is entered accurately and without errors.
+2025-03-09 13:36:16,183 - flask_app - INFO - Answer: Hanya ada sedikit kesalahan, cukup teliti.
+2025-03-09 13:36:16,184 - flask_app - INFO - Score Given: 4
+2025-03-09 13:36:16,184 - flask_app - INFO - Translated Criteria: {
+  "1": "Many mistakes, not careful.",
+  "2": "Quite a lot of mistakes, still less thorough.",
+  "3": "Quite accurately, there were some errors.",
+  "4": "There were only a few mistakes, quite thorough.",
+  "5": "Data is entered accurately and without errors."
+}
+2025-03-09 13:36:18,115 - flask_app - INFO - Translated text: There were only a few mistakes, quite thorough.
+2025-03-09 13:36:18,115 - flask_app - INFO - Translated answer: There were only a few mistakes, quite thorough.
+2025-03-09 13:36:18,128 - flask_app - INFO - Calculating similarity between: 
+Answer: 'There were only a few mistakes, quite thorough.'
+Criteria: 'Many mistakes, not careful.'
+2025-03-09 13:36:18,141 - flask_app - INFO - spaCy similarity score: 0.5635004639625549
+2025-03-09 13:36:18,142 - flask_app - INFO - Answer keywords: [('mistake', False), ('thorough', False)]
+2025-03-09 13:36:18,143 - flask_app - INFO - Criteria keywords: {'careful', 'mistake'}
+2025-03-09 13:36:18,143 - flask_app - INFO - Keyword matches: 1
+2025-03-09 13:36:18,143 - flask_app - INFO - Keyword ratio: 0.5
+2025-03-09 13:36:18,144 - flask_app - INFO - Combined similarity score: 0.5317502319812775
+2025-03-09 13:36:18,144 - flask_app - INFO - Calculating similarity between: 
+Answer: 'There were only a few mistakes, quite thorough.'
+Criteria: 'Quite a lot of mistakes, still less thorough.'
+2025-03-09 13:36:18,159 - flask_app - INFO - spaCy similarity score: 0.7128568291664124
+2025-03-09 13:36:18,160 - flask_app - INFO - Answer keywords: [('mistake', False), ('thorough', False)]
+2025-03-09 13:36:18,160 - flask_app - INFO - Criteria keywords: {'lot', 'thorough', 'mistake'}
+2025-03-09 13:36:18,160 - flask_app - INFO - Keyword matches: 2
+2025-03-09 13:36:18,161 - flask_app - INFO - Keyword ratio: 0.6666666666666666
+2025-03-09 13:36:18,161 - flask_app - INFO - Combined similarity score: 0.6897617479165394
+2025-03-09 13:36:18,162 - flask_app - INFO - Calculating similarity between: 
+Answer: 'There were only a few mistakes, quite thorough.'
+Criteria: 'Quite accurately, there were some errors.'
+2025-03-09 13:36:18,177 - flask_app - INFO - spaCy similarity score: 0.6720547080039978
+2025-03-09 13:36:18,177 - flask_app - INFO - Answer keywords: [('mistake', False), ('thorough', False)]
+2025-03-09 13:36:18,178 - flask_app - INFO - Criteria keywords: {'accurately', 'error'}
+2025-03-09 13:36:18,178 - flask_app - INFO - Keyword matches: 0
+2025-03-09 13:36:18,178 - flask_app - INFO - Keyword ratio: 0.0
+2025-03-09 13:36:18,179 - flask_app - INFO - Combined similarity score: 0.3360273540019989
+2025-03-09 13:36:18,179 - flask_app - INFO - Calculating similarity between: 
+Answer: 'There were only a few mistakes, quite thorough.'
+Criteria: 'There were only a few mistakes, quite thorough.'
+2025-03-09 13:36:18,193 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 13:36:18,194 - flask_app - INFO - Answer keywords: [('mistake', False), ('thorough', False)]
+2025-03-09 13:36:18,194 - flask_app - INFO - Criteria keywords: {'thorough', 'mistake'}
+2025-03-09 13:36:18,194 - flask_app - INFO - Keyword matches: 2
+2025-03-09 13:36:18,195 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 13:36:18,195 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 13:36:18,196 - flask_app - INFO - Calculating similarity between: 
+Answer: 'There were only a few mistakes, quite thorough.'
+Criteria: 'Data is entered accurately and without errors.'
+2025-03-09 13:36:18,210 - flask_app - INFO - spaCy similarity score: 0.3501395583152771
+2025-03-09 13:36:18,210 - flask_app - INFO - Answer keywords: [('mistake', False), ('thorough', False)]
+2025-03-09 13:36:18,211 - flask_app - INFO - Criteria keywords: {'accurately', 'error', 'datum', 'enter'}
+2025-03-09 13:36:18,243 - flask_app - INFO - Keyword matches: 0
+2025-03-09 13:36:18,243 - flask_app - INFO - Keyword ratio: 0.0
+2025-03-09 13:36:18,244 - flask_app - INFO - Combined similarity score: 0.17506977915763855
+2025-03-09 13:36:18,244 - flask_app - INFO - Hasil Analisis: best_score=4, best_similarity=1.0, sentiment=Negative
+2025-03-09 13:36:18,245 - flask_app - INFO - Similarity Scores: {
+  "1": 0.5318,
+  "2": 0.6898,
+  "3": 0.336,
+  "4": 1.0,
+  "5": 0.1751
+}
+2025-03-09 13:36:18,245 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 4,
+  "best_similarity": 1.0,
+  "sentiment": "Negative",
+  "avg_pos": 0.125,
+  "avg_neg": 0.225,
+  "similarity_scores": {
+    "1": 0.5318,
+    "2": 0.6898,
+    "3": 0.336,
+    "4": 1.0,
+    "5": 0.1751
+  }
+}
+2025-03-09 13:36:18,246 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 13:36:18] "POST /assess HTTP/1.1" 200 -
+2025-03-09 13:36:18,386 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Sangat aktif dan membantu menyelesaikan masalah.",
+  "score_given": 2,
+  "criteria": {
+    "1": "Tidak aktif dalam proses penggabungan.",
+    "2": "Kurang aktif dalam penggabungan, kontribusi minim.",
+    "3": "Cukup aktif namun kontribusi terbatas.",
+    "4": "Aktif dalam penggabungan, namun ada beberapa kekurangan.",
+    "5": "Sangat aktif dan membantu menyelesaikan masalah."
+  }
+}
+2025-03-09 13:36:18,387 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '355'}
+2025-03-09 13:36:20,201 - flask_app - INFO - Translated text: Inactive in the merge process.
+2025-03-09 13:36:22,070 - flask_app - INFO - Translated text: Less active in merging, minimal contribution.
+2025-03-09 13:36:23,771 - flask_app - INFO - Translated text: Moderately active but limited contributions.
+2025-03-09 13:36:25,708 - flask_app - INFO - Translated text: Active in mergers, but there are some drawbacks.
+2025-03-09 13:36:27,413 - flask_app - INFO - Translated text: Very active and helps solve problems.
+2025-03-09 13:36:27,413 - flask_app - INFO - Answer: Sangat aktif dan membantu menyelesaikan masalah.
+2025-03-09 13:36:27,414 - flask_app - INFO - Score Given: 2
+2025-03-09 13:36:27,414 - flask_app - INFO - Translated Criteria: {
+  "1": "Inactive in the merge process.",
+  "2": "Less active in merging, minimal contribution.",
+  "3": "Moderately active but limited contributions.",
+  "4": "Active in mergers, but there are some drawbacks.",
+  "5": "Very active and helps solve problems."
+}
+2025-03-09 13:36:29,120 - flask_app - INFO - Translated text: Very active and helps solve problems.
+2025-03-09 13:36:29,121 - flask_app - INFO - Translated answer: Very active and helps solve problems.
+2025-03-09 13:36:29,134 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Very active and helps solve problems.'
+Criteria: 'Inactive in the merge process.'
+2025-03-09 13:36:29,149 - flask_app - INFO - spaCy similarity score: 0.19892734289169312
+2025-03-09 13:36:29,149 - flask_app - INFO - Answer keywords: [('active', False), ('help', False), ('solve', False), ('problem', False)]
+2025-03-09 13:36:29,150 - flask_app - INFO - Criteria keywords: {'process', 'merge', 'inactive'}
+2025-03-09 13:36:29,150 - flask_app - INFO - Keyword matches: 0
+2025-03-09 13:36:29,151 - flask_app - INFO - Keyword ratio: 0.0
+2025-03-09 13:36:29,151 - flask_app - INFO - Combined similarity score: 0.09946367144584656
+2025-03-09 13:36:29,152 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Very active and helps solve problems.'
+Criteria: 'Less active in merging, minimal contribution.'
+2025-03-09 13:36:29,167 - flask_app - INFO - spaCy similarity score: 0.4306561350822449
+2025-03-09 13:36:29,167 - flask_app - INFO - Answer keywords: [('active', False), ('help', False), ('solve', False), ('problem', False)]
+2025-03-09 13:36:29,168 - flask_app - INFO - Criteria keywords: {'minimal', 'contribution', 'merging', 'active'}
+2025-03-09 13:36:29,169 - flask_app - INFO - Keyword matches: 1
+2025-03-09 13:36:29,169 - flask_app - INFO - Keyword ratio: 0.25
+2025-03-09 13:36:29,170 - flask_app - INFO - Combined similarity score: 0.34032806754112244
+2025-03-09 13:36:29,170 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Very active and helps solve problems.'
+Criteria: 'Moderately active but limited contributions.'
+2025-03-09 13:36:29,185 - flask_app - INFO - spaCy similarity score: 0.5350647568702698
+2025-03-09 13:36:29,185 - flask_app - INFO - Answer keywords: [('active', False), ('help', False), ('solve', False), ('problem', False)]
+2025-03-09 13:36:29,186 - flask_app - INFO - Criteria keywords: {'contribution', 'moderately', 'limited', 'active'}
+2025-03-09 13:36:29,187 - flask_app - INFO - Keyword matches: 1
+2025-03-09 13:36:29,187 - flask_app - INFO - Keyword ratio: 0.25
+2025-03-09 13:36:29,188 - flask_app - INFO - Combined similarity score: 0.3925323784351349
+2025-03-09 13:36:29,188 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Very active and helps solve problems.'
+Criteria: 'Active in mergers, but there are some drawbacks.'
+2025-03-09 13:36:29,207 - flask_app - INFO - spaCy similarity score: 0.5655282735824585
+2025-03-09 13:36:29,208 - flask_app - INFO - Answer keywords: [('active', False), ('help', False), ('solve', False), ('problem', False)]
+2025-03-09 13:36:29,208 - flask_app - INFO - Criteria keywords: {'drawback', 'merger', 'active'}
+2025-03-09 13:36:29,209 - flask_app - INFO - Keyword matches: 1
+2025-03-09 13:36:29,209 - flask_app - INFO - Keyword ratio: 0.3333333333333333
+2025-03-09 13:36:29,210 - flask_app - INFO - Combined similarity score: 0.4494308034578959
+2025-03-09 13:36:29,211 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Very active and helps solve problems.'
+Criteria: 'Very active and helps solve problems.'
+2025-03-09 13:36:29,227 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 13:36:29,228 - flask_app - INFO - Answer keywords: [('active', False), ('help', False), ('solve', False), ('problem', False)]
+2025-03-09 13:36:29,229 - flask_app - INFO - Criteria keywords: {'solve', 'problem', 'help', 'active'}
+2025-03-09 13:36:29,229 - flask_app - INFO - Keyword matches: 4
+2025-03-09 13:36:29,230 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 13:36:29,230 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 13:36:29,230 - flask_app - INFO - Hasil Analisis: best_score=5, best_similarity=1.0, sentiment=Negative
+2025-03-09 13:36:29,231 - flask_app - INFO - Similarity Scores: {
+  "1": 0.0995,
+  "2": 0.3403,
+  "3": 0.3925,
+  "4": 0.4494,
+  "5": 1.0
+}
+2025-03-09 13:36:29,231 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 5,
+  "best_similarity": 1.0,
+  "sentiment": "Negative",
+  "avg_pos": 0.05,
+  "avg_neg": 0.075,
+  "similarity_scores": {
+    "1": 0.0995,
+    "2": 0.3403,
+    "3": 0.3925,
+    "4": 0.4494,
+    "5": 1.0
+  }
+}
+2025-03-09 13:36:29,232 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 13:36:29] "POST /assess HTTP/1.1" 200 -
+2025-03-09 13:36:29,341 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Sangat kooperatif dan membantu tim dengan baik.",
+  "score_given": 2,
+  "criteria": {
+    "1": "Tidak banyak terlibat dalam kerjasama.",
+    "2": "Kurang terlibat dalam kerjasama, sering pasif.",
+    "3": "Cukup terlibat dalam kerjasama.",
+    "4": "Terlibat dengan baik, meskipun masih bisa ditingkatkan.",
+    "5": "Sangat kooperatif dan membantu tim dengan baik."
+  }
+}
+2025-03-09 13:36:29,342 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '341'}
+2025-03-09 13:36:31,045 - flask_app - INFO - Translated text: Not much involvement in cooperation.
+2025-03-09 13:36:32,737 - flask_app - INFO - Translated text: Less involved in cooperation, often passive.
+2025-03-09 13:36:34,520 - flask_app - INFO - Translated text: Quite involved in cooperation.
+2025-03-09 13:36:36,298 - flask_app - INFO - Translated text: Well-engaged, although it can still be improved.
+2025-03-09 13:36:38,042 - flask_app - INFO - Translated text: Very cooperative and helps the team well.
+2025-03-09 13:36:38,043 - flask_app - INFO - Answer: Sangat kooperatif dan membantu tim dengan baik.
+2025-03-09 13:36:38,043 - flask_app - INFO - Score Given: 2
+2025-03-09 13:36:38,044 - flask_app - INFO - Translated Criteria: {
+  "1": "Not much involvement in cooperation.",
+  "2": "Less involved in cooperation, often passive.",
+  "3": "Quite involved in cooperation.",
+  "4": "Well-engaged, although it can still be improved.",
+  "5": "Very cooperative and helps the team well."
+}
+2025-03-09 13:36:39,696 - flask_app - INFO - Translated text: Very cooperative and helps the team well.
+2025-03-09 13:36:39,696 - flask_app - INFO - Translated answer: Very cooperative and helps the team well.
+2025-03-09 13:36:39,708 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Very cooperative and helps the team well.'
+Criteria: 'Not much involvement in cooperation.'
+2025-03-09 13:36:39,724 - flask_app - INFO - spaCy similarity score: 0.31886449456214905
+2025-03-09 13:36:39,725 - flask_app - INFO - Answer keywords: [('cooperative', False), ('help', False), ('team', False)]
+2025-03-09 13:36:39,725 - flask_app - INFO - Criteria keywords: {'cooperation', 'involvement'}
+2025-03-09 13:36:39,725 - flask_app - INFO - Keyword matches: 0
+2025-03-09 13:36:39,726 - flask_app - INFO - Keyword ratio: 0.0
+2025-03-09 13:36:39,726 - flask_app - INFO - Combined similarity score: 0.15943224728107452
+2025-03-09 13:36:39,726 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Very cooperative and helps the team well.'
+Criteria: 'Less involved in cooperation, often passive.'
+2025-03-09 13:36:39,758 - flask_app - INFO - spaCy similarity score: 0.38517990708351135
+2025-03-09 13:36:39,759 - flask_app - INFO - Answer keywords: [('cooperative', False), ('help', False), ('team', False)]
+2025-03-09 13:36:39,759 - flask_app - INFO - Criteria keywords: {'cooperation', 'involve', 'passive'}
+2025-03-09 13:36:39,760 - flask_app - INFO - Keyword matches: 0
+2025-03-09 13:36:39,760 - flask_app - INFO - Keyword ratio: 0.0
+2025-03-09 13:36:39,760 - flask_app - INFO - Combined similarity score: 0.19258995354175568
+2025-03-09 13:36:39,761 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Very cooperative and helps the team well.'
+Criteria: 'Quite involved in cooperation.'
+2025-03-09 13:36:39,774 - flask_app - INFO - spaCy similarity score: 0.4099951386451721
+2025-03-09 13:36:39,774 - flask_app - INFO - Answer keywords: [('cooperative', False), ('help', False), ('team', False)]
+2025-03-09 13:36:39,775 - flask_app - INFO - Criteria keywords: {'cooperation', 'involve'}
+2025-03-09 13:36:39,775 - flask_app - INFO - Keyword matches: 0
+2025-03-09 13:36:39,775 - flask_app - INFO - Keyword ratio: 0.0
+2025-03-09 13:36:39,776 - flask_app - INFO - Combined similarity score: 0.20499756932258606
+2025-03-09 13:36:39,776 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Very cooperative and helps the team well.'
+Criteria: 'Well-engaged, although it can still be improved.'
+2025-03-09 13:36:39,792 - flask_app - INFO - spaCy similarity score: 0.24850741028785706
+2025-03-09 13:36:39,793 - flask_app - INFO - Answer keywords: [('cooperative', False), ('help', False), ('team', False)]
+2025-03-09 13:36:39,794 - flask_app - INFO - Criteria keywords: {'engage', 'improve'}
+2025-03-09 13:36:39,794 - flask_app - INFO - Keyword matches: 0
+2025-03-09 13:36:39,794 - flask_app - INFO - Keyword ratio: 0.0
+2025-03-09 13:36:39,795 - flask_app - INFO - Combined similarity score: 0.12425370514392853
+2025-03-09 13:36:39,795 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Very cooperative and helps the team well.'
+Criteria: 'Very cooperative and helps the team well.'
+2025-03-09 13:36:39,827 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 13:36:39,827 - flask_app - INFO - Answer keywords: [('cooperative', False), ('help', False), ('team', False)]
+2025-03-09 13:36:39,828 - flask_app - INFO - Criteria keywords: {'cooperative', 'help', 'team'}
+2025-03-09 13:36:39,828 - flask_app - INFO - Keyword matches: 3
+2025-03-09 13:36:39,828 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 13:36:39,829 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 13:36:39,829 - flask_app - INFO - Hasil Analisis: best_score=5, best_similarity=1.0, sentiment=Positive
+2025-03-09 13:36:39,829 - flask_app - INFO - Similarity Scores: {
+  "1": 0.1594,
+  "2": 0.1926,
+  "3": 0.205,
+  "4": 0.1243,
+  "5": 1.0
+}
+2025-03-09 13:36:39,830 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 5,
+  "best_similarity": 1.0,
+  "sentiment": "Positive",
+  "avg_pos": 0.175,
+  "avg_neg": 0.025,
+  "similarity_scores": {
+    "1": 0.1594,
+    "2": 0.1926,
+    "3": 0.205,
+    "4": 0.1243,
+    "5": 1.0
+  }
+}
+2025-03-09 13:36:39,831 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 13:36:39] "POST /assess HTTP/1.1" 200 -
+2025-03-09 13:36:39,880 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Komunikasi baik, tetapi masih bisa lebih efektif.",
+  "score_given": 4,
+  "criteria": {
+    "1": "Komunikasi tidak jelas atau tidak efektif.",
+    "2": "Komunikasi kurang jelas, sering terjadi kesalahpahaman.",
+    "3": "Komunikasi cukup baik namun kurang terbuka.",
+    "4": "Komunikasi baik, tetapi masih bisa lebih efektif.",
+    "5": "Komunikasi sangat baik, ide tersampaikan jelas."
+  }
+}
+2025-03-09 13:36:39,881 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '362'}
+2025-03-09 13:36:41,686 - flask_app - INFO - Translated text: Communication is unclear or ineffective.
+2025-03-09 13:36:43,426 - flask_app - INFO - Translated text: Communication is unclear, there are often misunderstandings.
+2025-03-09 13:36:45,099 - flask_app - INFO - Translated text: Communication is quite good but less open.
+2025-03-09 13:36:46,771 - flask_app - INFO - Translated text: Communication is good, but it can still be more effective.
+2025-03-09 13:36:48,586 - flask_app - INFO - Translated text: Communication is very good, ideas are conveyed clearly.
+2025-03-09 13:36:48,587 - flask_app - INFO - Answer: Komunikasi baik, tetapi masih bisa lebih efektif.
+2025-03-09 13:36:48,587 - flask_app - INFO - Score Given: 4
+2025-03-09 13:36:48,588 - flask_app - INFO - Translated Criteria: {
+  "1": "Communication is unclear or ineffective.",
+  "2": "Communication is unclear, there are often misunderstandings.",
+  "3": "Communication is quite good but less open.",
+  "4": "Communication is good, but it can still be more effective.",
+  "5": "Communication is very good, ideas are conveyed clearly."
+}
+2025-03-09 13:36:50,258 - flask_app - INFO - Translated text: Communication is good, but it can still be more effective.
+2025-03-09 13:36:50,259 - flask_app - INFO - Translated answer: Communication is good, but it can still be more effective.
+2025-03-09 13:36:50,270 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Communication is good, but it can still be more effective.'
+Criteria: 'Communication is unclear or ineffective.'
+2025-03-09 13:36:50,284 - flask_app - INFO - spaCy similarity score: 0.5767860412597656
+2025-03-09 13:36:50,284 - flask_app - INFO - Answer keywords: [('communication', False), ('good', False), ('effective', False)]
+2025-03-09 13:36:50,285 - flask_app - INFO - Criteria keywords: {'ineffective', 'unclear', 'communication'}
+2025-03-09 13:36:50,285 - flask_app - INFO - Keyword matches: 1
+2025-03-09 13:36:50,286 - flask_app - INFO - Keyword ratio: 0.3333333333333333
+2025-03-09 13:36:50,286 - flask_app - INFO - Combined similarity score: 0.45505968729654944
+2025-03-09 13:36:50,286 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Communication is good, but it can still be more effective.'
+Criteria: 'Communication is unclear, there are often misunderstandings.'
+2025-03-09 13:36:50,302 - flask_app - INFO - spaCy similarity score: 0.5655346512794495
+2025-03-09 13:36:50,303 - flask_app - INFO - Answer keywords: [('communication', False), ('good', False), ('effective', False)]
+2025-03-09 13:36:50,303 - flask_app - INFO - Criteria keywords: {'misunderstanding', 'unclear', 'communication'}
+2025-03-09 13:36:50,304 - flask_app - INFO - Keyword matches: 1
+2025-03-09 13:36:50,305 - flask_app - INFO - Keyword ratio: 0.3333333333333333
+2025-03-09 13:36:50,305 - flask_app - INFO - Combined similarity score: 0.44943399230639136
+2025-03-09 13:36:50,305 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Communication is good, but it can still be more effective.'
+Criteria: 'Communication is quite good but less open.'
+2025-03-09 13:36:50,321 - flask_app - INFO - spaCy similarity score: 0.6911438703536987
+2025-03-09 13:36:50,321 - flask_app - INFO - Answer keywords: [('communication', False), ('good', False), ('effective', False)]
+2025-03-09 13:36:50,322 - flask_app - INFO - Criteria keywords: {'good', 'open', 'communication'}
+2025-03-09 13:36:50,322 - flask_app - INFO - Keyword matches: 2
+2025-03-09 13:36:50,322 - flask_app - INFO - Keyword ratio: 0.6666666666666666
+2025-03-09 13:36:50,323 - flask_app - INFO - Combined similarity score: 0.6789052685101826
+2025-03-09 13:36:50,324 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Communication is good, but it can still be more effective.'
+Criteria: 'Communication is good, but it can still be more effective.'
+2025-03-09 13:36:50,337 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 13:36:50,337 - flask_app - INFO - Answer keywords: [('communication', False), ('good', False), ('effective', False)]
+2025-03-09 13:36:50,338 - flask_app - INFO - Criteria keywords: {'good', 'effective', 'communication'}
+2025-03-09 13:36:50,338 - flask_app - INFO - Keyword matches: 3
+2025-03-09 13:36:50,339 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 13:36:50,339 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 13:36:50,339 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Communication is good, but it can still be more effective.'
+Criteria: 'Communication is very good, ideas are conveyed clearly.'
+2025-03-09 13:36:50,355 - flask_app - INFO - spaCy similarity score: 0.6033577919006348
+2025-03-09 13:36:50,356 - flask_app - INFO - Answer keywords: [('communication', False), ('good', False), ('effective', False)]
+2025-03-09 13:36:50,356 - flask_app - INFO - Criteria keywords: {'convey', 'clearly', 'good', 'communication', 'idea'}
+2025-03-09 13:36:50,356 - flask_app - INFO - Keyword matches: 2
+2025-03-09 13:36:50,357 - flask_app - INFO - Keyword ratio: 0.4
+2025-03-09 13:36:50,357 - flask_app - INFO - Combined similarity score: 0.5016788959503173
+2025-03-09 13:36:50,358 - flask_app - INFO - Hasil Analisis: best_score=4, best_similarity=1.0, sentiment=Positive
+2025-03-09 13:36:50,358 - flask_app - INFO - Similarity Scores: {
+  "1": 0.4551,
+  "2": 0.4494,
+  "3": 0.6789,
+  "4": 1.0,
+  "5": 0.5017
+}
+2025-03-09 13:36:50,359 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 4,
+  "best_similarity": 1.0,
+  "sentiment": "Positive",
+  "avg_pos": 0.1607,
+  "avg_neg": 0.0714,
+  "similarity_scores": {
+    "1": 0.4551,
+    "2": 0.4494,
+    "3": 0.6789,
+    "4": 1.0,
+    "5": 0.5017
+  }
+}
+2025-03-09 13:36:50,360 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 13:36:50] "POST /assess HTTP/1.1" 200 -
+2025-03-09 13:36:50,588 - flask_app - INFO - Data diterima dari Laravel: {
+  "answer": "Membantu dalam beberapa situasi.",
+  "score_given": 5,
+  "criteria": {
+    "1": "Tidak aktif dalam menyelesaikan masalah.",
+    "2": "Kurang aktif dalam menemukan solusi.",
+    "3": "Membantu dalam beberapa situasi.",
+    "4": "Aktif dalam menyelesaikan masalah, namun kurang sistematis.",
+    "5": "Sangat aktif menyelesaikan masalah dan proaktif."
+  }
+}
+2025-03-09 13:36:50,588 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '324'}
+2025-03-09 13:36:52,388 - flask_app - INFO - Translated text: Inactive in solving problems.
+2025-03-09 13:36:54,290 - flask_app - INFO - Translated text: Less active in finding solutions.
+2025-03-09 13:36:56,164 - flask_app - INFO - Translated text: Helps in some situations.
+2025-03-09 13:36:57,853 - flask_app - INFO - Translated text: Active in solving problems, but less systematic.
+2025-03-09 13:36:59,886 - flask_app - INFO - Translated text: Very active in problem solving and proactive.
+2025-03-09 13:36:59,887 - flask_app - INFO - Answer: Membantu dalam beberapa situasi.
+2025-03-09 13:36:59,887 - flask_app - INFO - Score Given: 5
+2025-03-09 13:36:59,888 - flask_app - INFO - Translated Criteria: {
+  "1": "Inactive in solving problems.",
+  "2": "Less active in finding solutions.",
+  "3": "Helps in some situations.",
+  "4": "Active in solving problems, but less systematic.",
+  "5": "Very active in problem solving and proactive."
+}
+2025-03-09 13:37:01,603 - flask_app - INFO - Translated text: Helps in some situations.
+2025-03-09 13:37:01,604 - flask_app - INFO - Translated answer: Helps in some situations.
+2025-03-09 13:37:01,614 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Helps in some situations.'
+Criteria: 'Inactive in solving problems.'
+2025-03-09 13:37:01,627 - flask_app - INFO - spaCy similarity score: 0.583555281162262
+2025-03-09 13:37:01,629 - flask_app - INFO - Answer keywords: [('help', False), ('situation', False)]
+2025-03-09 13:37:01,629 - flask_app - INFO - Criteria keywords: {'solve', 'problem', 'inactive'}
+2025-03-09 13:37:01,630 - flask_app - INFO - Keyword matches: 0
+2025-03-09 13:37:01,630 - flask_app - INFO - Keyword ratio: 0.0
+2025-03-09 13:37:01,631 - flask_app - INFO - Combined similarity score: 0.291777640581131
+2025-03-09 13:37:01,631 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Helps in some situations.'
+Criteria: 'Less active in finding solutions.'
+2025-03-09 13:37:01,651 - flask_app - INFO - spaCy similarity score: 0.4215753376483917
+2025-03-09 13:37:01,652 - flask_app - INFO - Answer keywords: [('help', False), ('situation', False)]
+2025-03-09 13:37:01,652 - flask_app - INFO - Criteria keywords: {'solution', 'find', 'active'}
+2025-03-09 13:37:01,653 - flask_app - INFO - Keyword matches: 0
+2025-03-09 13:37:01,653 - flask_app - INFO - Keyword ratio: 0.0
+2025-03-09 13:37:01,653 - flask_app - INFO - Combined similarity score: 0.21078766882419586
+2025-03-09 13:37:01,654 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Helps in some situations.'
+Criteria: 'Helps in some situations.'
+2025-03-09 13:37:01,672 - flask_app - INFO - spaCy similarity score: 1.0
+2025-03-09 13:37:01,672 - flask_app - INFO - Answer keywords: [('help', False), ('situation', False)]
+2025-03-09 13:37:01,673 - flask_app - INFO - Criteria keywords: {'situation', 'help'}
+2025-03-09 13:37:01,673 - flask_app - INFO - Keyword matches: 2
+2025-03-09 13:37:01,674 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-09 13:37:01,674 - flask_app - INFO - Combined similarity score: 1.0
+2025-03-09 13:37:01,674 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Helps in some situations.'
+Criteria: 'Active in solving problems, but less systematic.'
+2025-03-09 13:37:01,691 - flask_app - INFO - spaCy similarity score: 0.3913474380970001
+2025-03-09 13:37:01,692 - flask_app - INFO - Answer keywords: [('help', False), ('situation', False)]
+2025-03-09 13:37:01,692 - flask_app - INFO - Criteria keywords: {'solve', 'problem', 'systematic', 'active'}
+2025-03-09 13:37:01,693 - flask_app - INFO - Keyword matches: 0
+2025-03-09 13:37:01,693 - flask_app - INFO - Keyword ratio: 0.0
+2025-03-09 13:37:01,693 - flask_app - INFO - Combined similarity score: 0.19567371904850006
+2025-03-09 13:37:01,694 - flask_app - INFO - Calculating similarity between: 
+Answer: 'Helps in some situations.'
+Criteria: 'Very active in problem solving and proactive.'
+2025-03-09 13:37:01,713 - flask_app - INFO - spaCy similarity score: 0.15764014422893524
+2025-03-09 13:37:01,713 - flask_app - INFO - Answer keywords: [('help', False), ('situation', False)]
+2025-03-09 13:37:01,714 - flask_app - INFO - Criteria keywords: {'solve', 'problem', 'proactive', 'active'}
+2025-03-09 13:37:01,714 - flask_app - INFO - Keyword matches: 0
+2025-03-09 13:37:01,714 - flask_app - INFO - Keyword ratio: 0.0
+2025-03-09 13:37:01,715 - flask_app - INFO - Combined similarity score: 0.07882007211446762
+2025-03-09 13:37:01,715 - flask_app - INFO - Hasil Analisis: best_score=3, best_similarity=1.0, sentiment=Negative
+2025-03-09 13:37:01,716 - flask_app - INFO - Similarity Scores: {
+  "1": 0.2918,
+  "2": 0.2108,
+  "3": 1.0,
+  "4": 0.1957,
+  "5": 0.0788
+}
+2025-03-09 13:37:01,716 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 3,
+  "best_similarity": 1.0,
+  "sentiment": "Negative",
+  "avg_pos": 0.0,
+  "avg_neg": 0.1875,
+  "similarity_scores": {
+    "1": 0.2918,
+    "2": 0.2108,
+    "3": 1.0,
+    "4": 0.1957,
+    "5": 0.0788
+  }
+}
+2025-03-09 13:37:01,717 - werkzeug - INFO - 127.0.0.1 - - [09/Mar/2025 13:37:01] "POST /assess HTTP/1.1" 200 -

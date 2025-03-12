@@ -1,0 +1,50 @@
+{
+  "9e6a27ad-6285-4e61-a289-1337d2e1e859": {
+    "assessment_id": "9e6a27ad-6285-4e61-a289-1337d2e1e859",
+    "rubrik_id": "9e6a06c4-13c6-4dd7-99f4-d54b330059cd",
+    "question": "Ini pertanyaan pertama",
+    "aspect": "disiplin",
+    "criteria": "tepat waktu",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "sangat kurang tepat waktu",
+      "2": "kurang tepat waktu",
+      "3": "cukup tepat waktu",
+      "4": "baik tepat waktu",
+      "5": "sangat baik tepat waktu"
+    },
+    "translated_criteria": {
+      "1": "very poorly timed",
+      "2": "not quite on time",
+      "3": "quite on time",
+      "4": "in time",
+      "5": "very good on time"
+    },
+    "updated_at": "2025-03-12 20:55:09"
+  },
+  "9e6a27ad-6b0e-4be8-a325-2b28e5c9cbb5": {
+    "assessment_id": "9e6a27ad-6b0e-4be8-a325-2b28e5c9cbb5",
+    "rubrik_id": "9e6a06c4-bbb6-407a-8ef9-1c64b158fb7f",
+    "question": "Ini pertanyaan pertama",
+    "aspect": "disiplin",
+    "criteria": "komunikasi",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "sangat kurang komunikasi",
+      "2": "kurang komunikasi",
+      "3": "cukup komunikasi",
+      "4": "baik komunikasi",
+      "5": "sangat komunikasi"
+    },
+    "translated_criteria": {
+      "1": "very poor communication",
+      "2": "lack of communication",
+      "3": "sufficient communication",
+      "4": "good communication",
+      "5": "very communicative"
+    },
+    "updated_at": "2025-03-12 20:55:24"
+  }
+}

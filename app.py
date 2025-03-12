@@ -10,7 +10,7 @@ from nltk.corpus import wordnet as wn
 from nltk.corpus import sentiwordnet as swn
 from nltk.wsd import lesk
 from nltk import word_tokenize
-from translate import Translator  # Import the translator
+from translate import Translator
 
 # Konfigurasi logging
 log_dir = 'logs'
@@ -70,14 +70,6 @@ def translate_text(text):
     except Exception as e:
         logger.error(f"Error translating text: {e}")
         return text  # Return original text if translation fails
-
-# Fungsi untuk menerjemahkan kriteria
-def translate_criteria(criteria):
-    translated_criteria = {}
-    for score, description in criteria.items():
-        translated_description = translate_text(description)
-        translated_criteria[score] = translated_description
-    return translated_criteria
 
 # Fungsi untuk menghitung kesamaan
 def calculate_similarity(answer_text, criteria_text):
@@ -142,6 +134,116 @@ default_question = "Have you collected the data according to the requirements?"
 def index():
     return render_template('index.html', question=default_question, criteria=default_criteria)
 
+# Function to load criteria from Rubrik.json based on question_id
+def load_criteria_from_rubrik(question_id):
+    try:
+        rubrik_file = "Rubrik.json"
+        if not os.path.exists(rubrik_file):
+            logger.warning(f"Rubrik file not found: {rubrik_file}")
+            return None
+        
+        with open(rubrik_file, 'r', encoding='utf-8') as f:
+            rubrik_data = json.load(f)
+        
+        # Match based on question_id which corresponds to assessment_id in Rubrik.json
+        for assessment_id, assessment_data in rubrik_data.items():
+            if assessment_id == question_id:
+                logger.info(f"Found matching criteria for question_id: {question_id}")
+                return assessment_data
+        
+        logger.warning(f"No matching criteria found for question_id: {question_id}")
+        return None
+    except Exception as e:
+        logger.error(f"Error loading criteria from Rubrik.json: {e}")
+        return None
+
+# New route for import-criteria remains unchanged
+@app.route('/import-criteria', methods=['POST'])
+def import_criteria():
+    if request.is_json:
+        data = request.json
+        logger.info(f"Received criteria import data: {json.dumps(data, indent=2, ensure_ascii=False)}")
+        
+        try:
+            assessment_id = data.get('assessment_id')
+            rubrik_id = data.get('rubrik_id')
+            question = data.get('question', '')
+            
+            # Create criteria dictionary from bobot_1 to bobot_5
+            raw_criteria = {
+                1: data.get('bobot_1', ''),
+                2: data.get('bobot_2', ''),
+                3: data.get('bobot_3', ''),
+                4: data.get('bobot_4', ''),
+                5: data.get('bobot_5', '')
+            }
+            
+            # Filter out empty criteria
+            criteria = {k: v for k, v in raw_criteria.items() if v and v.strip()}
+            
+            # Translate criteria to English
+            translated_criteria = {}
+            for score, description in criteria.items():
+                translated_description = translate_text(description)
+                translated_criteria[score] = translated_description
+            
+            # Log the translated criteria
+            logger.info(f"Translated criteria for assessment_id {assessment_id}: {json.dumps(translated_criteria, indent=2, ensure_ascii=False)}")
+            
+            # Save criteria to JSON file
+            rubrik_file = "Rubrik.json"
+            
+            # Load existing data if file exists
+            try:
+                if os.path.exists(rubrik_file):
+                    with open(rubrik_file, 'r', encoding='utf-8') as f:
+                        rubrik_data = json.load(f)
+                else:
+                    rubrik_data = {}
+            except Exception as e:
+                logger.error(f"Error loading existing rubrik data: {e}")
+                rubrik_data = {}
+            
+            # Add or update criteria for this assessment_id
+            rubrik_data[str(assessment_id)] = {
+                "assessment_id": assessment_id,
+                "rubrik_id": rubrik_id,
+                "question": question,
+                "aspect": data.get('aspect', ''),
+                "criteria": data.get('criteria', ''),
+                "skill_type": data.get('skill_type', ''),
+                "type": data.get('type', ''),
+                "raw_criteria": {str(k): v for k, v in criteria.items()},
+                "translated_criteria": {str(k): v for k, v in translated_criteria.items()},
+                "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            }
+            
+            # Write updated data back to file
+            with open(rubrik_file, 'w', encoding='utf-8') as f:
+                json.dump(rubrik_data, f, ensure_ascii=False, indent=2)
+            
+            logger.info(f"Successfully saved criteria for assessment_id {assessment_id} to {rubrik_file}")
+            
+            return jsonify({
+                'success': True,
+                'assessment_id': assessment_id,
+                'question': question,
+                'translated_criteria': translated_criteria,
+                'message': f"Data berhasil disimpan ke dalam {rubrik_file}"
+            })
+            
+        except Exception as e:
+            logger.error(f"Error processing criteria import: {e}")
+            return jsonify({
+                'success': False,
+                'error': str(e)
+            }), 500
+    else:
+        return jsonify({
+            'success': False,
+            'error': 'Invalid request format, JSON expected'
+        }), 400
+
 @app.route('/assess', methods=['POST'])
 def assess():
     # Check if the request is from a web form or an API call
@@ -155,42 +257,36 @@ def assess():
         # Log headers untuk debugging koneksi
         logger.info(f"Request Headers: {dict(request.headers)}")
         
+        # Extract the simplified data
+        question_id = data.get('question_id')
         answer = data.get('answer', '')
-        score_given = int(data.get('score_given', 1))
+        score_given = int(data.get('score', 1))
         
-        # Normalize criteria dictionary, make sure it's keyed by integers
-        raw_criteria = data.get('criteria', default_criteria)
-        criteria = {}
-        for k, v in raw_criteria.items():
-            try:
-                # Convert keys to integers
-                int_key = int(k)
-                # Clean up criteria text (remove any extra quotes or formatting)
-                clean_value = v.strip() if isinstance(v, str) else str(v)
-                criteria[int_key] = clean_value
-            except (ValueError, TypeError) as e:
-                logger.warning(f"Invalid criteria key or value: {k} = {v}. Error: {e}")
-                # Use a default value if conversion fails
-                criteria[int(k) if k.isdigit() else 0] = "Invalid criteria"
+        # Load criteria from Rubrik.json based on question_id
+        assessment_data = load_criteria_from_rubrik(question_id)
         
-        # Translate the criteria
-        translated_criteria = translate_criteria(criteria)
+        if assessment_data:
+            # Use the translated criteria from Rubrik.json
+            translated_criteria = {}
+            for score, description in assessment_data.get('translated_criteria', {}).items():
+                translated_criteria[int(score)] = description
+            
+            logger.info(f"Loaded criteria for question_id {question_id}: {json.dumps(translated_criteria, indent=2, ensure_ascii=False)}")
+        else:
+            # Use default criteria if no match found
+            translated_criteria = default_criteria
+            logger.warning(f"Using default criteria for question_id {question_id}")
         
         # Ensure we have criteria for all scores 1-5
         for i in range(1, 6):
             if i not in translated_criteria:
                 translated_criteria[i] = default_criteria[i]
                 logger.warning(f"Missing criteria for score {i}, using default")
-        
-        # Log setelah parsing data
-        logger.info(f"Answer: {answer}")
-        logger.info(f"Score Given: {score_given}")
-        logger.info(f"Translated Criteria: {json.dumps(translated_criteria, indent=2, ensure_ascii=False)}")
     else:
         # Web form request
         answer = request.form['answer']
         score_given = int(request.form['score'])
-        criteria = default_criteria
+        translated_criteria = default_criteria
         logger.info(f"Data diterima dari Web Form: answer={answer}, score={score_given}")
 
     # Translate the answer to English
@@ -263,7 +359,7 @@ def assess():
         # Log response yang dikirim
         logger.info(f"Response dikirim ke Laravel: {json.dumps(response_data, indent=2)}")
         
-        return jsonify(response_data)
+        return jsonify(response_data) 
     else:
         return render_template('result.html', answer=answer, score_given=score_given,
                               sentiment=sentiment, avg_pos=avg_pos, avg_neg=avg_neg,
