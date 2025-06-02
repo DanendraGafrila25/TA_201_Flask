@@ -402,8 +402,8 @@ class SimilarityAssessmentApp:
         """Run the Flask application."""
         self.app.run(debug=debug)
 
+similarity_app = SimilarityAssessmentApp()
+app = similarity_app.app 
 # Main Execution
-if __name__ == '__main__':
-    similarity_app = SimilarityAssessmentApp()
-    app = similarity_app.app  
+if __name__ == '__main__': 
     app.run()
