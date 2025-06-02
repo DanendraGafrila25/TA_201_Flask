@@ -1,216 +1,537 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Assessment Result</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Result Dashboard</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
             padding: 20px;
         }
-        .section {
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
             margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e9ecef;
         }
-        .gloss-item {
-            margin-bottom: 5px;
-            padding: 5px;
-            background-color: #f7f7f7;
-        }
-        .similar-word {
+
+        .card-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 1.2rem;
             font-weight: bold;
-            color: #0066cc;
+            color: white;
         }
-        .negated {
-            color: #cc0000;
+
+        .icon-score { background: linear-gradient(135deg, #4CAF50, #45a049); }
+        .icon-sentiment { background: linear-gradient(135deg, #2196F3, #1976D2); }
+        .icon-criteria { background: linear-gradient(135deg, #FF9800, #F57C00); }
+        .icon-words { background: linear-gradient(135deg, #9C27B0, #7B1FA2); }
+
+        .card h2 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            font-weight: 600;
         }
-        .similarity-details {
+
+        .score-display {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(#4CAF50 0deg, #4CAF50 var(--percentage), #e0e0e0 var(--percentage));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            position: relative;
+        }
+
+        .score-circle::before {
+            content: '';
+            width: 90px;
+            height: 90px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .score-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            z-index: 1;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+
+        .progress {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #45a049);
+            border-radius: 4px;
+            transition: width 0.8s ease;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #555;
+        }
+
+        .info-value {
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 2px;
+        }
+
+        .tag.positive {
+            background: #e8f5e8;
+            color: #2e7d32;
+        }
+
+        .tag.negative {
+            background: #ffebee;
+            color: #c62828;
+        }
+
+        .word-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .word-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px;
+            flex: 1;
+            min-width: 200px;
+            transition: all 0.3s ease;
+        }
+
+        .word-item:hover {
+            border-color: #4CAF50;
+            box-shadow: 0 2px 8px rgba(76, 175, 80, 0.2);
+        }
+
+        .word-term {
+            font-weight: bold;
+            color: #1976d2;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .word-definition {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .table-container {
+            overflow-x: auto;
             margin-top: 20px;
         }
-        .criteria-section {
-            margin-top: 15px;
-            padding: 10px;
-            background-color: #f0f8ff;
-        }
-        .match-percentage {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #006600;
-        }
-        .progress-bar {
-            height: 20px;
-            background-color: #e0e0e0;
-            border-radius: 10px;
-            margin: 10px 0;
-        }
-        .progress {
-            height: 20px;
-            background-color: #4CAF50;
-            border-radius: 10px;
-            text-align: center;
-            line-height: 20px;
-            color: white;
-            font-weight: bold;
-        }
-        .sentiment-detail {
-            margin-top: 15px;
-            padding: 10px;
-            background-color: #f0f0f0;
-        }
-        .similarity-explanation {
-            margin-top: 15px;
-            padding: 10px;
-            background-color: #e6f2ff;
-        }
+
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 15px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
+
         th {
-            background-color: #f2f2f2;
+            background: #f8f9fa;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .alert {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Assessment Result</h1>
-    
-    <div class="section">
-        <h2>Basic Information</h2>
-        <p><strong>Answer:</strong> {{ answer }}</p>
-        <p><strong>Score Given:</strong> {{ score_given }}</p>
-        <p><strong>Recommended Best Score:</strong> {{ best_score }} (Similarity: {{ "%.4f"|format(best_similarity|float) }})</p>
-        <p><strong>Match Percentage:</strong> <span class="match-percentage">{{ "%.2f"|format(best_match_percentage|float) }}%</span></p>
-        <div class="progress-bar">
-            <div class="progress" style="width: {{ "%.2f"|format(best_match_percentage|float) }}%">
-                {{ "%.2f"|format(best_match_percentage|float) }}%
-            </div>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Assessment Result Dashboard</h1>
+            <p>Comprehensive analysis of your assessment performance</p>
         </div>
-    </div>
-    
-    <div class="section sentiment-detail">
-        <h2>Enhanced Sentiment Analysis</h2>
-        <p><strong>Overall Sentiment:</strong> {{ sentiment_analysis.overall_sentiment }}</p>
-        
-        <h3>Sentiment Breakdown</h3>
-        <p>Positive Score: {{ "%.4f"|format(sentiment_analysis.sentiment_scores.get('positive', 0)|float) }}</p>
-        <p>Negative Score: {{ "%.4f"|format(sentiment_analysis.sentiment_scores.get('negative', 0)|float) }}</p>
-        
-        <h3>Sentiment Contexts</h3>
-        <div>
-            <h4>Positive Contexts:</h4>
-            {% if sentiment_analysis.context_sentiment.positive_contexts %}
-                <ul>
-                {% for context in sentiment_analysis.context_sentiment.positive_contexts %}
-                    <li>{{ context }}</li>
-                {% endfor %}
-                </ul>
-            {% else %}
-                <p>No positive contexts found.</p>
-            {% endif %}
-        </div>
-        
-        <h3>Word-Level Sentiment</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Word</th>
-                    <th>Positive Score</th>
-                    <th>Negative Score</th>
-                    <th>Negated</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for word in sentiment_analysis.word_sentiments %}
-                <tr>
-                    <td>{{ word.word }}</td>
-                    <td>{{ "%.4f"|format(word.pos_score|float) }}</td>
-                    <td>{{ "%.4f"|format(word.neg_score|float) }}</td>
-                    <td>{{ word.is_negated }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
-    
-    <div class="section">
-        <h2>Best Matching Criteria</h2>
-        <p><strong>Criteria {{ best_score }}:</strong> {{ criteria[best_score] }}</p>
-        
-        <h3>Similar Words Between Answer and Criteria:</h3>
-        {% if similar_words %}
-            <ul>
-                {% for word_info in similar_words %}
-                <li class="gloss-item">
-                    <span class="similar-word {% if word_info.get('negated', False) %}negated{% endif %}">
-                        {{ word_info.word }}{% if word_info.get('negated', False) %} (negated){% endif %}
-                    </span>: 
-                    {{ word_info.get('gloss', 'No definition available') }}
-                </li>
-                {% endfor %}
-            </ul>
-        {% else %}
-            <p>No shared words found between answer and criteria.</p>
-        {% endif %}
-    </div>
-    
-    <div class="section">
-        <h2>Answer Word Definitions</h2>
-        {% if answer_glosses %}
-            <ul>
-                {% for item in answer_glosses %}
-                <li class="gloss-item">
-                    <strong>{{ item.word }}</strong> ({{ item.pos }}): {{ item.gloss }}
-                </li>
-                {% endfor %}
-            </ul>
-        {% else %}
-            <p>No definitions available for words in the answer.</p>
-        {% endif %}
-    </div>
-    
-    <div class="section similarity-explanation">
-        <h2>Similarity Analysis Explanation</h2>
-        
-        {% for score, result in all_similarity_results.items() %}
-        <div class="criteria-section">
-            <h3>Criteria {{ score }}: {{ criteria[score] }}</h3>
-            
-            <h4>Similarity Calculation Breakdown</h4>
-            <p><strong>Semantic Similarity:</strong> Compares overall semantic meaning using spaCy's semantic similarity model.</p>
-            
-            <h4>Matching Metrics</h4>
-            <ul>
-                <li>Exact Word Matches: {{ result.match_details.exact_matches }}</li>
-                <li>Lemma (Root Word) Matches: {{ result.match_details.lemma_matches }}</li>
-                <li>Part of Speech Matches: {{ result.match_details.pos_matches }}</li>
-                <li>Total Keywords in Criteria: {{ result.match_details.total_criteria_keywords }}</li>
-            </ul>
-            
-            <h4>Calculation Details</h4>
-            <p>Similarity Score = (Semantic Similarity + Precise Match Score) / 2</p>
-            <p>Precise Match Score = (Exact Matches * 1.0 + Lemma Matches * 0.5 + POS Matches * 0.2) / Total Criteria Keywords</p>
-            
-            <p>Similarity: {{ "%.4f"|format(result.similarity|float) }}</p>
-            <p>Match Percentage: <span class="match-percentage">{{ "%.2f"|format(result.match_percentage|float) }}%</span></p>
-            <div class="progress-bar">
-                <div class="progress" style="width: {{ "%.2f"|format(result.match_percentage|float) }}%">
-                    {{ "%.2f"|format(result.match_percentage|float) }}%
+
+        <div class="content">
+            <!-- Basic Information Card -->
+            <div class="grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon icon-score">📈</div>
+                        <h2>Score Overview</h2>
+                    </div>
+                    
+                    <div class="score-display">
+                        <div class="score-circle" style="--percentage: {{ (best_match_percentage|float * 3.6)|round }}deg">
+                            <span class="score-text">{{ "%.0f"|format(best_match_percentage|float) }}%</span>
+                        </div>
+                        <p><strong>Match Percentage</strong></p>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">Your Answer:</span>
+                        <span class="info-value">{{ answer }}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Score Given:</span>
+                        <span class="info-value">{{ score_given }}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Recommended Score:</span>
+                        <span class="info-value">{{ best_score }}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Similarity Score:</span>
+                        <span class="info-value">{{ "%.4f"|format(best_similarity|float) }}</span>
+                    </div>
+                </div>
+
+                <!-- Sentiment Analysis Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon icon-sentiment">😊</div>
+                        <h2>Sentiment Analysis</h2>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">Overall Sentiment:</span>
+                        <span class="tag {{ sentiment_analysis.overall_sentiment|lower }}">
+                            {{ sentiment_analysis.overall_sentiment }}
+                        </span>
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px; color: #2c3e50;">Sentiment Scores</h3>
+                        <div class="info-row">
+                            <span class="info-label">Positive:</span>
+                            <span class="info-value">{{ "%.4f"|format(sentiment_analysis.sentiment_scores.get('positive', 0)|float) }}</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: {{ (sentiment_analysis.sentiment_scores.get('positive', 0)|float * 100)|round }}%"></div>
+                        </div>
+                        
+                        <div class="info-row">
+                            <span class="info-label">Negative:</span>
+                            <span class="info-value">{{ "%.4f"|format(sentiment_analysis.sentiment_scores.get('negative', 0)|float) }}</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: {{ (sentiment_analysis.sentiment_scores.get('negative', 0)|float * 100)|round }}%; background: linear-gradient(90deg, #f44336, #d32f2f);"></div>
+                        </div>
+                    </div>
+
+                    {% if sentiment_analysis.context_sentiment.positive_contexts %}
+                    <div style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 10px; color: #2c3e50;">Positive Contexts</h3>
+                        <div class="word-list">
+                            {% for context in sentiment_analysis.context_sentiment.positive_contexts %}
+                                <span class="tag positive">{{ context }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
                 </div>
             </div>
+
+            <!-- Best Matching Criteria -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon icon-criteria">🎯</div>
+                    <h2>Best Matching Criteria</h2>
+                </div>
+                
+                <div class="alert">
+                    <strong>Criteria {{ best_score }}:</strong> {{ criteria[best_score] }}
+                </div>
+
+                {% if similar_words %}
+                <h3 style="margin: 20px 0 15px; color: #2c3e50;">Similar Words Found</h3>
+                <div class="word-list">
+                    {% for word_info in similar_words %}
+                        <div class="word-item">
+                            <span class="word-term {% if word_info.get('negated', False) %}negative{% endif %}">
+                                {{ word_info.word }}{% if word_info.get('negated', False) %} (negated){% endif %}
+                            </span>
+                            <span class="word-definition">{{ word_info.get('gloss', 'No definition available') }}</span>
+                        </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p style="color: #666; font-style: italic;">No shared words found between answer and criteria.</p>
+                {% endif %}
+            </div>
+
+            <!-- Answer Word Definitions -->
+            {% if answer_glosses %}
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon icon-words">📚</div>
+                    <h2>Word Definitions in Your Answer</h2>
+                </div>
+                
+                <div class="word-list">
+                    {% for item in answer_glosses %}
+                        <div class="word-item">
+                            <span class="word-term">{{ item.word }} ({{ item.pos }})</span>
+                            <span class="word-definition">{{ item.gloss }}</span>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Word-Level Sentiment Table -->
+            {% if sentiment_analysis.word_sentiments %}
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon icon-sentiment">🔍</div>
+                    <h2>Word-Level Sentiment Analysis</h2>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Word</th>
+                                <th>Positive Score</th>
+                                <th>Negative Score</th>
+                                <th>Negated</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for word in sentiment_analysis.word_sentiments %}
+                            <tr>
+                                <td><strong>{{ word.word }}</strong></td>
+                                <td>{{ "%.4f"|format(word.pos_score|float) }}</td>
+                                <td>{{ "%.4f"|format(word.neg_score|float) }}</td>
+                                <td>
+                                    {% if word.is_negated %}
+                                        <span class="tag negative">Yes</span>
+                                    {% else %}
+                                        <span class="tag">No</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Detailed Similarity Analysis -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon icon-criteria">📊</div>
+                    <h2>Detailed Similarity Analysis</h2>
+                </div>
+
+                <div style="margin-bottom: 20px; padding: 15px; background: #e3f2fd; border-radius: 8px;">
+                    <h3 style="margin-bottom: 10px; color: #1976d2;">How Similarity is Calculated</h3>
+                    <p><strong>Semantic Similarity:</strong> Compares overall semantic meaning using advanced language models.</p>
+                    <p><strong>Formula:</strong> Similarity Score = (Semantic Similarity + Precise Match Score) / 2</p>
+                    <p><strong>Precise Match:</strong> (Exact Matches × 1.0 + Lemma Matches × 0.5 + POS Matches × 0.2) / Total Keywords</p>
+                </div>
+
+                {% for score, result in all_similarity_results.items() %}
+                <div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+                    <h3 style="color: #2c3e50; margin-bottom: 15px;">
+                        Criteria {{ score }}: {{ criteria[score] }}
+                    </h3>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 15px;">
+                        <div class="info-row">
+                            <span class="info-label">Exact Matches:</span>
+                            <span class="info-value">{{ result.match_details.exact_matches }}</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Lemma Matches:</span>
+                            <span class="info-value">{{ result.match_details.lemma_matches }}</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">POS Matches:</span>
+                            <span class="info-value">{{ result.match_details.pos_matches }}</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Total Keywords:</span>
+                            <span class="info-value">{{ result.match_details.total_criteria_keywords }}</span>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">Similarity Score:</span>
+                        <span class="info-value">{{ "%.4f"|format(result.similarity|float) }}</span>
+                    </div>
+                    
+                    <div class="info-row">
+                        <span class="info-label">Match Percentage:</span>
+                        <span class="info-value">{{ "%.2f"|format(result.match_percentage|float) }}%</span>
+                    </div>
+                    
+                    <div class="progress-bar">
+                        <div class="progress" style="width: {{ "%.2f"|format(result.match_percentage|float) }}%"></div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div style="text-align: center;">
+                <a href="/" class="back-button">← Back to Assessment Form</a>
+            </div>
         </div>
-        {% endfor %}
     </div>
-    
-    <p><a href="/">Back to Assessment Form</a></p>
 </body>
 </html>
