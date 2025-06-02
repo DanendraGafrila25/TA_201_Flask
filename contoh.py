@@ -2,7 +2,7 @@ import flask
 import nltk
 import spacy
 import re
-import os
+import os  # Tambahkan import os
 from functools import lru_cache
 from typing import List, Dict, Any, Tuple
 
@@ -315,13 +315,23 @@ class SimilarityAssessmentApp:
         """Setup Flask routes."""
         @self.app.route('/')
         def index():
-            return flask.render_template('index.html', 
-                                         question=self.question, 
-                                         criteria=self.criteria)
+            try:
+                return flask.render_template('index.html', 
+                                             question=self.question, 
+                                             criteria=self.criteria)
+            except Exception as e:
+                return f"<h1>Simple Assessment Tool</h1><p>Question: {self.question}</p><p>Error loading template: {str(e)}</p>"
+        
+        @self.app.route('/health')
+        def health_check():
+            return {'status': 'healthy', 'message': 'Application is running'}
         
         @self.app.route('/assess', methods=['POST'])
         def assess():
-            return self._process_assessment()
+            try:
+                return self._process_assessment()
+            except Exception as e:
+                return f"<h1>Error Processing Assessment</h1><p>Error: {str(e)}</p><a href='/'>Back to Home</a>"
     
     def _process_assessment(self):
         """Process answer assessment with advanced analysis."""
@@ -403,9 +413,11 @@ class SimilarityAssessmentApp:
         """Run the Flask application."""
         self.app.run(debug=debug)
 
+
 similarity_app = SimilarityAssessmentApp()
-app = similarity_app.app 
-# Main Execution
+app = similarity_app.app  
+
+# Main Execution - Updated untuk Railway
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=False)
