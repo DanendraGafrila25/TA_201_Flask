@@ -1,0 +1,48 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Flask-related
+instance/
+*.db
+*.sqlite
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Configuration files
+*.env
+*.local
+*.log
+
+# NLTK and SpaCy resources
+/nltk_data/
+/spacy_data/
+
+# Python egg and distribution files
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.tar.gz
+
+# Other
+*.bak
+*.tmp
+*.swp
