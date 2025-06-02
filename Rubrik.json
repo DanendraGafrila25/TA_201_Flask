@@ -1,7 +1,7 @@
 {
-  "9e6a27ad-6285-4e61-a289-1337d2e1e859": {
-    "assessment_id": "9e6a27ad-6285-4e61-a289-1337d2e1e859",
-    "rubrik_id": "9e6a06c4-13c6-4dd7-99f4-d54b330059cd",
+  "9e6b3732-211b-49a7-a371-5610398fd101": {
+    "assessment_id": "9e6b3732-211b-49a7-a371-5610398fd101",
+    "rubrik_id": "",
     "question": "Ini pertanyaan pertama",
     "aspect": "disiplin",
     "criteria": "tepat waktu",
@@ -21,12 +21,12 @@
       "4": "in time",
       "5": "very good on time"
     },
-    "updated_at": "2025-03-12 20:55:09"
+    "updated_at": "2025-03-13 09:34:21"
   },
-  "9e6a27ad-6b0e-4be8-a325-2b28e5c9cbb5": {
-    "assessment_id": "9e6a27ad-6b0e-4be8-a325-2b28e5c9cbb5",
+  "9e6b3732-2783-49f9-834c-1ffa52679db3": {
+    "assessment_id": "9e6b3732-2783-49f9-834c-1ffa52679db3",
     "rubrik_id": "9e6a06c4-bbb6-407a-8ef9-1c64b158fb7f",
-    "question": "Ini pertanyaan pertama",
+    "question": "Ini pertanyaan kedua",
     "aspect": "disiplin",
     "criteria": "komunikasi",
     "skill_type": "softskill",
@@ -45,6 +45,1854 @@
       "4": "good communication",
       "5": "very communicative"
     },
-    "updated_at": "2025-03-12 20:55:24"
+    "updated_at": "2025-03-13 09:34:31"
+  },
+  "9e6b3732-2954-4959-b3e4-52da2ee8c838": {
+    "assessment_id": "9e6b3732-2954-4959-b3e4-52da2ee8c838",
+    "rubrik_id": "9e6a06c4-13c6-4dd7-99f4-d54b330059cd",
+    "question": "Ini pertanyaan pertama peer",
+    "aspect": "disiplin",
+    "criteria": "tepat waktu",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "sangat kurang tepat waktu",
+      "2": "kurang tepat waktu",
+      "3": "cukup tepat waktu",
+      "4": "baik tepat waktu",
+      "5": "sangat baik tepat waktu"
+    },
+    "translated_criteria": {
+      "1": "very poorly timed",
+      "2": "not quite on time",
+      "3": "quite on time",
+      "4": "in time",
+      "5": "very good on time"
+    },
+    "updated_at": "2025-03-13 09:34:40"
+  },
+  "9e6b3732-29fb-443e-8c03-505b3d12b727": {
+    "assessment_id": "9e6b3732-29fb-443e-8c03-505b3d12b727",
+    "rubrik_id": "9e6a06c4-bbb6-407a-8ef9-1c64b158fb7f",
+    "question": "Ini pertanyaan peer",
+    "aspect": "disiplin",
+    "criteria": "komunikasi",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "sangat kurang komunikasi",
+      "2": "kurang komunikasi",
+      "3": "cukup komunikasi",
+      "4": "baik komunikasi",
+      "5": "sangat komunikasi"
+    },
+    "translated_criteria": {
+      "1": "very poor communication",
+      "2": "lack of communication",
+      "3": "sufficient communication",
+      "4": "good communication",
+      "5": "very communicative"
+    },
+    "updated_at": "2025-03-13 09:34:49"
+  },
+  "9e816dee-4735-4b2a-a447-a6509deb3704": {
+    "assessment_id": "9e816dee-4735-4b2a-a447-a6509deb3704",
+    "rubrik_id": "9e816dee-3675-4586-a80e-a341455b36bd",
+    "question": "Seberapa teliti dan lengkap Anda dalam menginputkan data ke Excel?",
+    "aspect": "Penginputan Data ke Excel",
+    "criteria": "Ketelitian dan keakuratan penginputan data.",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Banyak kesalahan, tidak teliti.",
+      "2": "Cukup banyak kesalahan, masih kurang teliti.",
+      "3": "Cukup akurat, terdapat beberapa kesalahan.",
+      "4": "Hanya ada sedikit kesalahan, cukup teliti.",
+      "5": "Data diinput dengan akurat dan tanpa kesalahan."
+    },
+    "translated_criteria": {
+      "1": "Many mistakes, not careful.",
+      "2": "Quite a lot of mistakes, still less thorough.",
+      "3": "Quite accurately, there were some errors.",
+      "4": "There were only a few mistakes, quite thorough.",
+      "5": "Data is entered accurately and without errors."
+    },
+    "updated_at": "2025-03-24 10:35:34"
+  },
+  "9e816dee-424f-4639-96d6-7c4942594280": {
+    "assessment_id": "9e816dee-424f-4639-96d6-7c4942594280",
+    "rubrik_id": "9e816dee-2fcf-4e38-82e3-4db7d3aed261",
+    "question": "Seberapa banyak iklan lowongan kerja yang berhasil Anda kumpulkan dari platform yang ditugaskan?",
+    "aspect": "Pengumpulan Iklan Lowongan Kerja",
+    "criteria": "Banyaknya iklan dan keragaman platform yang digunakan.",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Mengumpulkan sedikit iklan, platform terbatas.",
+      "2": "Mengumpulkan cukup iklan, platform terbatas.",
+      "3": "Iklan cukup, platform yang digunakan terbatas.",
+      "4": "Mengumpulkan banyak iklan, platform cukup beragam.",
+      "5": "Mengumpulkan banyak iklan dari banyak platform."
+    },
+    "translated_criteria": {
+      "1": "Collecting a little advertising, the platform is limited.",
+      "2": "Collect enough ads, limited platform.",
+      "3": "Ad enough, the platform used is limited.",
+      "4": "Collecting a lot of ads, the platform is quite diverse.",
+      "5": "Collect a lot of ads from many platforms."
+    },
+    "updated_at": "2025-03-24 10:35:44"
+  },
+  "9e816dee-4501-4132-87a8-f66c072c9862": {
+    "assessment_id": "9e816dee-4501-4132-87a8-f66c072c9862",
+    "rubrik_id": "9e816dee-3338-4ecc-9e80-f6198d9c8023",
+    "question": "Seberapa baik Anda memahami informasi yang terdapat dalam iklan lowongan kerja yang Anda kumpulkan?",
+    "aspect": "Pemahaman terhadap Isi Iklan",
+    "criteria": "Pemahaman informasi penting dari iklan yang dikumpulkan.",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak memahami isi iklan.",
+      "2": "Memahami sebagian kecil isi iklan.",
+      "3": "Cukup memahami isi iklan.",
+      "4": "Memahami sebagian besar isi iklan.",
+      "5": "Memahami isi iklan dengan sangat baik."
+    },
+    "translated_criteria": {
+      "1": "Don't understand the content of the ad.",
+      "2": "Understand a small portion of a listing's content.",
+      "3": "Simply understand the contents of the ad.",
+      "4": "Understand most of the content of the listing.",
+      "5": "Understand the content of the listing very well."
+    },
+    "updated_at": "2025-03-24 10:35:52"
+  },
+  "9e816dee-4637-483f-82cf-f0366b00e418": {
+    "assessment_id": "9e816dee-4637-483f-82cf-f0366b00e418",
+    "rubrik_id": "9e816dee-35a7-40d5-9977-44e32ac6cded",
+    "question": "Seberapa puas Anda dengan struktur data yang Anda usulkan?",
+    "aspect": "Pembuatan Struktur Data",
+    "criteria": "Kesesuaian dan kejelasan struktur data untuk memuat informasi.",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Struktur tidak sesuai dengan data.",
+      "2": "Struktur kurang sesuai, masih perlu banyak perbaikan.",
+      "3": "Struktur cukup sesuai, namun ada kekurangan.",
+      "4": "Struktur hampir sesuai, hanya ada sedikit kekurangan.",
+      "5": "Struktur data sangat baik dan lengkap."
+    },
+    "translated_criteria": {
+      "1": "The structure is incompatible with the data.",
+      "2": "The structure is not suitable, there are still many improvements.",
+      "3": "The structure is quite suitable, but there are shortcomings.",
+      "4": "The structure is almost suitable, there are only a few shortcomings.",
+      "5": "The data structure is very good and complete."
+    },
+    "updated_at": "2025-03-24 10:36:00"
+  },
+  "9e816dee-4848-4ac7-bf49-079ec71093c3": {
+    "assessment_id": "9e816dee-4848-4ac7-bf49-079ec71093c3",
+    "rubrik_id": "9e816dee-371e-41d1-8651-ba007570e837",
+    "question": "Seberapa efektif Anda berkontribusi dalam menggabungkan data dan struktur data dari kelompok lain?",
+    "aspect": "Penggabungan Data dengan Kelompok Lain",
+    "criteria": "Partisipasi dalam menggabungkan data kelompok.",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak aktif dalam proses penggabungan.",
+      "2": "Kurang aktif dalam penggabungan, kontribusi minim.",
+      "3": "Cukup aktif namun kontribusi terbatas.",
+      "4": "Aktif dalam penggabungan, namun ada beberapa kekurangan.",
+      "5": "Sangat aktif dan membantu menyelesaikan masalah."
+    },
+    "translated_criteria": {
+      "1": "Inactive in the merge process.",
+      "2": "Less active in merging, minimal contribution.",
+      "3": "Moderately active but limited contributions.",
+      "4": "Active in mergers, but there are some drawbacks.",
+      "5": "Very active and helps solve problems."
+    },
+    "updated_at": "2025-03-24 10:36:09"
+  },
+  "9e816dee-4943-4ab2-a4ff-e50ac9e66882": {
+    "assessment_id": "9e816dee-4943-4ab2-a4ff-e50ac9e66882",
+    "rubrik_id": "9e816dee-37a8-480c-a60f-de1fffb51b51",
+    "question": "Seberapa baik Anda bekerja sama dengan anggota kelompok Anda?",
+    "aspect": "Kolaborasi dan Kerjasama Tim",
+    "criteria": "Kemampuan bekerja sama dengan anggota kelompok lain.",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak banyak terlibat dalam kerjasama.",
+      "2": "Kurang terlibat dalam kerjasama, sering pasif.",
+      "3": "Cukup terlibat dalam kerjasama.",
+      "4": "Terlibat dengan baik, meskipun masih bisa ditingkatkan.",
+      "5": "Sangat kooperatif dan membantu tim dengan baik."
+    },
+    "translated_criteria": {
+      "1": "Not much involvement in cooperation.",
+      "2": "Less involved in cooperation, often passive.",
+      "3": "Quite involved in cooperation.",
+      "4": "Well-engaged, although it can still be improved.",
+      "5": "Very cooperative and helps the team well."
+    },
+    "updated_at": "2025-03-24 10:36:18"
+  },
+  "9e816dee-4a36-498c-8582-e3588be51170": {
+    "assessment_id": "9e816dee-4a36-498c-8582-e3588be51170",
+    "rubrik_id": "9e816dee-3828-4e41-8805-2e2c5e84654d",
+    "question": "Seberapa baik kemampuan Anda dalam menyampaikan ide dan solusi kepada anggota kelompok lain?",
+    "aspect": "Komunikasi",
+    "criteria": "Efektivitas dalam menyampaikan ide dan berdiskusi.",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Komunikasi tidak jelas atau tidak efektif.",
+      "2": "Komunikasi kurang jelas, sering terjadi kesalahpahaman.",
+      "3": "Komunikasi cukup baik namun kurang terbuka.",
+      "4": "Komunikasi baik, tetapi masih bisa lebih efektif.",
+      "5": "Komunikasi sangat baik, ide tersampaikan jelas."
+    },
+    "translated_criteria": {
+      "1": "Communication is unclear or ineffective.",
+      "2": "Communication is unclear, there are often misunderstandings.",
+      "3": "Communication is quite good but less open.",
+      "4": "Communication is good, but it can still be more effective.",
+      "5": "Communication is very good, ideas are conveyed clearly."
+    },
+    "updated_at": "2025-03-24 10:36:27"
+  },
+  "9e816dee-4b20-45e3-bffc-fa6dc6dd7fbf": {
+    "assessment_id": "9e816dee-4b20-45e3-bffc-fa6dc6dd7fbf",
+    "rubrik_id": "9e816dee-38b4-4515-b18d-12d1582b315b",
+    "question": "Seberapa baik Anda dalam mengidentifikasi dan menyelesaikan masalah yang muncul selama proyek?",
+    "aspect": "Pemecahan Masalah",
+    "criteria": "Kemampuan mengidentifikasi dan menyelesaikan masalah.",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak aktif dalam menyelesaikan masalah.",
+      "2": "Kurang aktif dalam menemukan solusi.",
+      "3": "Membantu dalam beberapa situasi.",
+      "4": "Aktif dalam menyelesaikan masalah, namun kurang sistematis.",
+      "5": "Sangat aktif menyelesaikan masalah dan proaktif."
+    },
+    "translated_criteria": {
+      "1": "Inactive in solving problems.",
+      "2": "Less active in finding solutions.",
+      "3": "Helps in some situations.",
+      "4": "Active in solving problems, but less systematic.",
+      "5": "Very active in problem solving and proactive."
+    },
+    "updated_at": "2025-03-24 10:36:36"
+  },
+  "9e816dee-4c16-4db7-b525-7d16b33662cb": {
+    "assessment_id": "9e816dee-4c16-4db7-b525-7d16b33662cb",
+    "rubrik_id": "9e816dee-3935-44d2-9dd4-6fd873df8c6c",
+    "question": "Seberapa baik Anda dalam mengelola waktu dan menyelesaikan tugas sesuai tenggat waktu?",
+    "aspect": "Manajemen Waktu",
+    "criteria": "Kemampuan menyelesaikan tugas sesuai tenggat waktu.",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Banyak tugas yang terlambat diselesaikan.",
+      "2": "Beberapa tugas terlambat, sering menunda pekerjaan.",
+      "3": "Beberapa tugas terlambat namun masih dapat dikejar.",
+      "4": "Sebagian besar tugas selesai tepat waktu, hanya ada sedikit keterlambatan.",
+      "5": "Semua tugas diselesaikan tepat waktu."
+    },
+    "translated_criteria": {
+      "1": "Many tasks are overdue for completion.",
+      "2": "Some tasks are late, often delaying work.",
+      "3": "Some tasks are late but can still be pursued.",
+      "4": "Most tasks are completed on time, there is only a small delay.",
+      "5": "All tasks are completed on time."
+    },
+    "updated_at": "2025-03-24 10:36:44"
+  },
+  "9e816dee-4d05-43ad-9b7c-5dc9ec493bcb": {
+    "assessment_id": "9e816dee-4d05-43ad-9b7c-5dc9ec493bcb",
+    "rubrik_id": "9e816dee-2fcf-4e38-82e3-4db7d3aed261",
+    "question": "Seberapa baik [Nama] dalam mengumpulkan iklan lowongan kerja dari platform yang ditugaskan?",
+    "aspect": "Pengumpulan Iklan Lowongan Kerja",
+    "criteria": "Banyaknya iklan dan keragaman platform yang digunakan.",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Mengumpulkan sedikit iklan, platform terbatas.",
+      "2": "Mengumpulkan cukup iklan, platform terbatas.",
+      "3": "Iklan cukup, platform yang digunakan terbatas.",
+      "4": "Mengumpulkan banyak iklan, platform cukup beragam.",
+      "5": "Mengumpulkan banyak iklan dari banyak platform."
+    },
+    "translated_criteria": {
+      "1": "Collecting a little advertising, the platform is limited.",
+      "2": "Collect enough ads, limited platform.",
+      "3": "Ad enough, the platform used is limited.",
+      "4": "Collecting a lot of ads, the platform is quite diverse.",
+      "5": "Collect a lot of ads from many platforms."
+    },
+    "updated_at": "2025-03-24 10:36:53"
+  },
+  "9e816dee-4e08-43c3-8126-248854b76c2f": {
+    "assessment_id": "9e816dee-4e08-43c3-8126-248854b76c2f",
+    "rubrik_id": "9e816dee-3338-4ecc-9e80-f6198d9c8023",
+    "question": "Bagaimana pemahaman [Nama] terhadap isi iklan yang dikumpulkan?",
+    "aspect": "Pemahaman terhadap Isi Iklan",
+    "criteria": "Pemahaman informasi penting dari iklan yang dikumpulkan.",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak memahami isi iklan.",
+      "2": "Memahami sebagian kecil isi iklan.",
+      "3": "Cukup memahami isi iklan.",
+      "4": "Memahami sebagian besar isi iklan.",
+      "5": "Memahami isi iklan dengan sangat baik."
+    },
+    "translated_criteria": {
+      "1": "Don't understand the content of the ad.",
+      "2": "Understand a small portion of a listing's content.",
+      "3": "Simply understand the contents of the ad.",
+      "4": "Understand most of the content of the listing.",
+      "5": "Understand the content of the listing very well."
+    },
+    "updated_at": "2025-03-24 10:37:01"
+  },
+  "9e816dee-4eff-41c8-8656-79cee0c8a19b": {
+    "assessment_id": "9e816dee-4eff-41c8-8656-79cee0c8a19b",
+    "rubrik_id": "9e816dee-35a7-40d5-9977-44e32ac6cded",
+    "question": "Seberapa baik struktur data yang diusulkan oleh [Nama]?",
+    "aspect": "Pembuatan Struktur Data",
+    "criteria": "Kesesuaian dan kejelasan struktur data untuk memuat informasi.",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Struktur tidak sesuai dengan data.",
+      "2": "Struktur kurang sesuai, masih perlu banyak perbaikan.",
+      "3": "Struktur cukup sesuai, namun ada kekurangan.",
+      "4": "Struktur hampir sesuai, hanya ada sedikit kekurangan.",
+      "5": "Struktur data sangat baik dan lengkap."
+    },
+    "translated_criteria": {
+      "1": "The structure is incompatible with the data.",
+      "2": "The structure is not suitable, there are still many improvements.",
+      "3": "The structure is quite suitable, but there are shortcomings.",
+      "4": "The structure is almost suitable, there are only a few shortcomings.",
+      "5": "The data structure is very good and complete."
+    },
+    "updated_at": "2025-03-24 10:37:08"
+  },
+  "9e816dee-5054-45b0-9f82-1110d38e383d": {
+    "assessment_id": "9e816dee-5054-45b0-9f82-1110d38e383d",
+    "rubrik_id": "9e816dee-3675-4586-a80e-a341455b36bd",
+    "question": "Seberapa teliti [Nama] dalam menginputkan data ke Excel?",
+    "aspect": "Penginputan Data ke Excel",
+    "criteria": "Ketelitian dan keakuratan penginputan data.",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Banyak kesalahan, tidak teliti.",
+      "2": "Cukup banyak kesalahan, masih kurang teliti.",
+      "3": "Cukup akurat, terdapat beberapa kesalahan.",
+      "4": "Hanya ada sedikit kesalahan, cukup teliti.",
+      "5": "Data diinput dengan akurat dan tanpa kesalahan."
+    },
+    "translated_criteria": {
+      "1": "Many mistakes, not careful.",
+      "2": "Quite a lot of mistakes, still less thorough.",
+      "3": "Quite accurately, there were some errors.",
+      "4": "There were only a few mistakes, quite thorough.",
+      "5": "Data is entered accurately and without errors."
+    },
+    "updated_at": "2025-03-24 10:37:16"
+  },
+  "9e816dee-516c-47c8-a111-e41212c1be80": {
+    "assessment_id": "9e816dee-516c-47c8-a111-e41212c1be80",
+    "rubrik_id": "9e816dee-371e-41d1-8651-ba007570e837",
+    "question": "Seberapa efektif Anda berkontribusi dalam menggabungkan data dan struktur data dari kelompok lain?",
+    "aspect": "Penggabungan Data dengan Kelompok Lain",
+    "criteria": "Partisipasi dalam menggabungkan data kelompok.",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak aktif dalam proses penggabungan.",
+      "2": "Kurang aktif dalam penggabungan, kontribusi minim.",
+      "3": "Cukup aktif namun kontribusi terbatas.",
+      "4": "Aktif dalam penggabungan, namun ada beberapa kekurangan.",
+      "5": "Sangat aktif dan membantu menyelesaikan masalah."
+    },
+    "translated_criteria": {
+      "1": "Inactive in the merge process.",
+      "2": "Less active in merging, minimal contribution.",
+      "3": "Moderately active but limited contributions.",
+      "4": "Active in mergers, but there are some drawbacks.",
+      "5": "Very active and helps solve problems."
+    },
+    "updated_at": "2025-03-24 10:37:24"
+  },
+  "9e816dee-5261-4be8-bda2-78128b2687fc": {
+    "assessment_id": "9e816dee-5261-4be8-bda2-78128b2687fc",
+    "rubrik_id": "9e816dee-37a8-480c-a60f-de1fffb51b51",
+    "question": "Seberapa aktif [Nama] terlibat dalam penggabungan data dengan kelompok lain?",
+    "aspect": "Kolaborasi dan Kerjasama Tim",
+    "criteria": "Kemampuan bekerja sama dengan anggota kelompok lain.",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak banyak terlibat dalam kerjasama.",
+      "2": "Kurang terlibat dalam kerjasama, sering pasif.",
+      "3": "Cukup terlibat dalam kerjasama.",
+      "4": "Terlibat dengan baik, meskipun masih bisa ditingkatkan.",
+      "5": "Sangat kooperatif dan membantu tim dengan baik."
+    },
+    "translated_criteria": {
+      "1": "Not much involvement in cooperation.",
+      "2": "Less involved in cooperation, often passive.",
+      "3": "Quite involved in cooperation.",
+      "4": "Well-engaged, although it can still be improved.",
+      "5": "Very cooperative and helps the team well."
+    },
+    "updated_at": "2025-03-24 10:37:31"
+  },
+  "9e816dee-5350-4ca7-bc26-29cbc45f516b": {
+    "assessment_id": "9e816dee-5350-4ca7-bc26-29cbc45f516b",
+    "rubrik_id": "9e816dee-3828-4e41-8805-2e2c5e84654d",
+    "question": "Seberapa baik [Nama] bekerja sama dengan anggota kelompok?",
+    "aspect": "Komunikasi",
+    "criteria": "Efektivitas dalam menyampaikan ide dan berdiskusi.",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Komunikasi tidak jelas atau tidak efektif.",
+      "2": "Komunikasi kurang jelas, sering terjadi kesalahpahaman.",
+      "3": "Komunikasi cukup baik namun kurang terbuka.",
+      "4": "Komunikasi baik, tetapi masih bisa lebih efektif.",
+      "5": "Komunikasi sangat baik, ide tersampaikan jelas."
+    },
+    "translated_criteria": {
+      "1": "Communication is unclear or ineffective.",
+      "2": "Communication is unclear, there are often misunderstandings.",
+      "3": "Communication is quite good but less open.",
+      "4": "Communication is good, but it can still be more effective.",
+      "5": "Communication is very good, ideas are conveyed clearly."
+    },
+    "updated_at": "2025-03-24 10:37:39"
+  },
+  "9e816dee-54b7-4ecc-9865-8a3992f2834e": {
+    "assessment_id": "9e816dee-54b7-4ecc-9865-8a3992f2834e",
+    "rubrik_id": "9e816dee-38b4-4515-b18d-12d1582b315b",
+    "question": "Seberapa efektif [Nama] dalam berkomunikasi dengan anggota kelompok?",
+    "aspect": "Pemecahan Masalah",
+    "criteria": "Kemampuan mengidentifikasi dan menyelesaikan masalah.",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak aktif dalam menyelesaikan masalah.",
+      "2": "Kurang aktif dalam menemukan solusi.",
+      "3": "Membantu dalam beberapa situasi.",
+      "4": "Aktif dalam menyelesaikan masalah, namun kurang sistematis.",
+      "5": "Sangat aktif menyelesaikan masalah dan proaktif."
+    },
+    "translated_criteria": {
+      "1": "Inactive in solving problems.",
+      "2": "Less active in finding solutions.",
+      "3": "Helps in some situations.",
+      "4": "Active in solving problems, but less systematic.",
+      "5": "Very active in problem solving and proactive."
+    },
+    "updated_at": "2025-03-24 10:37:47"
+  },
+  "9e816dee-55c1-4635-9959-7cb65a881fbb": {
+    "assessment_id": "9e816dee-55c1-4635-9959-7cb65a881fbb",
+    "rubrik_id": "9e816dee-3935-44d2-9dd4-6fd873df8c6c",
+    "question": "Seberapa baik [Nama] dalam menyelesaikan tugas tepat waktu?",
+    "aspect": "Manajemen Waktu",
+    "criteria": "Kemampuan menyelesaikan tugas sesuai tenggat waktu.",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Banyak tugas yang terlambat diselesaikan.",
+      "2": "Beberapa tugas terlambat, sering menunda pekerjaan.",
+      "3": "Beberapa tugas terlambat namun masih dapat dikejar.",
+      "4": "Sebagian besar tugas selesai tepat waktu, hanya ada sedikit keterlambatan.",
+      "5": "Semua tugas diselesaikan tepat waktu."
+    },
+    "translated_criteria": {
+      "1": "Many tasks are overdue for completion.",
+      "2": "Some tasks are late, often delaying work.",
+      "3": "Some tasks are late but can still be pursued.",
+      "4": "Most tasks are completed on time, there is only a small delay.",
+      "5": "All tasks are completed on time."
+    },
+    "updated_at": "2025-03-24 10:37:55"
+  },
+  "9eca178d-7e95-4951-b1eb-f4ea256b59d8": {
+    "assessment_id": "9eca178d-7e95-4951-b1eb-f4ea256b59d8",
+    "rubrik_id": "9eca16e2-607b-4a91-8b26-f5bbd7dc563b",
+    "question": "Apakah rekan tim ini menyelesaikan tugas sesuai deadline?",
+    "aspect": "Penyelesaian Tugas",
+    "criteria": "Penyelesaian Tugas",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Jarang menyelesaikan tugas atau sering melewati deadline.",
+      "2": "Sering terlambat dalam menyelesaikan tugas.",
+      "3": "Sering menyelesaikan tugas tepat waktu tetapi terkadang terlambat.",
+      "4": "Menyelesaikan tugas tepat waktu dengan sedikit keterlambatan.",
+      "5": "Selalu menyelesaikan tugas tepat waktu atau lebih cepat."
+    },
+    "translated_criteria": {
+      "1": "Rarely complete tasks or often miss deadlines.",
+      "2": "Often late in completing tasks.",
+      "3": "Often complete tasks on time but sometimes late.",
+      "4": "Complete tasks on time with minimal delay.",
+      "5": "Always complete tasks on time or faster."
+    },
+    "updated_at": "2025-04-29 13:29:32"
+  },
+  "9eca178d-7b54-4ee8-8573-7d268fa3ad4a": {
+    "assessment_id": "9eca178d-7b54-4ee8-8573-7d268fa3ad4a",
+    "rubrik_id": "9eca16e2-5bb6-4efc-aec4-7720f7cabaa9",
+    "question": "Sejauh mana rekan tim ini memahami konsep dan teknologi yang digunakan dalam proyek ini?",
+    "aspect": "Pemahaman Teknis",
+    "criteria": "Pemahaman Teknis",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak memahami teknologi yang digunakan dan sering mengalami kesulitan.",
+      "2": "Hanya memahami konsep dasar, sulit menerapkannya tanpa bantuan.",
+      "3": "Memahami teknologi tetapi masih memerlukan bantuan dalam penerapannya.",
+      "4": "Memahami sebagian besar teknologi dan mampu menggunakannya dengan baik.",
+      "5": "Memahami semua konsep dan teknologi yang digunakan, serta dapat menjelaskan dan mengajarkan ke tim lain."
+    },
+    "translated_criteria": {
+      "1": "Does not understand the technology used and often has difficulty.",
+      "2": "Just understanding the basic concepts, it's hard to apply them without help.",
+      "3": "Understand the technology but still need help in its application.",
+      "4": "Understand most technologies and be able to use them well.",
+      "5": "Understand all concepts and technologies used, and be able to explain and teach to other teams."
+    },
+    "updated_at": "2025-04-29 13:29:41"
+  },
+  "9eca178d-7d34-4352-940d-5519f3668237": {
+    "assessment_id": "9eca178d-7d34-4352-940d-5519f3668237",
+    "rubrik_id": "9eca16e2-5f36-4064-ac21-685e15399c46",
+    "question": "Seberapa baik hasil kerja rekan tim ini?",
+    "aspect": "Kualitas Pekerjaan",
+    "criteria": "Kualitas Pekerjaan",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Hasil kerja buruk, tidak memenuhi standar proyek.",
+      "2": "Hasil kerja kurang memuaskan, perlu banyak revisi.",
+      "3": "Hasil kerja cukup baik, tetapi membutuhkan beberapa perbaikan.",
+      "4": "Hasil kerja baik, tetapi masih ada revisi kecil yang diperlukan.",
+      "5": "Hasil kerja sangat baik, rapi, efisien, dan minim revisi."
+    },
+    "translated_criteria": {
+      "1": "Poor workmanship, not meeting project standards.",
+      "2": "The results of the work are unsatisfactory, need many revisions.",
+      "3": "The work is quite good, but needs some improvement.",
+      "4": "The results of the work are good, but there are still minor revisions needed.",
+      "5": "The results of the work are very good, neat, efficient, and minimal revision."
+    },
+    "updated_at": "2025-04-29 13:29:52"
+  },
+  "9eca178d-7f15-4ab7-bc74-265ebbbca90b": {
+    "assessment_id": "9eca178d-7f15-4ab7-bc74-265ebbbca90b",
+    "rubrik_id": "9eca16e2-60e4-413e-96cc-64f743a25e53",
+    "question": "Seberapa cepat rekan tim ini belajar dan menerapkan teknologi baru dalam proyek ini?",
+    "aspect": "Adaptasi Teknologi",
+    "criteria": "Adaptasi Teknologi",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak berusaha mempelajari teknologi baru atau menolak menggunakannya.",
+      "2": "Sulit dalam memahami teknologi baru dan sering tertinggal.",
+      "3": "Dapat mempelajari teknologi baru dengan waktu yang lebih lama.",
+      "4": "Cepat mempelajari teknologi baru tetapi masih butuh sedikit bantuan.",
+      "5": "Sangat cepat mempelajari dan menerapkan teknologi baru tanpa bantuan."
+    },
+    "translated_criteria": {
+      "1": "Not trying to learn new technology or refusing to use it.",
+      "2": "It is difficult to understand new technologies and is often left behind.",
+      "3": "Can learn new technologies for a longer time.",
+      "4": "Quick to learn new technology but still need a little help.",
+      "5": "Very quickly learn and apply new technologies without assistance."
+    },
+    "updated_at": "2025-04-29 13:30:03"
+  },
+  "9eca178d-7f9a-4f15-b0a6-627374d3947d": {
+    "assessment_id": "9eca178d-7f9a-4f15-b0a6-627374d3947d",
+    "rubrik_id": "9eca16e2-616a-4660-8561-ce155cbee65a",
+    "question": "Seberapa baik rekan tim ini dalam menyelesaikan masalah yang membutuhkan analisis mendalam?",
+    "aspect": "Pemecahan Masalah Kompleks",
+    "criteria": "Pemecahan Masalah Kompleks",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak mampu menyelesaikan masalah sendiri, selalu bergantung pada orang lain.",
+      "2": "Sering mengalami kesulitan dalam menyelesaikan masalah teknis.",
+      "3": "Mampu menyelesaikan masalah sederhana tetapi kesulitan dengan yang lebih kompleks.",
+      "4": "Dapat menyelesaikan masalah kompleks tetapi memerlukan bantuan dalam beberapa aspek.",
+      "5": "Mampu menyelesaikan masalah teknis yang kompleks secara mandiri dan efisien."
+    },
+    "translated_criteria": {
+      "1": "Unable to solve problems on their own, always dependent on others.",
+      "2": "Often have difficulty in resolving technical problems.",
+      "3": "Able to solve simple problems but difficulties with more complex ones.",
+      "4": "Able to solve complex problems but requires assistance in several aspects.",
+      "5": "Able to solve complex technical problems independently and efficiently."
+    },
+    "updated_at": "2025-04-29 13:30:11"
+  },
+  "9eca178d-8019-4b98-9cde-a89bc2f7b420": {
+    "assessment_id": "9eca178d-8019-4b98-9cde-a89bc2f7b420",
+    "rubrik_id": "9eca16e2-61cb-4dd4-b08b-ba0b3273acee",
+    "question": "Seberapa baik rekan tim ini dalam membagi waktu antara tugas coding, testing, dan dokumentasi?",
+    "aspect": "Manajemen Waktu",
+    "criteria": "Manajemen Waktu",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak memiliki manajemen waktu, sering melewati deadline atau tidak menyelesaikan tugas.",
+      "2": "Sering terlambat dalam menyelesaikan tugas karena kurang perencanaan.",
+      "3": "Mampu menyelesaikan tugas tetapi sering terburu-buru atau kurang efisien.",
+      "4": "Mengelola waktu dengan baik tetapi kadang perlu perpanjangan waktu.",
+      "5": "Sangat baik dalam mengatur waktu, selalu menyelesaikan tugas sebelum deadline tanpa mengorbankan kualitas."
+    },
+    "translated_criteria": {
+      "1": "Lacks time management, often misses deadlines or doesn't complete tasks.",
+      "2": "Often late in completing tasks due to lack of planning.",
+      "3": "Able to complete tasks but often in a hurry or less efficient.",
+      "4": "Time management is good but sometimes it needs to be extended.",
+      "5": "Very good at managing time, always completing tasks before deadlines without sacrificing quality."
+    },
+    "updated_at": "2025-04-29 13:30:20"
+  },
+  "9eca178d-8081-4b08-a8a2-109cd1e7c250": {
+    "assessment_id": "9eca178d-8081-4b08-a8a2-109cd1e7c250",
+    "rubrik_id": "9eca16e2-6225-448c-be70-f247bf70ba88",
+    "question": "Seberapa jelas dan efektif komunikasi rekan tim ini dalam proyek ini?",
+    "aspect": "Komunikasi",
+    "criteria": "Komunikasi",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak berkomunikasi sama sekali atau sulit dipahami oleh tim.",
+      "2": "Kurang berkomunikasi dengan tim, sering menyebabkan miskomunikasi.",
+      "3": "Dapat berkomunikasi tetapi kadang sulit dipahami atau kurang aktif berbicara.",
+      "4": "Menyampaikan ide dengan baik tetapi terkadang kurang jelas dalam beberapa situasi.",
+      "5": "Selalu menyampaikan ide dengan jelas, logis, dan efektif, serta mampu mendengarkan dan memahami tim lain."
+    },
+    "translated_criteria": {
+      "1": "Not communicating at all or difficult for the team to understand.",
+      "2": "Lack of communication with the team, often leads to miscommunication.",
+      "3": "Able to communicate but sometimes difficult to understand or less active in speaking.",
+      "4": "Conveys ideas well but sometimes lacks clarity in some situations.",
+      "5": "Always convey ideas clearly, logically, and effectively, and be able to listen and understand other teams."
+    },
+    "updated_at": "2025-04-29 13:30:27"
+  },
+  "9eca178d-80f9-42ff-b62a-5903d2343607": {
+    "assessment_id": "9eca178d-80f9-42ff-b62a-5903d2343607",
+    "rubrik_id": "9eca16e2-627a-423b-9246-fc5f0b3fcb3e",
+    "question": "Seberapa baik rekan tim ini memahami kebutuhan SIPTA?",
+    "aspect": "Analisis Kebutuhan",
+    "criteria": "Analisis Kebutuhan",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak memahami kebutuhan sistem dan tidak dapat menganalisis kebutuhan dengan baik.",
+      "2": "Kurang memahami kebutuhan sistem, sering salah menginterpretasikan.",
+      "3": "Memahami kebutuhan secara umum tetapi kurang detail dalam analisisnya.",
+      "4": "Memahami kebutuhan sistem dengan baik tetapi masih memerlukan klarifikasi dalam beberapa aspek.",
+      "5": "Memahami kebutuhan sistem dengan sangat baik dan dapat mengidentifikasi masalah serta solusi yang tepat."
+    },
+    "translated_criteria": {
+      "1": "Does not understand system needs and cannot analyze needs well.",
+      "2": "Lack of understanding of system needs, often misinterpreting.",
+      "3": "Understand the needs in general but lack detail in the analysis.",
+      "4": "Understand the needs of the system well but still need clarification in some aspects.",
+      "5": "Understand system needs very well and can identify problems and appropriate solutions."
+    },
+    "updated_at": "2025-04-29 13:30:34"
+  },
+  "9eca178d-8179-4bf1-9c6b-0e24bb2ac545": {
+    "assessment_id": "9eca178d-8179-4bf1-9c6b-0e24bb2ac545",
+    "rubrik_id": "9eca16e2-62d0-4a88-b988-df557b02051a",
+    "question": "Seberapa aktif rekan tim ini dalam pembuatan ERD, flowchart, atau desain UI?",
+    "aspect": "Perancangan Sistem",
+    "criteria": "Perancangan Sistem",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak terlibat dalam perancangan sistem sama sekali.",
+      "2": "Hanya sedikit terlibat dalam perancangan dan kurang memahami detailnya.",
+      "3": "Terlibat dalam perancangan tetapi kontribusinya terbatas.",
+      "4": "Terlibat aktif dalam perancangan tetapi masih ada perbaikan yang diperlukan.",
+      "5": "Sangat aktif dalam membuat ERD, flowchart, atau UI dengan kualitas tinggi."
+    },
+    "translated_criteria": {
+      "1": "Not involved in system design at all.",
+      "2": "Little involvement in the design and lack of understanding of the details.",
+      "3": "Involved in the design but limited in its contribution.",
+      "4": "Actively involved in the design but there are still improvements needed.",
+      "5": "Very active in creating high quality ERDs, flowcharts, or UIs."
+    },
+    "updated_at": "2025-04-29 13:30:43"
+  },
+  "9eca178d-81e9-403e-abac-5bffb1f36ec3": {
+    "assessment_id": "9eca178d-81e9-403e-abac-5bffb1f36ec3",
+    "rubrik_id": "9eca16e2-6323-42a6-9d00-c573547af80b",
+    "question": "Seberapa baik rekan tim ini mengimplementasikan modul yang menjadi tanggung jawabnya?",
+    "aspect": "Implementasi Fitur",
+    "criteria": "Implementasi Fitur",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak dapat mengimplementasikan fitur dengan benar atau gagal menyelesaikan tugas.",
+      "2": "Fitur sering tidak sesuai requirement dan membutuhkan banyak perbaikan.",
+      "3": "Fitur berjalan tetapi masih terdapat beberapa kesalahan atau bug.",
+      "4": "Fitur berjalan dengan baik tetapi masih membutuhkan beberapa perbaikan.",
+      "5": "Fitur yang dikembangkan berjalan dengan sempurna, sesuai requirement, dan minim bug."
+    },
+    "translated_criteria": {
+      "1": "Unable to implement the feature correctly or failed to complete the task.",
+      "2": "Features often don't meet requirements and require a lot of improvements.",
+      "3": "The feature is running but there are still some errors or bugs.",
+      "4": "The feature is running well but still needs some improvements.",
+      "5": "The developed features run perfectly, according to requirements, and have minimal bugs."
+    },
+    "updated_at": "2025-04-29 13:30:53"
+  },
+  "9eca178d-828a-4f4a-8399-801fc6853efa": {
+    "assessment_id": "9eca178d-828a-4f4a-8399-801fc6853efa",
+    "rubrik_id": "9eca16e2-6377-4018-b7c7-7458485270a5",
+    "question": "Seberapa aktif rekan tim ini dalam memastikan fitur yang buatnya dapat terintegrasi dengan modul lain?",
+    "aspect": "Integrasi Sistem",
+    "criteria": "Integrasi Sistem",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak mengusahakan integrasi, membebankan kepada anggota lain.",
+      "2": "Jarang berkontribusi dalam integrasi atau membutuhkan banyak bantuan tim lain.",
+      "3": "Berusaha melakukan integrasi tetapi sering mengalami kendala teknis.",
+      "4": "Berkontribusi dalam integrasi tetapi masih membutuhkan sedikit bantuan dalam debugging.",
+      "5": "Sangat aktif dalam memastikan fitur dapat terhubung dengan modul lain, mengatasi error integrasi secara mandiri."
+    },
+    "translated_criteria": {
+      "1": "Not working on integration, imposing it on other members.",
+      "2": "Rarely contribute to the integration or need a lot of help from other teams.",
+      "3": "Trying to integrate but often experiencing technical difficulties.",
+      "4": "Contribute to the integration but still need a little help in debugging.",
+      "5": "Very active in ensuring features can connect with other modules, resolving integration errors independently."
+    },
+    "updated_at": "2025-04-29 13:31:02"
+  },
+  "9eca178d-8301-494d-a8ba-870bedaa55c3": {
+    "assessment_id": "9eca178d-8301-494d-a8ba-870bedaa55c3",
+    "rubrik_id": "9eca16e2-63cd-4d1a-ad80-859e3eb5a05c",
+    "question": "Seberapa sering rekan tim ini melakukan commit dan merge dengan benar di repository tim?",
+    "aspect": "Penggunaan Git",
+    "criteria": "Penggunaan Git",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak pernah melakukan commit atau merge, membebankan tugas ke tim lain.",
+      "2": "Jarang menggunakan Git dengan benar, sering menyebabkan konflik dalam repository.",
+      "3": "Menggunakan Git tetapi sering lupa commit atau push kode tepat waktu.",
+      "4": "Melakukan commit dan merge dengan baik tetapi kadang kurang mengikuti standar tim.",
+      "5": "Selalu melakukan commit dan merge dengan benar, mengikuti workflow tim, dan memberikan commit message yang jelas."
+    },
+    "translated_criteria": {
+      "1": "Never commit or merge, assigning tasks to other teams.",
+      "2": "Rarely use Git correctly, often causing conflicts in the repository.",
+      "3": "Using Git but often forgetting to commit or push code on time.",
+      "4": "Commit and merge well but sometimes don't follow team standards.",
+      "5": "Always commit and merge correctly, follow the team's workflow, and provide a clear commit message."
+    },
+    "updated_at": "2025-04-29 13:31:09"
+  },
+  "9eca178d-836f-47d4-9ba7-ebe144c2b8e4": {
+    "assessment_id": "9eca178d-836f-47d4-9ba7-ebe144c2b8e4",
+    "rubrik_id": "9eca16e2-6483-43f1-ab13-a9a0d609822a",
+    "question": "Seberapa teliti rekan tim ini dalam menguji fitur sebelum deployment?",
+    "aspect": "Pengujian Fitur",
+    "criteria": "Pengujian Fitur",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak melakukan pengujian sama sekali, sering menyebabkan bug di sistem.",
+      "2": "Jarang melakukan pengujian sebelum submit kode, sering mengandalkan tim QA.",
+      "3": "Melakukan pengujian tetapi hanya dalam skenario dasar, tidak terdokumentasi dengan baik.",
+      "4": "Menguji fitur dengan baik tetapi kadang melewatkan beberapa skenario penting.",
+      "5": "Selalu menguji fitur sebelum merge/deploy, menggunakan test case yang jelas dan mendokumentasikan hasilnya."
+    },
+    "translated_criteria": {
+      "1": "Not testing at all, often causing bugs in the system.",
+      "2": "Rarely do tests before submitting code, often relying on the QA team.",
+      "3": "Conducting tests but only in basic scenarios, is not well documented.",
+      "4": "Tests features well but sometimes misses some important scenarios.",
+      "5": "Always test features before merging/deploying, use clear test cases and document the results."
+    },
+    "updated_at": "2025-04-29 13:31:17"
+  },
+  "9eca178d-83eb-4a35-bc7e-dc70a8718e20": {
+    "assessment_id": "9eca178d-83eb-4a35-bc7e-dc70a8718e20",
+    "rubrik_id": "9eca16e2-6556-4433-b6b7-c562e2be0d12",
+    "question": "Seberapa lengkap dokumentasi yang rekan tim ini buat untuk fitur yang dikembangkannya?",
+    "aspect": "Dokumentasi",
+    "criteria": "Dokumentasi",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak membuat dokumentasi sama sekali.",
+      "2": "Dokumentasi sangat minim dan tidak membantu anggota tim lainnya.",
+      "3": "Dokumentasi ada tetapi tidak rapi atau sulit dipahami oleh orang lain.",
+      "4": "Dokumentasi cukup lengkap tetapi ada beberapa bagian yang kurang jelas.",
+      "5": "Menyusun dokumentasi API, teknis, dan proses pengembangan dengan detail dan mudah dipahami."
+    },
+    "translated_criteria": {
+      "1": "No documentation at all.",
+      "2": "Documentation is minimal and unhelpful to the rest of the team.",
+      "3": "Documentation is present but not neat or difficult for others to understand.",
+      "4": "The documentation is quite complete but there are some parts that are not clear.",
+      "5": "Prepare API documentation, technical, and development processes in detail and easy to understand."
+    },
+    "updated_at": "2025-04-29 13:31:26"
+  },
+  "9eca178d-845e-4434-aa07-6004ca0fdd2c": {
+    "assessment_id": "9eca178d-845e-4434-aa07-6004ca0fdd2c",
+    "rubrik_id": "9eca16e2-65bc-46e5-b051-334bb01b2fd1",
+    "question": "Seberapa sering rekan tim ini melakukan review kode anggota lain?",
+    "aspect": "Review Kode",
+    "criteria": "Review Kode",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak pernah melakukan review terhadap kode anggota lain.",
+      "2": "Jarang memberikan review atau hanya melihat sekilas tanpa feedback yang berarti.",
+      "3": "Kadang memberikan review tetapi hanya untuk hal-hal kecil atau mendasar.",
+      "4": "Sering melakukan review kode tetapi masih kurang mendalam dalam analisisnya.",
+      "5": "Secara rutin melakukan review kode anggota lain, memberikan saran konstruktif, dan membantu meningkatkan kualitas kode tim."
+    },
+    "translated_criteria": {
+      "1": "Never review another member's code.",
+      "2": "Rarely give reviews or just take a glance without meaningful feedback.",
+      "3": "Sometimes provide reviews but only for small or basic things.",
+      "4": "Often conducts code reviews but still lacks depth in its analysis.",
+      "5": "Regularly review other members' codes, provide constructive suggestions, and help improve the quality of the team's code."
+    },
+    "updated_at": "2025-04-29 13:31:33"
+  },
+  "9eca178d-84c6-4f6a-80ac-5eed6068b1a8": {
+    "assessment_id": "9eca178d-84c6-4f6a-80ac-5eed6068b1a8",
+    "rubrik_id": "9eca16e2-6613-4490-baf2-4f5ed6040828",
+    "question": "Seberapa rapi dan mudah dipahami kode yang rekan tim ini tulis?",
+    "aspect": "Keandalan Kode",
+    "criteria": "Keandalan Kode",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Kode buruk, sering menyebabkan error atau konflik, dan tidak bisa digunakan tanpa perbaikan besar.",
+      "2": "Kode sering berantakan, tidak terdokumentasi, dan sulit dimengerti oleh tim lain.",
+      "3": "Kode berfungsi tetapi kurang terstruktur dan sulit dipahami.",
+      "4": "Menulis kode dengan cukup baik tetapi masih bisa diperbaiki dalam hal readability atau efisiensi.",
+      "5": "Menulis kode yang bersih, efisien, terdokumentasi dengan baik, dan mudah dipahami oleh tim lain."
+    },
+    "translated_criteria": {
+      "1": "Bad code, often causes errors or conflicts, and cannot be used without major improvements.",
+      "2": "Code is often cluttered, undocumented, and difficult for other teams to understand.",
+      "3": "The code works but lacks structure and is difficult to understand.",
+      "4": "Writing code is quite good but can still be improved in terms of readability or efficiency.",
+      "5": "Write code that is clean, efficient, well-documented, and easy for other teams to understand."
+    },
+    "updated_at": "2025-04-29 13:31:41"
+  },
+  "9eca178d-852c-4d90-acfb-c1c2a7d3023e": {
+    "assessment_id": "9eca178d-852c-4d90-acfb-c1c2a7d3023e",
+    "rubrik_id": "9eca16e2-666a-4516-89d5-1b2c29f383d4",
+    "question": "Seberapa mudah rekan tim ini bekerja sama dengan Anda dalam menghubungkan fitur antar modul?",
+    "aspect": "Kolaborasi Integrasi",
+    "criteria": "Kolaborasi Integrasi",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak mau berkoordinasi dalam integrasi sistem dan menyerahkan sepenuhnya ke tim lain.",
+      "2": "Kurang kooperatif dalam integrasi, sering menyebabkan konflik dalam penggabungan fitur.",
+      "3": "Dapat berkolaborasi tetapi kadang sulit mengikuti workflow integrasi.",
+      "4": "Berusaha bekerja sama dengan baik tetapi masih memerlukan arahan tambahan dari tim lain.",
+      "5": "Sangat kooperatif dalam menghubungkan fitur dengan modul lain, proaktif membantu debugging dan memastikan integrasi lancar."
+    },
+    "translated_criteria": {
+      "1": "Is unwilling to coordinate in system integration and leaves it entirely to the other team.",
+      "2": "Lack of cooperation in integration, often leads to conflicts in the incorporation of features.",
+      "3": "Able to collaborate but sometimes difficult to follow the integration workflow.",
+      "4": "Trying to work well together but still need additional direction from other teams.",
+      "5": "Very cooperative in connecting features with other modules, proactively assisting debugging and ensuring smooth integration."
+    },
+    "updated_at": "2025-04-29 13:31:49"
+  },
+  "9eca178d-8593-48a8-b635-7f8626bcf963": {
+    "assessment_id": "9eca178d-8593-48a8-b635-7f8626bcf963",
+    "rubrik_id": "9eca16e2-66be-44b2-b68d-302420f77916",
+    "question": "Seberapa besar kontribusi teknis rekan tim ini dalam pengembangan fitur SIPTA?",
+    "aspect": "Kontribusi Teknis",
+    "criteria": "Kontribusi Teknis",
+    "skill_type": "hardskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak berkontribusi dalam pengembangan fitur sama sekali.",
+      "2": "Kontribusi teknis sangat minim dan sering bergantung pada anggota tim lain.",
+      "3": "Mengembangkan fitur tetapi sering memerlukan revisi dan bantuan tim lain.",
+      "4": "Berkontribusi dalam coding tetapi lebih banyak mengerjakan fitur minor.",
+      "5": "Sangat aktif dalam coding, menyelesaikan fitur utama, dan memberikan solusi teknis yang bermanfaat bagi proyek."
+    },
+    "translated_criteria": {
+      "1": "Not contributing to feature development at all.",
+      "2": "Technical contributions are minimal and often dependent on other team members.",
+      "3": "Developing features but often requiring revision and the help of other teams.",
+      "4": "Contribute in coding but work more on minor features.",
+      "5": "Very active in coding, completing key features, and providing technical solutions that are useful to the project."
+    },
+    "updated_at": "2025-04-29 13:31:57"
+  },
+  "9eca178d-85fd-4dbc-a739-c8c7e959dd34": {
+    "assessment_id": "9eca178d-85fd-4dbc-a739-c8c7e959dd34",
+    "rubrik_id": "9eca16e2-6711-451e-bd74-fe2dd3e42938",
+    "question": "Seberapa baik rekan tim ini bekerja sama dengan Anda?",
+    "aspect": "Kolaborasi",
+    "criteria": "Kolaborasi",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak bekerja sama dengan tim, sering tidak hadir atau menghindari tanggung jawab.",
+      "2": "Kurang bekerja sama, sering mengandalkan anggota tim lain dalam menyelesaikan tugas.",
+      "3": "Bekerja sama tetapi hanya dalam tugas tertentu, kurang terlibat secara keseluruhan.",
+      "4": "Bekerja sama dengan baik tetapi terkadang kurang aktif dalam diskusi tim.",
+      "5": "Sangat aktif bekerja sama, selalu membantu tim, dan berkontribusi dalam diskusi dan tugas bersama."
+    },
+    "translated_criteria": {
+      "1": "Lack of teamwork, frequent absences or avoidance of responsibilities.",
+      "2": "Lack of cooperation, often relying on other team members to complete tasks.",
+      "3": "Working together but only in specific tasks, less involved overall.",
+      "4": "Works well together but is sometimes less active in team discussions.",
+      "5": "Very active working together, always helping the team, and contributing to discussions and shared tasks."
+    },
+    "updated_at": "2025-04-29 13:32:05"
+  },
+  "9eca178d-8667-41db-bb9a-c7adb420cb1d": {
+    "assessment_id": "9eca178d-8667-41db-bb9a-c7adb420cb1d",
+    "rubrik_id": "9eca16e2-6225-448c-be70-f247bf70ba88",
+    "question": "Seberapa efektif rekan tim ini dalam berkomunikasi dalam proyek?",
+    "aspect": "Komunikasi",
+    "criteria": "Komunikasi",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak berkomunikasi sama sekali atau sulit dipahami oleh tim.",
+      "2": "Kurang berkomunikasi dengan tim, sering menyebabkan miskomunikasi.",
+      "3": "Dapat berkomunikasi tetapi kadang sulit dipahami atau kurang aktif berbicara.",
+      "4": "Menyampaikan ide dengan baik tetapi terkadang kurang jelas dalam beberapa situasi.",
+      "5": "Selalu menyampaikan ide dengan jelas, logis, dan efektif, serta mampu mendengarkan dan memahami tim lain."
+    },
+    "translated_criteria": {
+      "1": "Not communicating at all or difficult for the team to understand.",
+      "2": "Lack of communication with the team, often leads to miscommunication.",
+      "3": "Able to communicate but sometimes difficult to understand or less active in speaking.",
+      "4": "Conveys ideas well but sometimes lacks clarity in some situations.",
+      "5": "Always convey ideas clearly, logically, and effectively, and be able to listen and understand other teams."
+    },
+    "updated_at": "2025-04-29 13:32:13"
+  },
+  "9eca178d-86db-4178-9414-f3caadbcbd4b": {
+    "assessment_id": "9eca178d-86db-4178-9414-f3caadbcbd4b",
+    "rubrik_id": "9eca16e2-67ca-412b-bdfd-bd7199e6896e",
+    "question": "Seberapa baik rekan tim ini bertanggung jawab atas tugasnya?",
+    "aspect": "Tanggung Jawab",
+    "criteria": "Tanggung Jawab",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak bertanggung jawab dalam tugas, sering mengabaikan pekerjaan tim.",
+      "2": "Sering lalai dalam tugas dan kurang peduli dengan hasilnya.",
+      "3": "Menyelesaikan tugas tetapi sering terlambat atau membutuhkan arahan tambahan.",
+      "4": "Bertanggung jawab dalam tugas tetapi terkadang membutuhkan pengingat.",
+      "5": "Selalu menyelesaikan tugas sesuai yang diberikan tanpa perlu diingatkan."
+    },
+    "translated_criteria": {
+      "1": "Being irresponsible in tasks, often neglecting team work.",
+      "2": "Often negligent in tasks and less concerned with the outcome.",
+      "3": "Completing tasks but often being late or needing additional direction.",
+      "4": "Responsible for tasks but sometimes requires reminders.",
+      "5": "Always complete tasks as assigned without needing to be reminded."
+    },
+    "updated_at": "2025-04-29 13:32:22"
+  },
+  "9eca178d-876d-40ae-9630-b7e8a6460f27": {
+    "assessment_id": "9eca178d-876d-40ae-9630-b7e8a6460f27",
+    "rubrik_id": "9eca16e2-682c-4529-93f1-488623917f2c",
+    "question": "Seberapa aktif rekan tim ini dalam mengambil inisiatif?",
+    "aspect": "Inisiatif",
+    "criteria": "Inisiatif",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak pernah menunjukkan inisiatif dan hanya mengandalkan tim lain.",
+      "2": "Jarang mengambil inisiatif dan lebih sering menunggu instruksi.",
+      "3": "Mengambil inisiatif dalam beberapa situasi tetapi sering pasif.",
+      "4": "Kadang mengambil inisiatif tetapi masih menunggu arahan dari tim atau dosen.",
+      "5": "Proaktif dalam mencari solusi, memberikan ide baru, dan selalu siap mengambil tugas tambahan."
+    },
+    "translated_criteria": {
+      "1": "Never show initiative and only rely on other teams.",
+      "2": "Rarely takes the initiative and more often waits for instructions.",
+      "3": "Takes initiative in some situations but is often passive.",
+      "4": "Sometimes take the initiative but still wait for direction from the team or lecturer.",
+      "5": "Proactive in finding solutions, providing new ideas, and always ready to take on additional tasks."
+    },
+    "updated_at": "2025-04-29 13:32:30"
+  },
+  "9eca178d-87de-428b-bfee-5f87d68272b0": {
+    "assessment_id": "9eca178d-87de-428b-bfee-5f87d68272b0",
+    "rubrik_id": "9eca16e2-61cb-4dd4-b08b-ba0b3273acee",
+    "question": "Seberapa baik rekan tim ini bisa membagi waktu dengan baik dalam proyek?",
+    "aspect": "Manajemen Waktu",
+    "criteria": "Manajemen Waktu",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak memiliki manajemen waktu, sering melewati deadline atau tidak menyelesaikan tugas.",
+      "2": "Sering terlambat dalam menyelesaikan tugas karena kurang perencanaan.",
+      "3": "Mampu menyelesaikan tugas tetapi sering terburu-buru atau kurang efisien.",
+      "4": "Mengelola waktu dengan baik tetapi kadang perlu perpanjangan waktu.",
+      "5": "Sangat baik dalam mengatur waktu, selalu menyelesaikan tugas sebelum deadline tanpa mengorbankan kualitas."
+    },
+    "translated_criteria": {
+      "1": "Lacks time management, often misses deadlines or doesn't complete tasks.",
+      "2": "Often late in completing tasks due to lack of planning.",
+      "3": "Able to complete tasks but often in a hurry or less efficient.",
+      "4": "Time management is good but sometimes it needs to be extended.",
+      "5": "Very good at managing time, always completing tasks before deadlines without sacrificing quality."
+    },
+    "updated_at": "2025-04-29 13:32:38"
+  },
+  "9eca178d-8849-4aea-a4a1-3a04c69a8eb6": {
+    "assessment_id": "9eca178d-8849-4aea-a4a1-3a04c69a8eb6",
+    "rubrik_id": "9eca16e2-68e1-4dce-aae6-d0d204b5a7d7",
+    "question": "Seberapa baik rekan tim ini memahami dan menghargai perspektif Anda?",
+    "aspect": "Empati & Kepekaan Sosial",
+    "criteria": "Empati & Kepekaan Sosial",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak memiliki empati sama sekali, tidak peduli dengan kondisi rekan tim.",
+      "2": "Kurang peka terhadap keadaan anggota tim lain, sering mengabaikan situasi sulit.",
+      "3": "Dapat memahami perspektif tim lain tetapi jarang menunjukkan dukungan secara aktif.",
+      "4": "Berusaha memahami anggota tim tetapi kadang kurang responsif dalam beberapa situasi.",
+      "5": "Selalu memahami dan menghargai perasaan serta pendapat anggota tim lain, bersikap suportif."
+    },
+    "translated_criteria": {
+      "1": "Has no empathy at all, doesn't care about the condition of teammates.",
+      "2": "Lack of sensitivity to the circumstances of other team members, often ignoring difficult situations.",
+      "3": "Can understand other teams' perspectives but rarely actively show support.",
+      "4": "Trying to understand team members but sometimes less responsive in some situations.",
+      "5": "Always understand and respect the feelings and opinions of other team members, be supportive."
+    },
+    "updated_at": "2025-04-29 13:32:45"
+  },
+  "9eca178d-88da-4443-a03d-97082d7be7d6": {
+    "assessment_id": "9eca178d-88da-4443-a03d-97082d7be7d6",
+    "rubrik_id": "9eca16e2-6934-43e9-83b6-5dfa80147ab8",
+    "question": "Seberapa baik rekan tim ini menangani situasi saat menghadapi tantangan besar dalam proyek?",
+    "aspect": "Kesabaran & Ketekunan",
+    "criteria": "Kesabaran & Ketekunan",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak memiliki ketekunan, mudah menyerah, dan tidak menyelesaikan tugas.",
+      "2": "Sering kehilangan motivasi dan cepat menyerah dalam menghadapi tantangan.",
+      "3": "Berusaha menyelesaikan masalah tetapi mudah kehilangan fokus jika terlalu sulit.",
+      "4": "Tetap bertahan menghadapi kesulitan tetapi kadang mudah menyerah jika menemui hambatan besar.",
+      "5": "Selalu sabar dan tetap berusaha meskipun menghadapi tantangan besar atau situasi sulit dalam proyek."
+    },
+    "translated_criteria": {
+      "1": "Lacks perseverance, gives up easily, and does not complete tasks.",
+      "2": "Often lose motivation and quickly give up in the face of challenges.",
+      "3": "Trying to solve a problem but easily losing focus if it is too difficult.",
+      "4": "Still endure difficulties but sometimes give up easily if they encounter major obstacles.",
+      "5": "Always be patient and keep trying despite major challenges or difficult situations in the project."
+    },
+    "updated_at": "2025-04-29 13:32:53"
+  },
+  "9eca178d-894b-4b75-b7a7-c514b79bd368": {
+    "assessment_id": "9eca178d-894b-4b75-b7a7-c514b79bd368",
+    "rubrik_id": "9eca16e2-6987-4bb9-903e-88ed81215e1f",
+    "question": "Seberapa baik rekan tim ini merespons kritik atau masukan dari Anda atau dosen?",
+    "aspect": "Keterbukaan terhadap Feedback",
+    "criteria": "Keterbukaan terhadap Feedback",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak mau menerima kritik sama sekali, selalu menganggap dirinya benar.",
+      "2": "Sulit menerima kritik, sering mengabaikan saran dari rekan atau dosen.",
+      "3": "Mendengar feedback tetapi kadang defensif atau lambat dalam mengimplementasikannya.",
+      "4": "Dapat menerima feedback dengan baik tetapi masih perlu dorongan untuk menerapkannya.",
+      "5": "Selalu menerima kritik dengan positif, aktif memperbaiki kesalahan, dan meminta feedback untuk perbaikan diri."
+    },
+    "translated_criteria": {
+      "1": "Does not want to accept criticism at all, always considers himself right.",
+      "2": "Difficult to accept criticism, often ignoring suggestions from colleagues or lecturers.",
+      "3": "Hear feedback but sometimes get defensive or slow in implementing it.",
+      "4": "Be able to receive feedback well but still need encouragement to implement it.",
+      "5": "Always accept criticism positively, actively correct mistakes, and ask for feedback for self-improvement."
+    },
+    "updated_at": "2025-04-29 13:33:01"
+  },
+  "9eca178d-89be-4ce3-8133-96de52186ee2": {
+    "assessment_id": "9eca178d-89be-4ce3-8133-96de52186ee2",
+    "rubrik_id": "9eca16e2-69db-459e-ad24-4efa3503b8d6",
+    "question": "Seberapa baik rekan tim ini berkolaborasi dan membantu anggota lain yang mengalami kesulitan?",
+    "aspect": "Kerjasama dalam Tim",
+    "criteria": "Kerjasama dalam Tim",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak mau bekerja sama atau membantu rekan satu tim.",
+      "2": "Jarang membantu tim lain, lebih fokus pada tugasnya sendiri.",
+      "3": "Membantu tim lain hanya dalam tugas tertentu, kurang proaktif dalam kolaborasi.",
+      "4": "Sering membantu anggota tim lain tetapi terkadang menunggu permintaan terlebih dahulu.",
+      "5": "Selalu mendukung dan membantu anggota tim lain yang mengalami kesulitan tanpa perlu diminta."
+    },
+    "translated_criteria": {
+      "1": "Unwilling to cooperate or assist teammates.",
+      "2": "Rarely helps other teams, focusing more on their own tasks.",
+      "3": "Helping other teams only in certain tasks, less proactive in collaboration.",
+      "4": "Often helps other team members but sometimes waits for a request first.",
+      "5": "Always support and assist other team members who are experiencing difficulties without needing to be asked."
+    },
+    "updated_at": "2025-04-29 13:33:08"
+  },
+  "9eca178d-8a33-4bcf-a25e-ba090731e672": {
+    "assessment_id": "9eca178d-8a33-4bcf-a25e-ba090731e672",
+    "rubrik_id": "9eca16e2-6a2e-47e5-802e-be5c3cfc59fd",
+    "question": "Seberapa baik rekan tim ini menangani konflik atau perbedaan pendapat dalam proyek?",
+    "aspect": "Kemampuan Menyelesaikan Konflik",
+    "criteria": "Kemampuan Menyelesaikan Konflik",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "Tidak bisa menyelesaikan konflik, justru memperburuk keadaan dengan sikapnya.",
+      "2": "Menghindari konflik atau lebih sering menyalahkan pihak lain.",
+      "3": "Dapat menangani konflik tetapi sering mengalami kesulitan dalam menengahi perbedaan pendapat.",
+      "4": "Berusaha menyelesaikan konflik dengan baik tetapi masih memerlukan bantuan dari pihak lain.",
+      "5": "Mampu menyelesaikan konflik dengan diplomasi, menjaga komunikasi tetap positif, dan mencapai solusi yang adil."
+    },
+    "translated_criteria": {
+      "1": "Unable to resolve the conflict, it only made things worse with his attitude.",
+      "2": "Avoid conflict or blame the other side more often.",
+      "3": "Can handle conflict but often has difficulty mediating disagreements.",
+      "4": "Trying to resolve conflicts well but still need help from other parties.",
+      "5": "Able to resolve conflicts with diplomacy, maintain positive communication, and reach fair solutions."
+    },
+    "updated_at": "2025-04-29 13:33:17"
+  },
+  "9ef2d404-56df-4c02-9af8-246a27c8b0a1": {
+    "assessment_id": "9ef2d404-56df-4c02-9af8-246a27c8b0a1",
+    "rubrik_id": "9ef2d403-30be-4fc9-afac-19aa66289127",
+    "question": "pertanyaan 1",
+    "aspect": "bertanggung jawab",
+    "criteria": "disiplin",
+    "skill_type": "softskill",
+    "type": "peerAssessment",
+    "raw_criteria": {
+      "1": "sangat kurang",
+      "2": "kurang",
+      "3": "cukup",
+      "4": "baik",
+      "5": "sangat baik"
+    },
+    "translated_criteria": {
+      "1": "Very Deficient",
+      "2": "lacking",
+      "3": "adequately",
+      "4": "good",
+      "5": "very good"
+    },
+    "updated_at": "2025-05-20 20:46:19"
+  },
+  "9ef4f2a4-8744-405c-90b9-a2e12555d19b": {
+    "assessment_id": "9ef4f2a4-8744-405c-90b9-a2e12555d19b",
+    "rubrik_id": "9eca16e2-61cb-4dd4-b08b-ba0b3273acee",
+    "question": "Seberapa baik Anda dalam membagi waktu antara tugas coding, testing, dan dokumentasi?",
+    "aspect": "Manajemen Waktu",
+    "criteria": "Manajemen Waktu",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak memiliki manajemen waktu, sering melewati deadline atau tidak menyelesaikan tugas.",
+      "2": "Sering terlambat dalam menyelesaikan tugas karena kurang perencanaan.",
+      "3": "Mampu menyelesaikan tugas tetapi sering terburu-buru atau kurang efisien.",
+      "4": "Mengelola waktu dengan baik tetapi kadang perlu perpanjangan waktu.",
+      "5": "Sangat baik dalam mengatur waktu, selalu menyelesaikan tugas sebelum deadline tanpa mengorbankan kualitas."
+    },
+    "translated_criteria": {
+      "1": "Lacks time management, often misses deadlines or doesn't complete tasks.",
+      "2": "Often late in completing tasks due to lack of planning.",
+      "3": "Able to complete tasks but often in a hurry or less efficient.",
+      "4": "Time management is good but sometimes it needs to be extended.",
+      "5": "Very good at managing time, always completing tasks before deadlines without sacrificing quality."
+    },
+    "updated_at": "2025-05-20 20:46:50"
+  },
+  "9ef4f2a4-7eb6-4e99-a052-cdadb774e3c7": {
+    "assessment_id": "9ef4f2a4-7eb6-4e99-a052-cdadb774e3c7",
+    "rubrik_id": "9eca16e2-5bb6-4efc-aec4-7720f7cabaa9",
+    "question": "Sejauh mana Anda memahami konsep dan teknologi yang digunakan dalam proyek ini?",
+    "aspect": "Pemahaman Teknis",
+    "criteria": "Pemahaman Teknis",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak memahami teknologi yang digunakan dan sering mengalami kesulitan.",
+      "2": "Hanya memahami konsep dasar, sulit menerapkannya tanpa bantuan.",
+      "3": "Memahami teknologi tetapi masih memerlukan bantuan dalam penerapannya.",
+      "4": "Memahami sebagian besar teknologi dan mampu menggunakannya dengan baik.",
+      "5": "Memahami semua konsep dan teknologi yang digunakan, serta dapat menjelaskan dan mengajarkan ke tim lain."
+    },
+    "translated_criteria": {
+      "1": "Does not understand the technology used and often has difficulty.",
+      "2": "Just understanding the basic concepts, it's hard to apply them without help.",
+      "3": "Understand the technology but still need help in its application.",
+      "4": "Understand most technologies and be able to use them well.",
+      "5": "Understand all concepts and technologies used, and be able to explain and teach to other teams."
+    },
+    "updated_at": "2025-05-20 20:46:59"
+  },
+  "9ef4f2a4-81f8-47f9-a251-6f89329796dd": {
+    "assessment_id": "9ef4f2a4-81f8-47f9-a251-6f89329796dd",
+    "rubrik_id": "9eca16e2-5f36-4064-ac21-685e15399c46",
+    "question": "Seberapa baik hasil kerja Anda?",
+    "aspect": "Kualitas Pekerjaan",
+    "criteria": "Kualitas Pekerjaan",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Hasil kerja buruk, tidak memenuhi standar proyek.",
+      "2": "Hasil kerja kurang memuaskan, perlu banyak revisi.",
+      "3": "Hasil kerja cukup baik, tetapi membutuhkan beberapa perbaikan.",
+      "4": "Hasil kerja baik, tetapi masih ada revisi kecil yang diperlukan.",
+      "5": "Hasil kerja sangat baik, rapi, efisien, dan minim revisi."
+    },
+    "translated_criteria": {
+      "1": "Poor workmanship, not meeting project standards.",
+      "2": "The results of the work are unsatisfactory, need many revisions.",
+      "3": "The work is quite good, but needs some improvement.",
+      "4": "The results of the work are good, but there are still minor revisions needed.",
+      "5": "The results of the work are very good, neat, efficient, and minimal revision."
+    },
+    "updated_at": "2025-05-20 20:47:07"
+  },
+  "9ef4f2a4-847c-4b88-808f-ff07a77dfc93": {
+    "assessment_id": "9ef4f2a4-847c-4b88-808f-ff07a77dfc93",
+    "rubrik_id": "9eca16e2-607b-4a91-8b26-f5bbd7dc563b",
+    "question": "Apakah Anda menyelesaikan tugas sesuai deadline?",
+    "aspect": "Penyelesaian Tugas",
+    "criteria": "Penyelesaian Tugas",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Jarang menyelesaikan tugas atau sering melewati deadline.",
+      "2": "Sering terlambat dalam menyelesaikan tugas.",
+      "3": "Sering menyelesaikan tugas tepat waktu tetapi terkadang terlambat.",
+      "4": "Menyelesaikan tugas tepat waktu dengan sedikit keterlambatan.",
+      "5": "Selalu menyelesaikan tugas tepat waktu atau lebih cepat."
+    },
+    "translated_criteria": {
+      "1": "Rarely complete tasks or often miss deadlines.",
+      "2": "Often late in completing tasks.",
+      "3": "Often complete tasks on time but sometimes late.",
+      "4": "Complete tasks on time with minimal delay.",
+      "5": "Always complete tasks on time or faster."
+    },
+    "updated_at": "2025-05-20 20:47:15"
+  },
+  "9ef4f2a4-8570-4470-8356-cceaef40ce18": {
+    "assessment_id": "9ef4f2a4-8570-4470-8356-cceaef40ce18",
+    "rubrik_id": "9eca16e2-60e4-413e-96cc-64f743a25e53",
+    "question": "Seberapa cepat Anda belajar dan menerapkan teknologi baru dalam proyek ini?",
+    "aspect": "Adaptasi Teknologi",
+    "criteria": "Adaptasi Teknologi",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak berusaha mempelajari teknologi baru atau menolak menggunakannya.",
+      "2": "Sulit dalam memahami teknologi baru dan sering tertinggal.",
+      "3": "Dapat mempelajari teknologi baru dengan waktu yang lebih lama.",
+      "4": "Cepat mempelajari teknologi baru tetapi masih butuh sedikit bantuan.",
+      "5": "Sangat cepat mempelajari dan menerapkan teknologi baru tanpa bantuan."
+    },
+    "translated_criteria": {
+      "1": "Not trying to learn new technology or refusing to use it.",
+      "2": "It is difficult to understand new technologies and is often left behind.",
+      "3": "Can learn new technologies for a longer time.",
+      "4": "Quick to learn new technology but still need a little help.",
+      "5": "Very quickly learn and apply new technologies without assistance."
+    },
+    "updated_at": "2025-05-20 20:47:23"
+  },
+  "9ef4f2a4-8647-4e74-baf7-688e07bf7eaf": {
+    "assessment_id": "9ef4f2a4-8647-4e74-baf7-688e07bf7eaf",
+    "rubrik_id": "9eca16e2-616a-4660-8561-ce155cbee65a",
+    "question": "Seberapa baik Anda dalam menyelesaikan masalah yang membutuhkan analisis mendalam?",
+    "aspect": "Pemecahan Masalah Kompleks",
+    "criteria": "Pemecahan Masalah Kompleks",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak mampu menyelesaikan masalah sendiri, selalu bergantung pada orang lain.",
+      "2": "Sering mengalami kesulitan dalam menyelesaikan masalah teknis.",
+      "3": "Mampu menyelesaikan masalah sederhana tetapi kesulitan dengan yang lebih kompleks.",
+      "4": "Dapat menyelesaikan masalah kompleks tetapi memerlukan bantuan dalam beberapa aspek.",
+      "5": "Mampu menyelesaikan masalah teknis yang kompleks secara mandiri dan efisien."
+    },
+    "translated_criteria": {
+      "1": "Unable to solve problems on their own, always dependent on others.",
+      "2": "Often have difficulty in resolving technical problems.",
+      "3": "Able to solve simple problems but difficulties with more complex ones.",
+      "4": "Able to solve complex problems but requires assistance in several aspects.",
+      "5": "Able to solve complex technical problems independently and efficiently."
+    },
+    "updated_at": "2025-05-20 20:47:30"
+  },
+  "9ef4f2a4-889a-4e68-ad69-9cfeb2cba738": {
+    "assessment_id": "9ef4f2a4-889a-4e68-ad69-9cfeb2cba738",
+    "rubrik_id": "9eca16e2-6225-448c-be70-f247bf70ba88",
+    "question": "Seberapa jelas dan efektif komunikasi Anda dalam proyek ini?",
+    "aspect": "Komunikasi",
+    "criteria": "Komunikasi",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak berkomunikasi sama sekali atau sulit dipahami oleh tim.",
+      "2": "Kurang berkomunikasi dengan tim, sering menyebabkan miskomunikasi.",
+      "3": "Dapat berkomunikasi tetapi kadang sulit dipahami atau kurang aktif berbicara.",
+      "4": "Menyampaikan ide dengan baik tetapi terkadang kurang jelas dalam beberapa situasi.",
+      "5": "Selalu menyampaikan ide dengan jelas, logis, dan efektif, serta mampu mendengarkan dan memahami tim lain."
+    },
+    "translated_criteria": {
+      "1": "Not communicating at all or difficult for the team to understand.",
+      "2": "Lack of communication with the team, often leads to miscommunication.",
+      "3": "Able to communicate but sometimes difficult to understand or less active in speaking.",
+      "4": "Conveys ideas well but sometimes lacks clarity in some situations.",
+      "5": "Always convey ideas clearly, logically, and effectively, and be able to listen and understand other teams."
+    },
+    "updated_at": "2025-05-20 20:47:37"
+  },
+  "9ef4f2a4-8979-4604-b5f2-dbb8caa4c766": {
+    "assessment_id": "9ef4f2a4-8979-4604-b5f2-dbb8caa4c766",
+    "rubrik_id": "9eca16e2-627a-423b-9246-fc5f0b3fcb3e",
+    "question": "Seberapa baik Anda memahami kebutuhan SIPTA?",
+    "aspect": "Analisis Kebutuhan",
+    "criteria": "Analisis Kebutuhan",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak memahami kebutuhan sistem dan tidak dapat menganalisis kebutuhan dengan baik.",
+      "2": "Kurang memahami kebutuhan sistem, sering salah menginterpretasikan.",
+      "3": "Memahami kebutuhan secara umum tetapi kurang detail dalam analisisnya.",
+      "4": "Memahami kebutuhan sistem dengan baik tetapi masih memerlukan klarifikasi dalam beberapa aspek.",
+      "5": "Memahami kebutuhan sistem dengan sangat baik dan dapat mengidentifikasi masalah serta solusi yang tepat."
+    },
+    "translated_criteria": {
+      "1": "Does not understand system needs and cannot analyze needs well.",
+      "2": "Lack of understanding of system needs, often misinterpreting.",
+      "3": "Understand the needs in general but lack detail in the analysis.",
+      "4": "Understand the needs of the system well but still need clarification in some aspects.",
+      "5": "Understand system needs very well and can identify problems and appropriate solutions."
+    },
+    "updated_at": "2025-05-20 20:47:45"
+  },
+  "9ef4f2a4-8a48-475f-941c-48b01281e7d7": {
+    "assessment_id": "9ef4f2a4-8a48-475f-941c-48b01281e7d7",
+    "rubrik_id": "9eca16e2-62d0-4a88-b988-df557b02051a",
+    "question": "Seberapa aktif Anda dalam pembuatan ERD, flowchart, atau desain UI?",
+    "aspect": "Perancangan Sistem",
+    "criteria": "Perancangan Sistem",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak terlibat dalam perancangan sistem sama sekali.",
+      "2": "Hanya sedikit terlibat dalam perancangan dan kurang memahami detailnya.",
+      "3": "Terlibat dalam perancangan tetapi kontribusinya terbatas.",
+      "4": "Terlibat aktif dalam perancangan tetapi masih ada perbaikan yang diperlukan.",
+      "5": "Sangat aktif dalam membuat ERD, flowchart, atau UI dengan kualitas tinggi."
+    },
+    "translated_criteria": {
+      "1": "Not involved in system design at all.",
+      "2": "Little involvement in the design and lack of understanding of the details.",
+      "3": "Involved in the design but limited in its contribution.",
+      "4": "Actively involved in the design but there are still improvements needed.",
+      "5": "Very active in creating high quality ERDs, flowcharts, or UIs."
+    },
+    "updated_at": "2025-05-20 20:47:52"
+  },
+  "9ef4f2a4-8b0f-471a-a071-2ee847436a8c": {
+    "assessment_id": "9ef4f2a4-8b0f-471a-a071-2ee847436a8c",
+    "rubrik_id": "9eca16e2-6323-42a6-9d00-c573547af80b",
+    "question": "Seberapa baik Anda mengimplementasikan modul yang menjadi tanggung jawab Anda?",
+    "aspect": "Implementasi Fitur",
+    "criteria": "Implementasi Fitur",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak dapat mengimplementasikan fitur dengan benar atau gagal menyelesaikan tugas.",
+      "2": "Fitur sering tidak sesuai requirement dan membutuhkan banyak perbaikan.",
+      "3": "Fitur berjalan tetapi masih terdapat beberapa kesalahan atau bug.",
+      "4": "Fitur berjalan dengan baik tetapi masih membutuhkan beberapa perbaikan.",
+      "5": "Fitur yang dikembangkan berjalan dengan sempurna, sesuai requirement, dan minim bug."
+    },
+    "translated_criteria": {
+      "1": "Unable to implement the feature correctly or failed to complete the task.",
+      "2": "Features often don't meet requirements and require a lot of improvements.",
+      "3": "The feature is running but there are still some errors or bugs.",
+      "4": "The feature is running well but still needs some improvements.",
+      "5": "The developed features run perfectly, according to requirements, and have minimal bugs."
+    },
+    "updated_at": "2025-05-20 20:48:01"
+  },
+  "9ef4f2a4-8bd5-4a59-aece-fa5e21d0739d": {
+    "assessment_id": "9ef4f2a4-8bd5-4a59-aece-fa5e21d0739d",
+    "rubrik_id": "9eca16e2-6377-4018-b7c7-7458485270a5",
+    "question": "Seberapa aktif Anda dalam memastikan fitur yang Anda buat dapat terintegrasi dengan modul lain?",
+    "aspect": "Integrasi Sistem",
+    "criteria": "Integrasi Sistem",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak mengusahakan integrasi, membebankan kepada anggota lain.",
+      "2": "Jarang berkontribusi dalam integrasi atau membutuhkan banyak bantuan tim lain.",
+      "3": "Berusaha melakukan integrasi tetapi sering mengalami kendala teknis.",
+      "4": "Berkontribusi dalam integrasi tetapi masih membutuhkan sedikit bantuan dalam debugging.",
+      "5": "Sangat aktif dalam memastikan fitur dapat terhubung dengan modul lain, mengatasi error integrasi secara mandiri."
+    },
+    "translated_criteria": {
+      "1": "Not working on integration, imposing it on other members.",
+      "2": "Rarely contribute to the integration or need a lot of help from other teams.",
+      "3": "Trying to integrate but often experiencing technical difficulties.",
+      "4": "Contribute to the integration but still need a little help in debugging.",
+      "5": "Very active in ensuring features can connect with other modules, resolving integration errors independently."
+    },
+    "updated_at": "2025-05-20 20:48:09"
+  },
+  "9ef4f2a4-8ca1-4725-92ff-da5aa23700b4": {
+    "assessment_id": "9ef4f2a4-8ca1-4725-92ff-da5aa23700b4",
+    "rubrik_id": "9eca16e2-63cd-4d1a-ad80-859e3eb5a05c",
+    "question": "Seberapa sering Anda melakukan commit dan merge dengan benar di repository tim?",
+    "aspect": "Penggunaan Git",
+    "criteria": "Penggunaan Git",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak pernah melakukan commit atau merge, membebankan tugas ke tim lain.",
+      "2": "Jarang menggunakan Git dengan benar, sering menyebabkan konflik dalam repository.",
+      "3": "Menggunakan Git tetapi sering lupa commit atau push kode tepat waktu.",
+      "4": "Melakukan commit dan merge dengan baik tetapi kadang kurang mengikuti standar tim.",
+      "5": "Selalu melakukan commit dan merge dengan benar, mengikuti workflow tim, dan memberikan commit message yang jelas."
+    },
+    "translated_criteria": {
+      "1": "Never commit or merge, assigning tasks to other teams.",
+      "2": "Rarely use Git correctly, often causing conflicts in the repository.",
+      "3": "Using Git but often forgetting to commit or push code on time.",
+      "4": "Commit and merge well but sometimes don't follow team standards.",
+      "5": "Always commit and merge correctly, follow the team's workflow, and provide a clear commit message."
+    },
+    "updated_at": "2025-05-20 20:48:17"
+  },
+  "9ef4f2a4-8d8d-4af9-8462-de37f7def876": {
+    "assessment_id": "9ef4f2a4-8d8d-4af9-8462-de37f7def876",
+    "rubrik_id": "9eca16e2-6483-43f1-ab13-a9a0d609822a",
+    "question": "Seberapa teliti Anda dalam menguji fitur sebelum deployment?",
+    "aspect": "Pengujian Fitur",
+    "criteria": "Pengujian Fitur",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak melakukan pengujian sama sekali, sering menyebabkan bug di sistem.",
+      "2": "Jarang melakukan pengujian sebelum submit kode, sering mengandalkan tim QA.",
+      "3": "Melakukan pengujian tetapi hanya dalam skenario dasar, tidak terdokumentasi dengan baik.",
+      "4": "Menguji fitur dengan baik tetapi kadang melewatkan beberapa skenario penting.",
+      "5": "Selalu menguji fitur sebelum merge/deploy, menggunakan test case yang jelas dan mendokumentasikan hasilnya."
+    },
+    "translated_criteria": {
+      "1": "Not testing at all, often causing bugs in the system.",
+      "2": "Rarely do tests before submitting code, often relying on the QA team.",
+      "3": "Conducting tests but only in basic scenarios, is not well documented.",
+      "4": "Tests features well but sometimes misses some important scenarios.",
+      "5": "Always test features before merging/deploying, use clear test cases and document the results."
+    },
+    "updated_at": "2025-05-20 20:48:25"
+  },
+  "9ef4f2a4-8ecc-4de1-9d73-a22a7ee1dd88": {
+    "assessment_id": "9ef4f2a4-8ecc-4de1-9d73-a22a7ee1dd88",
+    "rubrik_id": "9eca16e2-6556-4433-b6b7-c562e2be0d12",
+    "question": "Seberapa lengkap dokumentasi yang Anda buat untuk fitur yang dikembangkan?",
+    "aspect": "Dokumentasi",
+    "criteria": "Dokumentasi",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak membuat dokumentasi sama sekali.",
+      "2": "Dokumentasi sangat minim dan tidak membantu anggota tim lainnya.",
+      "3": "Dokumentasi ada tetapi tidak rapi atau sulit dipahami oleh orang lain.",
+      "4": "Dokumentasi cukup lengkap tetapi ada beberapa bagian yang kurang jelas.",
+      "5": "Menyusun dokumentasi API, teknis, dan proses pengembangan dengan detail dan mudah dipahami."
+    },
+    "translated_criteria": {
+      "1": "No documentation at all.",
+      "2": "Documentation is minimal and unhelpful to the rest of the team.",
+      "3": "Documentation is present but not neat or difficult for others to understand.",
+      "4": "The documentation is quite complete but there are some parts that are not clear.",
+      "5": "Prepare API documentation, technical, and development processes in detail and easy to understand."
+    },
+    "updated_at": "2025-05-20 20:48:32"
+  },
+  "9ef4f2a4-8fa6-4d2d-9a7c-0ddbd341e74b": {
+    "assessment_id": "9ef4f2a4-8fa6-4d2d-9a7c-0ddbd341e74b",
+    "rubrik_id": "9eca16e2-65bc-46e5-b051-334bb01b2fd1",
+    "question": "Seberapa sering Anda melakukan review kode anggota lain?",
+    "aspect": "Review Kode",
+    "criteria": "Review Kode",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak pernah melakukan review terhadap kode anggota lain.",
+      "2": "Jarang memberikan review atau hanya melihat sekilas tanpa feedback yang berarti.",
+      "3": "Kadang memberikan review tetapi hanya untuk hal-hal kecil atau mendasar.",
+      "4": "Sering melakukan review kode tetapi masih kurang mendalam dalam analisisnya.",
+      "5": "Secara rutin melakukan review kode anggota lain, memberikan saran konstruktif, dan membantu meningkatkan kualitas kode tim."
+    },
+    "translated_criteria": {
+      "1": "Never review another member's code.",
+      "2": "Rarely give reviews or just take a glance without meaningful feedback.",
+      "3": "Sometimes provide reviews but only for small or basic things.",
+      "4": "Often conducts code reviews but still lacks depth in its analysis.",
+      "5": "Regularly review other members' codes, provide constructive suggestions, and help improve the quality of the team's code."
+    },
+    "updated_at": "2025-05-20 20:48:40"
+  },
+  "9ef4f2a4-9071-4e9e-b74f-3ddf39e071d5": {
+    "assessment_id": "9ef4f2a4-9071-4e9e-b74f-3ddf39e071d5",
+    "rubrik_id": "9eca16e2-6613-4490-baf2-4f5ed6040828",
+    "question": "Seberapa rapi dan mudah dipahami kode yang Anda tulis?",
+    "aspect": "Keandalan Kode",
+    "criteria": "Keandalan Kode",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Kode buruk, sering menyebabkan error atau konflik, dan tidak bisa digunakan tanpa perbaikan besar.",
+      "2": "Kode sering berantakan, tidak terdokumentasi, dan sulit dimengerti oleh tim lain.",
+      "3": "Kode berfungsi tetapi kurang terstruktur dan sulit dipahami.",
+      "4": "Menulis kode dengan cukup baik tetapi masih bisa diperbaiki dalam hal readability atau efisiensi.",
+      "5": "Menulis kode yang bersih, efisien, terdokumentasi dengan baik, dan mudah dipahami oleh tim lain."
+    },
+    "translated_criteria": {
+      "1": "Bad code, often causes errors or conflicts, and cannot be used without major improvements.",
+      "2": "Code is often cluttered, undocumented, and difficult for other teams to understand.",
+      "3": "The code works but lacks structure and is difficult to understand.",
+      "4": "Writing code is quite good but can still be improved in terms of readability or efficiency.",
+      "5": "Write code that is clean, efficient, well-documented, and easy for other teams to understand."
+    },
+    "updated_at": "2025-05-20 20:48:47"
+  },
+  "9ef4f2a4-9154-4f1a-8d1c-18e86d9803ed": {
+    "assessment_id": "9ef4f2a4-9154-4f1a-8d1c-18e86d9803ed",
+    "rubrik_id": "9eca16e2-666a-4516-89d5-1b2c29f383d4",
+    "question": "Seberapa mudah Anda bekerja sama dengan rekan tim dalam menghubungkan fitur antar modul?",
+    "aspect": "Kolaborasi Integrasi",
+    "criteria": "Kolaborasi Integrasi",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak mau berkoordinasi dalam integrasi sistem dan menyerahkan sepenuhnya ke tim lain.",
+      "2": "Kurang kooperatif dalam integrasi, sering menyebabkan konflik dalam penggabungan fitur.",
+      "3": "Dapat berkolaborasi tetapi kadang sulit mengikuti workflow integrasi.",
+      "4": "Berusaha bekerja sama dengan baik tetapi masih memerlukan arahan tambahan dari tim lain.",
+      "5": "Sangat kooperatif dalam menghubungkan fitur dengan modul lain, proaktif membantu debugging dan memastikan integrasi lancar."
+    },
+    "translated_criteria": {
+      "1": "Is unwilling to coordinate in system integration and leaves it entirely to the other team.",
+      "2": "Lack of cooperation in integration, often leads to conflicts in the incorporation of features.",
+      "3": "Able to collaborate but sometimes difficult to follow the integration workflow.",
+      "4": "Trying to work well together but still need additional direction from other teams.",
+      "5": "Very cooperative in connecting features with other modules, proactively assisting debugging and ensuring smooth integration."
+    },
+    "updated_at": "2025-05-20 20:48:55"
+  },
+  "9ef4f2a4-9228-4409-bf9d-98cd713e548e": {
+    "assessment_id": "9ef4f2a4-9228-4409-bf9d-98cd713e548e",
+    "rubrik_id": "9eca16e2-66be-44b2-b68d-302420f77916",
+    "question": "Seberapa besar kontribusi teknis Anda dalam pengembangan fitur SIPTA?",
+    "aspect": "Kontribusi Teknis",
+    "criteria": "Kontribusi Teknis",
+    "skill_type": "hardskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak berkontribusi dalam pengembangan fitur sama sekali.",
+      "2": "Kontribusi teknis sangat minim dan sering bergantung pada anggota tim lain.",
+      "3": "Mengembangkan fitur tetapi sering memerlukan revisi dan bantuan tim lain.",
+      "4": "Berkontribusi dalam coding tetapi lebih banyak mengerjakan fitur minor.",
+      "5": "Sangat aktif dalam coding, menyelesaikan fitur utama, dan memberikan solusi teknis yang bermanfaat bagi proyek."
+    },
+    "translated_criteria": {
+      "1": "Not contributing to feature development at all.",
+      "2": "Technical contributions are minimal and often dependent on other team members.",
+      "3": "Developing features but often requiring revision and the help of other teams.",
+      "4": "Contribute in coding but work more on minor features.",
+      "5": "Very active in coding, completing key features, and providing technical solutions that are useful to the project."
+    },
+    "updated_at": "2025-05-20 20:49:03"
+  },
+  "9ef4f2a4-92f8-4bef-99fe-ad222c60abe5": {
+    "assessment_id": "9ef4f2a4-92f8-4bef-99fe-ad222c60abe5",
+    "rubrik_id": "9eca16e2-6711-451e-bd74-fe2dd3e42938",
+    "question": "Seberapa baik tingkat kerja sama Anda dalam tim?",
+    "aspect": "Kolaborasi",
+    "criteria": "Kolaborasi",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak bekerja sama dengan tim, sering tidak hadir atau menghindari tanggung jawab.",
+      "2": "Kurang bekerja sama, sering mengandalkan anggota tim lain dalam menyelesaikan tugas.",
+      "3": "Bekerja sama tetapi hanya dalam tugas tertentu, kurang terlibat secara keseluruhan.",
+      "4": "Bekerja sama dengan baik tetapi terkadang kurang aktif dalam diskusi tim.",
+      "5": "Sangat aktif bekerja sama, selalu membantu tim, dan berkontribusi dalam diskusi dan tugas bersama."
+    },
+    "translated_criteria": {
+      "1": "Lack of teamwork, frequent absences or avoidance of responsibilities.",
+      "2": "Lack of cooperation, often relying on other team members to complete tasks.",
+      "3": "Working together but only in specific tasks, less involved overall.",
+      "4": "Works well together but is sometimes less active in team discussions.",
+      "5": "Very active working together, always helping the team, and contributing to discussions and shared tasks."
+    },
+    "updated_at": "2025-05-20 20:49:11"
+  },
+  "9ef4f2a4-93f8-4844-8ad1-e1f6dc58b6e9": {
+    "assessment_id": "9ef4f2a4-93f8-4844-8ad1-e1f6dc58b6e9",
+    "rubrik_id": "9eca16e2-6225-448c-be70-f247bf70ba88",
+    "question": "Seberapa jelas dan efektif Anda menyampaikan ide dan pendapat?",
+    "aspect": "Komunikasi",
+    "criteria": "Komunikasi",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak berkomunikasi sama sekali atau sulit dipahami oleh tim.",
+      "2": "Kurang berkomunikasi dengan tim, sering menyebabkan miskomunikasi.",
+      "3": "Dapat berkomunikasi tetapi kadang sulit dipahami atau kurang aktif berbicara.",
+      "4": "Menyampaikan ide dengan baik tetapi terkadang kurang jelas dalam beberapa situasi.",
+      "5": "Selalu menyampaikan ide dengan jelas, logis, dan efektif, serta mampu mendengarkan dan memahami tim lain."
+    },
+    "translated_criteria": {
+      "1": "Not communicating at all or difficult for the team to understand.",
+      "2": "Lack of communication with the team, often leads to miscommunication.",
+      "3": "Able to communicate but sometimes difficult to understand or less active in speaking.",
+      "4": "Conveys ideas well but sometimes lacks clarity in some situations.",
+      "5": "Always convey ideas clearly, logically, and effectively, and be able to listen and understand other teams."
+    },
+    "updated_at": "2025-05-20 20:49:19"
+  },
+  "9ef4f2a4-9536-4a99-8e2e-3919e8414f03": {
+    "assessment_id": "9ef4f2a4-9536-4a99-8e2e-3919e8414f03",
+    "rubrik_id": "9eca16e2-67ca-412b-bdfd-bd7199e6896e",
+    "question": "Seberapa bertanggung jawab Anda dalam mengerjakan tugas yang diberikan?",
+    "aspect": "Tanggung Jawab",
+    "criteria": "Tanggung Jawab",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak bertanggung jawab dalam tugas, sering mengabaikan pekerjaan tim.",
+      "2": "Sering lalai dalam tugas dan kurang peduli dengan hasilnya.",
+      "3": "Menyelesaikan tugas tetapi sering terlambat atau membutuhkan arahan tambahan.",
+      "4": "Bertanggung jawab dalam tugas tetapi terkadang membutuhkan pengingat.",
+      "5": "Selalu menyelesaikan tugas sesuai yang diberikan tanpa perlu diingatkan."
+    },
+    "translated_criteria": {
+      "1": "Being irresponsible in tasks, often neglecting team work.",
+      "2": "Often negligent in tasks and less concerned with the outcome.",
+      "3": "Completing tasks but often being late or needing additional direction.",
+      "4": "Responsible for tasks but sometimes requires reminders.",
+      "5": "Always complete tasks as assigned without needing to be reminded."
+    },
+    "updated_at": "2025-05-20 20:49:27"
+  },
+  "9ef4f2a4-9617-4e2a-9799-4d3fb591e500": {
+    "assessment_id": "9ef4f2a4-9617-4e2a-9799-4d3fb591e500",
+    "rubrik_id": "9eca16e2-682c-4529-93f1-488623917f2c",
+    "question": "Seberapa aktif Anda dalam mengambil inisiatif?",
+    "aspect": "Inisiatif",
+    "criteria": "Inisiatif",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak pernah menunjukkan inisiatif dan hanya mengandalkan tim lain.",
+      "2": "Jarang mengambil inisiatif dan lebih sering menunggu instruksi.",
+      "3": "Mengambil inisiatif dalam beberapa situasi tetapi sering pasif.",
+      "4": "Kadang mengambil inisiatif tetapi masih menunggu arahan dari tim atau dosen.",
+      "5": "Proaktif dalam mencari solusi, memberikan ide baru, dan selalu siap mengambil tugas tambahan."
+    },
+    "translated_criteria": {
+      "1": "Never show initiative and only rely on other teams.",
+      "2": "Rarely takes the initiative and more often waits for instructions.",
+      "3": "Takes initiative in some situations but is often passive.",
+      "4": "Sometimes take the initiative but still wait for direction from the team or lecturer.",
+      "5": "Proactive in finding solutions, providing new ideas, and always ready to take on additional tasks."
+    },
+    "updated_at": "2025-05-20 20:49:34"
+  },
+  "9ef4f2a4-96de-450a-b810-0be92d6871c3": {
+    "assessment_id": "9ef4f2a4-96de-450a-b810-0be92d6871c3",
+    "rubrik_id": "9eca16e2-61cb-4dd4-b08b-ba0b3273acee",
+    "question": "Seberapa baik Anda mengelola waktu untuk menyelesaikan tugas?",
+    "aspect": "Manajemen Waktu",
+    "criteria": "Manajemen Waktu",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak memiliki manajemen waktu, sering melewati deadline atau tidak menyelesaikan tugas.",
+      "2": "Sering terlambat dalam menyelesaikan tugas karena kurang perencanaan.",
+      "3": "Mampu menyelesaikan tugas tetapi sering terburu-buru atau kurang efisien.",
+      "4": "Mengelola waktu dengan baik tetapi kadang perlu perpanjangan waktu.",
+      "5": "Sangat baik dalam mengatur waktu, selalu menyelesaikan tugas sebelum deadline tanpa mengorbankan kualitas."
+    },
+    "translated_criteria": {
+      "1": "Lacks time management, often misses deadlines or doesn't complete tasks.",
+      "2": "Often late in completing tasks due to lack of planning.",
+      "3": "Able to complete tasks but often in a hurry or less efficient.",
+      "4": "Time management is good but sometimes it needs to be extended.",
+      "5": "Very good at managing time, always completing tasks before deadlines without sacrificing quality."
+    },
+    "updated_at": "2025-05-20 20:49:42"
+  },
+  "9ef4f2a4-979e-4f3c-a5e5-88ea77b62ff6": {
+    "assessment_id": "9ef4f2a4-979e-4f3c-a5e5-88ea77b62ff6",
+    "rubrik_id": "9eca16e2-68e1-4dce-aae6-d0d204b5a7d7",
+    "question": "Seberapa baik Anda memahami dan menghargai perspektif rekan satu tim?",
+    "aspect": "Empati & Kepekaan Sosial",
+    "criteria": "Empati & Kepekaan Sosial",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak memiliki empati sama sekali, tidak peduli dengan kondisi rekan tim.",
+      "2": "Kurang peka terhadap keadaan anggota tim lain, sering mengabaikan situasi sulit.",
+      "3": "Dapat memahami perspektif tim lain tetapi jarang menunjukkan dukungan secara aktif.",
+      "4": "Berusaha memahami anggota tim tetapi kadang kurang responsif dalam beberapa situasi.",
+      "5": "Selalu memahami dan menghargai perasaan serta pendapat anggota tim lain, bersikap suportif."
+    },
+    "translated_criteria": {
+      "1": "Has no empathy at all, doesn't care about the condition of teammates.",
+      "2": "Lack of sensitivity to the circumstances of other team members, often ignoring difficult situations.",
+      "3": "Can understand other teams' perspectives but rarely actively show support.",
+      "4": "Trying to understand team members but sometimes less responsive in some situations.",
+      "5": "Always understand and respect the feelings and opinions of other team members, be supportive."
+    },
+    "updated_at": "2025-05-20 20:49:50"
+  },
+  "9ef4f2a4-9866-48db-8d55-e44e582603f0": {
+    "assessment_id": "9ef4f2a4-9866-48db-8d55-e44e582603f0",
+    "rubrik_id": "9eca16e2-6934-43e9-83b6-5dfa80147ab8",
+    "question": "Sebaik apa Anda menangani situasi saat menghadapi tantangan besar dalam proyek?",
+    "aspect": "Kesabaran & Ketekunan",
+    "criteria": "Kesabaran & Ketekunan",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak memiliki ketekunan, mudah menyerah, dan tidak menyelesaikan tugas.",
+      "2": "Sering kehilangan motivasi dan cepat menyerah dalam menghadapi tantangan.",
+      "3": "Berusaha menyelesaikan masalah tetapi mudah kehilangan fokus jika terlalu sulit.",
+      "4": "Tetap bertahan menghadapi kesulitan tetapi kadang mudah menyerah jika menemui hambatan besar.",
+      "5": "Selalu sabar dan tetap berusaha meskipun menghadapi tantangan besar atau situasi sulit dalam proyek."
+    },
+    "translated_criteria": {
+      "1": "Lacks perseverance, gives up easily, and does not complete tasks.",
+      "2": "Often lose motivation and quickly give up in the face of challenges.",
+      "3": "Trying to solve a problem but easily losing focus if it is too difficult.",
+      "4": "Still endure difficulties but sometimes give up easily if they encounter major obstacles.",
+      "5": "Always be patient and keep trying despite major challenges or difficult situations in the project."
+    },
+    "updated_at": "2025-05-20 20:49:58"
+  },
+  "9ef4f2a4-9936-4d37-8f5c-14735aecddde": {
+    "assessment_id": "9ef4f2a4-9936-4d37-8f5c-14735aecddde",
+    "rubrik_id": "9eca16e2-6987-4bb9-903e-88ed81215e1f",
+    "question": "Seberapa baik Anda merespons kritik atau masukan dari rekan satu tim atau dosen?",
+    "aspect": "Keterbukaan terhadap Feedback",
+    "criteria": "Keterbukaan terhadap Feedback",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak mau menerima kritik sama sekali, selalu menganggap dirinya benar.",
+      "2": "Sulit menerima kritik, sering mengabaikan saran dari rekan atau dosen.",
+      "3": "Mendengar feedback tetapi kadang defensif atau lambat dalam mengimplementasikannya.",
+      "4": "Dapat menerima feedback dengan baik tetapi masih perlu dorongan untuk menerapkannya.",
+      "5": "Selalu menerima kritik dengan positif, aktif memperbaiki kesalahan, dan meminta feedback untuk perbaikan diri."
+    },
+    "translated_criteria": {
+      "1": "Does not want to accept criticism at all, always considers himself right.",
+      "2": "Difficult to accept criticism, often ignoring suggestions from colleagues or lecturers.",
+      "3": "Hear feedback but sometimes get defensive or slow in implementing it.",
+      "4": "Be able to receive feedback well but still need encouragement to implement it.",
+      "5": "Always accept criticism positively, actively correct mistakes, and ask for feedback for self-improvement."
+    },
+    "updated_at": "2025-05-20 20:50:07"
+  },
+  "9ef4f2a4-99f7-42c3-8107-7bc222bcad18": {
+    "assessment_id": "9ef4f2a4-99f7-42c3-8107-7bc222bcad18",
+    "rubrik_id": "9eca16e2-69db-459e-ad24-4efa3503b8d6",
+    "question": "Seberapa baik Anda berkolaborasi dan membantu anggota lain yang mengalami kesulitan?",
+    "aspect": "Kerjasama dalam Tim",
+    "criteria": "Kerjasama dalam Tim",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak mau bekerja sama atau membantu rekan satu tim.",
+      "2": "Jarang membantu tim lain, lebih fokus pada tugasnya sendiri.",
+      "3": "Membantu tim lain hanya dalam tugas tertentu, kurang proaktif dalam kolaborasi.",
+      "4": "Sering membantu anggota tim lain tetapi terkadang menunggu permintaan terlebih dahulu.",
+      "5": "Selalu mendukung dan membantu anggota tim lain yang mengalami kesulitan tanpa perlu diminta."
+    },
+    "translated_criteria": {
+      "1": "Unwilling to cooperate or assist teammates.",
+      "2": "Rarely helps other teams, focusing more on their own tasks.",
+      "3": "Helping other teams only in certain tasks, less proactive in collaboration.",
+      "4": "Often helps other team members but sometimes waits for a request first.",
+      "5": "Always support and assist other team members who are experiencing difficulties without needing to be asked."
+    },
+    "updated_at": "2025-05-20 20:50:15"
+  },
+  "9ef4f2a4-9b83-4dba-9f00-35e72ef13703": {
+    "assessment_id": "9ef4f2a4-9b83-4dba-9f00-35e72ef13703",
+    "rubrik_id": "9eca16e2-6a2e-47e5-802e-be5c3cfc59fd",
+    "question": "Seberapa baik Anda menangani konflik atau perbedaan pendapat dalam proyek?",
+    "aspect": "Kemampuan Menyelesaikan Konflik",
+    "criteria": "Kemampuan Menyelesaikan Konflik",
+    "skill_type": "softskill",
+    "type": "selfAssessment",
+    "raw_criteria": {
+      "1": "Tidak bisa menyelesaikan konflik, justru memperburuk keadaan dengan sikapnya.",
+      "2": "Menghindari konflik atau lebih sering menyalahkan pihak lain.",
+      "3": "Dapat menangani konflik tetapi sering mengalami kesulitan dalam menengahi perbedaan pendapat.",
+      "4": "Berusaha menyelesaikan konflik dengan baik tetapi masih memerlukan bantuan dari pihak lain.",
+      "5": "Mampu menyelesaikan konflik dengan diplomasi, menjaga komunikasi tetap positif, dan mencapai solusi yang adil."
+    },
+    "translated_criteria": {
+      "1": "Unable to resolve the conflict, it only made things worse with his attitude.",
+      "2": "Avoid conflict or blame the other side more often.",
+      "3": "Can handle conflict but often has difficulty mediating disagreements.",
+      "4": "Trying to resolve conflicts well but still need help from other parties.",
+      "5": "Able to resolve conflicts with diplomacy, maintain positive communication, and reach fair solutions."
+    },
+    "updated_at": "2025-05-20 20:50:23"
   }
 }

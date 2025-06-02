@@ -576,3 +576,175 @@
 2025-03-12 20:55:24,858 - flask_app - INFO - Successfully saved criteria for assessment_id 9e6a27ad-6b0e-4be8-a325-2b28e5c9cbb5 to Rubrik.json
 2025-03-12 20:55:24,872 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2025 20:55:24] "POST /import-criteria HTTP/1.1" 200 -
 2025-03-12 21:04:02,168 - werkzeug - INFO -  * Detected change in 'D:\\KULIAH\\TA\\venv\\app.py', reloading
+2025-03-12 21:04:03,123 - werkzeug - INFO -  * Restarting with stat
+2025-03-12 21:04:06,868 - flask_app - INFO - Aplikasi Flask dimulai
+2025-03-12 21:04:06,884 - werkzeug - WARNING -  * Debugger is active!
+2025-03-12 21:04:06,893 - werkzeug - INFO -  * Debugger PIN: 136-691-489
+2025-03-12 21:06:54,666 - flask_app - INFO - Data diterima dari Laravel: {
+  "question_id": "9e6a27ad-6285-4e61-a289-1337d2e1e859",
+  "answer": "saya sudah baik dalam tepat waktu",
+  "score": 3
+}
+2025-03-12 21:06:54,666 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '109'}
+2025-03-12 21:06:54,667 - flask_app - INFO - Found matching criteria for question_id: 9e6a27ad-6285-4e61-a289-1337d2e1e859
+2025-03-12 21:06:54,667 - flask_app - INFO - Loaded criteria for question_id 9e6a27ad-6285-4e61-a289-1337d2e1e859: {
+  "1": "very poorly timed",
+  "2": "not quite on time",
+  "3": "quite on time",
+  "4": "in time",
+  "5": "very good on time"
+}
+2025-03-12 21:06:57,666 - flask_app - INFO - Translated text: i've been good in time
+2025-03-12 21:06:57,667 - flask_app - INFO - Translated answer: i've been good in time
+2025-03-12 21:07:00,519 - flask_app - INFO - Calculating similarity between: 
+Answer: 'i've been good in time'
+Criteria: 'very poorly timed'
+2025-03-12 21:07:00,535 - flask_app - INFO - spaCy similarity score: 0.08921006321907043
+2025-03-12 21:07:00,537 - flask_app - INFO - Answer keywords: [('good', False), ('time', False)]
+2025-03-12 21:07:00,537 - flask_app - INFO - Criteria keywords: {'poorly', 'time'}
+2025-03-12 21:07:00,538 - flask_app - INFO - Keyword matches: 1
+2025-03-12 21:07:00,538 - flask_app - INFO - Keyword ratio: 0.5
+2025-03-12 21:07:00,539 - flask_app - INFO - Combined similarity score: 0.2946050316095352
+2025-03-12 21:07:00,539 - flask_app - INFO - Calculating similarity between: 
+Answer: 'i've been good in time'
+Criteria: 'not quite on time'
+2025-03-12 21:07:00,567 - flask_app - INFO - spaCy similarity score: 0.22424407303333282
+2025-03-12 21:07:00,567 - flask_app - INFO - Answer keywords: [('good', False), ('time', False)]
+2025-03-12 21:07:00,567 - flask_app - INFO - Criteria keywords: {'time'}
+2025-03-12 21:07:00,567 - flask_app - INFO - Keyword matches: 1
+2025-03-12 21:07:00,568 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-12 21:07:00,568 - flask_app - INFO - Combined similarity score: 0.6121220365166664
+2025-03-12 21:07:00,568 - flask_app - INFO - Calculating similarity between: 
+Answer: 'i've been good in time'
+Criteria: 'quite on time'
+2025-03-12 21:07:00,585 - flask_app - INFO - spaCy similarity score: 0.28915274143218994
+2025-03-12 21:07:00,586 - flask_app - INFO - Answer keywords: [('good', False), ('time', False)]
+2025-03-12 21:07:00,586 - flask_app - INFO - Criteria keywords: {'time'}
+2025-03-12 21:07:00,586 - flask_app - INFO - Keyword matches: 1
+2025-03-12 21:07:00,587 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-12 21:07:00,587 - flask_app - INFO - Combined similarity score: 0.644576370716095
+2025-03-12 21:07:00,587 - flask_app - INFO - Calculating similarity between: 
+Answer: 'i've been good in time'
+Criteria: 'in time'
+2025-03-12 21:07:00,614 - flask_app - INFO - spaCy similarity score: 0.4469362795352936
+2025-03-12 21:07:00,616 - flask_app - INFO - Answer keywords: [('good', False), ('time', False)]
+2025-03-12 21:07:00,616 - flask_app - INFO - Criteria keywords: {'time'}
+2025-03-12 21:07:00,616 - flask_app - INFO - Keyword matches: 1
+2025-03-12 21:07:00,617 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-12 21:07:00,617 - flask_app - INFO - Combined similarity score: 0.7234681397676468
+2025-03-12 21:07:00,617 - flask_app - INFO - Calculating similarity between: 
+Answer: 'i've been good in time'
+Criteria: 'very good on time'
+2025-03-12 21:07:00,639 - flask_app - INFO - spaCy similarity score: 0.40407082438468933
+2025-03-12 21:07:00,639 - flask_app - INFO - Answer keywords: [('good', False), ('time', False)]
+2025-03-12 21:07:00,639 - flask_app - INFO - Criteria keywords: {'good', 'time'}
+2025-03-12 21:07:00,639 - flask_app - INFO - Keyword matches: 2
+2025-03-12 21:07:00,640 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-12 21:07:00,640 - flask_app - INFO - Combined similarity score: 0.7020354121923447
+2025-03-12 21:07:00,640 - flask_app - INFO - Hasil Analisis: best_score=4, best_similarity=0.7235, sentiment=Positive
+2025-03-12 21:07:00,640 - flask_app - INFO - Similarity Scores: {
+  "1": 0.2946,
+  "2": 0.6121,
+  "3": 0.6446,
+  "4": 0.7235,
+  "5": 0.702
+}
+2025-03-12 21:07:00,641 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 4,
+  "best_similarity": 0.7235,
+  "sentiment": "Positive",
+  "avg_pos": 0.3333,
+  "avg_neg": 0.0,
+  "similarity_scores": {
+    "1": 0.2946,
+    "2": 0.6121,
+    "3": 0.6446,
+    "4": 0.7235,
+    "5": 0.702
+  }
+}
+2025-03-12 21:07:00,643 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2025 21:07:00] "POST /assess HTTP/1.1" 200 -
+2025-03-12 21:07:00,739 - flask_app - INFO - Data diterima dari Laravel: {
+  "question_id": "9e6a27ad-6b0e-4be8-a325-2b28e5c9cbb5",
+  "answer": "saya sangat baik dan luarbiasa dalam komunikasi",
+  "score": 2
+}
+2025-03-12 21:07:00,740 - flask_app - INFO - Request Headers: {'Host': 'localhost:5000', 'User-Agent': 'GuzzleHttp/7', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Content-Length': '123'}
+2025-03-12 21:07:00,741 - flask_app - INFO - Found matching criteria for question_id: 9e6a27ad-6b0e-4be8-a325-2b28e5c9cbb5
+2025-03-12 21:07:00,741 - flask_app - INFO - Loaded criteria for question_id 9e6a27ad-6b0e-4be8-a325-2b28e5c9cbb5: {
+  "1": "very poor communication",
+  "2": "lack of communication",
+  "3": "sufficient communication",
+  "4": "good communication",
+  "5": "very communicative"
+}
+2025-03-12 21:07:02,760 - flask_app - INFO - Translated text: i am very good and excellent in communication
+2025-03-12 21:07:02,760 - flask_app - INFO - Translated answer: i am very good and excellent in communication
+2025-03-12 21:07:02,768 - flask_app - INFO - Calculating similarity between: 
+Answer: 'i am very good and excellent in communication'
+Criteria: 'very poor communication'
+2025-03-12 21:07:02,783 - flask_app - INFO - spaCy similarity score: 0.46081051230430603
+2025-03-12 21:07:02,784 - flask_app - INFO - Answer keywords: [('good', False), ('excellent', False), ('communication', False)]
+2025-03-12 21:07:02,784 - flask_app - INFO - Criteria keywords: {'communication', 'poor'}
+2025-03-12 21:07:02,785 - flask_app - INFO - Keyword matches: 1
+2025-03-12 21:07:02,785 - flask_app - INFO - Keyword ratio: 0.5
+2025-03-12 21:07:02,785 - flask_app - INFO - Combined similarity score: 0.480405256152153
+2025-03-12 21:07:02,786 - flask_app - INFO - Calculating similarity between: 
+Answer: 'i am very good and excellent in communication'
+Criteria: 'lack of communication'
+2025-03-12 21:07:02,800 - flask_app - INFO - spaCy similarity score: 0.37380436062812805
+2025-03-12 21:07:02,801 - flask_app - INFO - Answer keywords: [('good', False), ('excellent', False), ('communication', False)]
+2025-03-12 21:07:02,801 - flask_app - INFO - Criteria keywords: {'lack', 'communication'}
+2025-03-12 21:07:02,801 - flask_app - INFO - Keyword matches: 1
+2025-03-12 21:07:02,802 - flask_app - INFO - Keyword ratio: 0.5
+2025-03-12 21:07:02,802 - flask_app - INFO - Combined similarity score: 0.436902180314064
+2025-03-12 21:07:02,802 - flask_app - INFO - Calculating similarity between: 
+Answer: 'i am very good and excellent in communication'
+Criteria: 'sufficient communication'
+2025-03-12 21:07:02,817 - flask_app - INFO - spaCy similarity score: 0.2431035041809082
+2025-03-12 21:07:02,818 - flask_app - INFO - Answer keywords: [('good', False), ('excellent', False), ('communication', False)]
+2025-03-12 21:07:02,818 - flask_app - INFO - Criteria keywords: {'sufficient', 'communication'}
+2025-03-12 21:07:02,819 - flask_app - INFO - Keyword matches: 1
+2025-03-12 21:07:02,819 - flask_app - INFO - Keyword ratio: 0.5
+2025-03-12 21:07:02,820 - flask_app - INFO - Combined similarity score: 0.3715517520904541
+2025-03-12 21:07:02,823 - flask_app - INFO - Calculating similarity between: 
+Answer: 'i am very good and excellent in communication'
+Criteria: 'good communication'
+2025-03-12 21:07:02,850 - flask_app - INFO - spaCy similarity score: 0.2534126937389374
+2025-03-12 21:07:02,851 - flask_app - INFO - Answer keywords: [('good', False), ('excellent', False), ('communication', False)]
+2025-03-12 21:07:02,851 - flask_app - INFO - Criteria keywords: {'good', 'communication'}
+2025-03-12 21:07:02,853 - flask_app - INFO - Keyword matches: 2
+2025-03-12 21:07:02,854 - flask_app - INFO - Keyword ratio: 1.0
+2025-03-12 21:07:02,854 - flask_app - INFO - Combined similarity score: 0.6267063468694687
+2025-03-12 21:07:02,855 - flask_app - INFO - Calculating similarity between: 
+Answer: 'i am very good and excellent in communication'
+Criteria: 'very communicative'
+2025-03-12 21:07:02,883 - flask_app - INFO - spaCy similarity score: 0.5589951276779175
+2025-03-12 21:07:02,884 - flask_app - INFO - Answer keywords: [('good', False), ('excellent', False), ('communication', False)]
+2025-03-12 21:07:02,885 - flask_app - INFO - Criteria keywords: {'communicative'}
+2025-03-12 21:07:02,885 - flask_app - INFO - Keyword matches: 0
+2025-03-12 21:07:02,885 - flask_app - INFO - Keyword ratio: 0.0
+2025-03-12 21:07:02,886 - flask_app - INFO - Combined similarity score: 0.27949756383895874
+2025-03-12 21:07:02,886 - flask_app - INFO - Hasil Analisis: best_score=4, best_similarity=0.6267, sentiment=Positive
+2025-03-12 21:07:02,886 - flask_app - INFO - Similarity Scores: {
+  "1": 0.4804,
+  "2": 0.4369,
+  "3": 0.3716,
+  "4": 0.6267,
+  "5": 0.2795
+}
+2025-03-12 21:07:02,887 - flask_app - INFO - Response dikirim ke Laravel: {
+  "best_score": 4,
+  "best_similarity": 0.6267,
+  "sentiment": "Positive",
+  "avg_pos": 0.2812,
+  "avg_neg": 0.0,
+  "similarity_scores": {
+    "1": 0.4804,
+    "2": 0.4369,
+    "3": 0.3716,
+    "4": 0.6267,
+    "5": 0.2795
+  }
+}
+2025-03-12 21:07:02,889 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2025 21:07:02] "POST /assess HTTP/1.1" 200 -
