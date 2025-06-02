@@ -404,5 +404,6 @@ class SimilarityAssessmentApp:
 
 # Main Execution
 if __name__ == '__main__':
-    app = SimilarityAssessmentApp()
+    similarity_app = SimilarityAssessmentApp()
+    app = similarity_app.app  
     app.run()
