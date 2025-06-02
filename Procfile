@@ -1,1 +1,1 @@
-web: python contoh:SimilarityAssessmentApp().app
+web: python contoh:app
