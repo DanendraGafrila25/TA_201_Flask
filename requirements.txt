@@ -47,6 +47,7 @@ threadpoolctl==3.6.0
 tqdm==4.67.1
 translate==3.6.1
 typer==0.15.2
+textblob==0.17.1
 typing_extensions==4.12.2
 urllib3==2.3.0
 wasabi==1.1.3
